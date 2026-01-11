@@ -1,0 +1,49 @@
+  **** HLS Build v2025.1 6135595
+INFO: [HLS 200-2005] Using work_dir /home/szymon/Desktop/PBAWIZ/Gauss/HLS/gauss_filter/GaussianFilter 
+INFO: [HLS 200-2176] Writing Vitis IDE component file /home/szymon/Desktop/PBAWIZ/Gauss/HLS/gauss_filter/GaussianFilter/vitis-comp.json
+INFO: [HLS 200-10] Creating and opening component '/home/szymon/Desktop/PBAWIZ/Gauss/HLS/gauss_filter/GaussianFilter'.
+INFO: [HLS 200-1611] Setting target device to 'xc7z007s-clg400-1'
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-2174] Applying component config ini file /home/szymon/Desktop/PBAWIZ/Gauss/HLS/gauss_filter/hls_config.cfg
+INFO: [HLS 200-1465] Applying config ini 'syn.file=/home/szymon/Desktop/PBAWIZ/Gauss/Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp' from /home/szymon/Desktop/PBAWIZ/Gauss/HLS/gauss_filter/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file '/home/szymon/Desktop/PBAWIZ/Gauss/Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=/home/szymon/Desktop/PBAWIZ/Gauss/Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.h' from /home/szymon/Desktop/PBAWIZ/Gauss/HLS/gauss_filter/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file '/home/szymon/Desktop/PBAWIZ/Gauss/Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=/home/szymon/Desktop/PBAWIZ/Gauss/Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/tb_GaussianFilter.cpp' from /home/szymon/Desktop/PBAWIZ/Gauss/HLS/gauss_filter/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding test bench file '/home/szymon/Desktop/PBAWIZ/Gauss/Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/tb_GaussianFilter.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.top=GaussianFilter' from /home/szymon/Desktop/PBAWIZ/Gauss/HLS/gauss_filter/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vitis' from /home/szymon/Desktop/PBAWIZ/Gauss/HLS/gauss_filter/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_latency=64
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_rtl -register_reset_num=3
+INFO: [HLS 200-1465] Applying config ini 'part=xc7z007sclg400-1' from /home/szymon/Desktop/PBAWIZ/Gauss/HLS/gauss_filter/hls_config.cfg(1)
+INFO: [HLS 200-1465] Applying config ini 'clock=8ns' from /home/szymon/Desktop/PBAWIZ/Gauss/HLS/gauss_filter/hls_config.cfg(11)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 8ns.
+INFO: [HLS 200-1465] Applying config ini 'clock_uncertainty=12%' from /home/szymon/Desktop/PBAWIZ/Gauss/HLS/gauss_filter/hls_config.cfg(12)
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0.96ns.
+INFO: [HLS 200-1465] Applying config ini 'csim.code_analyzer=1' from /home/szymon/Desktop/PBAWIZ/Gauss/HLS/gauss_filter/hls_config.cfg(13)
+INFO: [HLS 200-1465] Applying config ini 'package.ip.display_name=gaussian_filter' from /home/szymon/Desktop/PBAWIZ/Gauss/HLS/gauss_filter/hls_config.cfg(15)
+INFO: [HLS 200-1465] Applying config ini 'package.output.file=gaussian_filter' from /home/szymon/Desktop/PBAWIZ/Gauss/HLS/gauss_filter/hls_config.cfg(16)
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from /home/szymon/Desktop/PBAWIZ/Gauss/HLS/gauss_filter/hls_config.cfg(5)
+INFO: [HLS 200-1465] Applying config ini 'vivado.rtl=vhdl' from /home/szymon/Desktop/PBAWIZ/Gauss/HLS/gauss_filter/hls_config.cfg(14)
+INFO: [HLS 200-2176] Writing Vitis IDE component file /home/szymon/Desktop/PBAWIZ/Gauss/HLS/gauss_filter/GaussianFilter/vitis-comp.json
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+   Build using "/home/szymon/tools/Xilinx/2025.1/Vitis/lnx64/tools/vcxx/libexec//clang++"
+   Compiling apatb_GaussianFilter.cpp
+   Compiling GaussianFilter.cpp_pre.cpp.tb.cpp
+   Compiling tb_GaussianFilter.cpp_pre.cpp.tb.cpp
+   Compiling apatb_GaussianFilter_ir.ll
+   Generating cosim.tv.exe
+INFO: [COSIM 212-302] Starting C TB testing ... 
+Program started.
+All the results matched: Successful!!!
+ERROR: [COSIM 212-330] Aborting co-simulation: top function 'GaussianFilter' is not invoked in the test bench.
+ERROR: [COSIM 212-5] *** C/RTL co-simulation file generation failed. ***
+ERROR: [COSIM 212-4] *** C/RTL co-simulation finished: FAIL ***
+ERROR: 
+INFO: [HLS 200-112] Total CPU user time: 11.76 seconds. Total CPU system time: 1.29 seconds. Total elapsed time: 13.22 seconds; peak allocated memory: 315.340 MB.

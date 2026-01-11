@@ -1,0 +1,3 @@
+relativeroot=/home/szymon/Desktop/PBAWIZ/Gauss/HLS/gauss_filter
+original_argv=--mode hls --package --config /home/szymon/Desktop/PBAWIZ/Gauss/HLS/gauss_filter/hls_config.cfg --work_dir GaussianFilter 
+

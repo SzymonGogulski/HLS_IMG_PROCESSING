@@ -1,0 +1,2 @@
+XILINX_VITIS=/home/szymon/tools/Xilinx/2025.1/Vitis
+cmdline: /home/szymon/tools/Xilinx/2025.1/Vitis/bin/xcd -p 48003 -t 7b01295c-eef4-11f0-b839-14f6d89c79cb

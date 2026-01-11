@@ -1,0 +1,148 @@
+<profile>
+<RunData>
+  <RUN_TYPE>impl</RUN_TYPE>
+  <VIVADO_VERSION>v.2025.1</VIVADO_VERSION>
+  <ROOT_MODULE_CELL>bd_0_i/hls_inst</ROOT_MODULE_CELL>
+</RunData>
+<TimingReport>
+  <TargetClockPeriod>8.000</TargetClockPeriod>
+  <AchievedClockPeriod>6.011</AchievedClockPeriod>
+  <CLOCK_NAME>ap_clk</CLOCK_NAME>
+  <CP_FINAL>6.011</CP_FINAL>
+  <CP_ROUTE>6.011</CP_ROUTE>
+  <CP_SYNTH>5.166</CP_SYNTH>
+  <CP_TARGET>8.000</CP_TARGET>
+  <SLACK_FINAL>1.989</SLACK_FINAL>
+  <SLACK_ROUTE>1.989</SLACK_ROUTE>
+  <SLACK_SYNTH>2.834</SLACK_SYNTH>
+  <TIMING_MET>TRUE</TIMING_MET>
+  <TNS_FINAL>0.000</TNS_FINAL>
+  <TNS_ROUTE>0.000</TNS_ROUTE>
+  <TNS_SYNTH>0.000</TNS_SYNTH>
+  <WNS_FINAL>1.989</WNS_FINAL>
+  <WNS_ROUTE>1.989</WNS_ROUTE>
+  <WNS_SYNTH>2.834</WNS_SYNTH>
+</TimingReport>
+<AreaReport>
+  <Resources>
+    <BRAM>0</BRAM>
+    <CLB>0</CLB>
+    <DSP>17</DSP>
+    <FF>362</FF>
+    <LATCH>0</LATCH>
+    <LUT>268</LUT>
+    <SLICE>123</SLICE>
+    <SRL>4</SRL>
+    <URAM>0</URAM>
+  </Resources>
+  <AvailableResources>
+    <BRAM>100</BRAM>
+    <CLB>0</CLB>
+    <DSP>66</DSP>
+    <FF>28800</FF>
+    <LUT>14400</LUT>
+    <SLICE>4400</SLICE>
+    <URAM>0</URAM>
+  </AvailableResources>
+</AreaReport>
+<RtlModules>
+  <RtlModule CELL="U0" DEPTH="0" FILE_NAME="bd_0_hls_inst_0.vhd" ORIG_REF_NAME="GaussianFilter" TOP_CELL="bd_0_i/hls_inst/U0">
+    <SubModules count="13">CTRL_s_axi_U mac_muladd_8ns_8ns_16ns_17_4_1_U10 mac_muladd_8ns_8ns_16ns_17_4_1_U12 mac_muladd_8ns_8ns_16ns_17_4_1_U13 mac_muladd_8ns_8ns_16ns_17_4_1_U16 mac_muladd_8ns_8ns_16ns_17_4_1_U17 mac_muladd_8ns_8ns_16ns_17_4_1_U6 mac_muladd_8ns_8ns_16ns_17_4_1_U7 mac_muladd_8ns_8ns_16ns_17_4_1_U8 mac_muladd_8ns_8ns_16ns_17_4_1_U9 mac_muladd_8ns_8ns_17ns_17_4_1_U11 mac_muladd_8ns_8ns_17ns_17_4_1_U14 mac_muladd_8ns_8ns_17ns_17_4_1_U15</SubModules>
+    <Resources DSP="17" FF="362" LUT="268" LogicLUT="264" SRL="4"/>
+    <LocalResources FF="251" LUT="5" LogicLUT="1" SRL="4"/>
+  </RtlModule>
+  <RtlModule CELL="U0/CTRL_s_axi_U" DEPTH="1" FILE_NAME="GaussianFilter.vhd" ORIG_REF_NAME="GaussianFilter_CTRL_s_axi">
+    <Resources FF="103" LUT="122" LogicLUT="122"/>
+  </RtlModule>
+  <RtlModule CELL="U0/mac_muladd_8ns_8ns_16ns_17_4_1_U10" DEPTH="1" FILE_NAME="GaussianFilter.vhd" ORIG_REF_NAME="GaussianFilter_mac_muladd_8ns_8ns_16ns_17_4_1">
+  </RtlModule>
+  <RtlModule CELL="U0/mac_muladd_8ns_8ns_16ns_17_4_1_U12" DEPTH="1" FILE_NAME="GaussianFilter.vhd" ORIG_REF_NAME="GaussianFilter_mac_muladd_8ns_8ns_16ns_17_4_1">
+  </RtlModule>
+  <RtlModule CELL="U0/mac_muladd_8ns_8ns_16ns_17_4_1_U13" DEPTH="1" FILE_NAME="GaussianFilter.vhd" ORIG_REF_NAME="GaussianFilter_mac_muladd_8ns_8ns_16ns_17_4_1">
+  </RtlModule>
+  <RtlModule CELL="U0/mac_muladd_8ns_8ns_16ns_17_4_1_U16" DEPTH="1" FILE_NAME="GaussianFilter.vhd" ORIG_REF_NAME="GaussianFilter_mac_muladd_8ns_8ns_16ns_17_4_1">
+  </RtlModule>
+  <RtlModule CELL="U0/mac_muladd_8ns_8ns_16ns_17_4_1_U17" DEPTH="1" FILE_NAME="GaussianFilter.vhd" ORIG_REF_NAME="GaussianFilter_mac_muladd_8ns_8ns_16ns_17_4_1">
+  </RtlModule>
+  <RtlModule CELL="U0/mac_muladd_8ns_8ns_16ns_17_4_1_U6" DEPTH="1" FILE_NAME="GaussianFilter.vhd" ORIG_REF_NAME="GaussianFilter_mac_muladd_8ns_8ns_16ns_17_4_1">
+  </RtlModule>
+  <RtlModule CELL="U0/mac_muladd_8ns_8ns_16ns_17_4_1_U7" DEPTH="1" FILE_NAME="GaussianFilter.vhd" ORIG_REF_NAME="GaussianFilter_mac_muladd_8ns_8ns_16ns_17_4_1">
+  </RtlModule>
+  <RtlModule CELL="U0/mac_muladd_8ns_8ns_16ns_17_4_1_U8" DEPTH="1" FILE_NAME="GaussianFilter.vhd" ORIG_REF_NAME="GaussianFilter_mac_muladd_8ns_8ns_16ns_17_4_1">
+  </RtlModule>
+  <RtlModule CELL="U0/mac_muladd_8ns_8ns_16ns_17_4_1_U9" DEPTH="1" FILE_NAME="GaussianFilter.vhd" ORIG_REF_NAME="GaussianFilter_mac_muladd_8ns_8ns_16ns_17_4_1">
+  </RtlModule>
+  <RtlModule CELL="U0/mac_muladd_8ns_8ns_17ns_17_4_1_U11" DEPTH="1" FILE_NAME="GaussianFilter.vhd" ORIG_REF_NAME="GaussianFilter_mac_muladd_8ns_8ns_17ns_17_4_1">
+  </RtlModule>
+  <RtlModule CELL="U0/mac_muladd_8ns_8ns_17ns_17_4_1_U14" DEPTH="1" FILE_NAME="GaussianFilter.vhd" ORIG_REF_NAME="GaussianFilter_mac_muladd_8ns_8ns_17ns_17_4_1">
+  </RtlModule>
+  <RtlModule CELL="U0/mac_muladd_8ns_8ns_17ns_17_4_1_U15" DEPTH="1" FILE_NAME="GaussianFilter.vhd" ORIG_REF_NAME="GaussianFilter_mac_muladd_8ns_8ns_17ns_17_4_1">
+  </RtlModule>
+</RtlModules>
+<TimingPaths>
+  <TPATH DATAPATH_DELAY="5.989" DATAPATH_LOGIC_DELAY="2.780" DATAPATH_NET_DELAY="3.209" ENDPOINT_PIN="bd_0_i/hls_inst/U0/add_ln93_9_reg_1121_reg[16]/D" LOGIC_LEVELS="7" MAX_FANOUT="5" SLACK="1.989" STARTPOINT_PIN="bd_0_i/hls_inst/U0/p_ZZ14GaussianFilter7ap_uintILi8EES0_S0_S0_S0_E13data_in_array_0_2_load_reg_963_reg[5]/C">
+    <CELL NAME="bd_0_i/hls_inst/U0/p_ZZ14GaussianFilter7ap_uintILi8EES0_S0_S0_S0_E13data_in_array_0_2_load_reg_963_reg[5]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="GaussianFilter.vhd" LINE_NUMBER="801"/>
+    <CELL NAME="bd_0_i/hls_inst/U0/mac_muladd_8ns_8ns_16ns_17_4_1_U9/GaussianFilter_mac_muladd_8ns_8ns_16ns_17_4_1_DSP48_0_U/add_ln93_9_reg_1121[11]_i_16" PRIMITIVE_TYPE="LUT.others.LUT3" FILE_NAME="GaussianFilter.vhd" LINE_NUMBER="854"/>
+    <CELL NAME="bd_0_i/hls_inst/U0/mac_muladd_8ns_8ns_16ns_17_4_1_U9/GaussianFilter_mac_muladd_8ns_8ns_16ns_17_4_1_DSP48_0_U/add_ln93_9_reg_1121[11]_i_20" PRIMITIVE_TYPE="LUT.others.LUT4" FILE_NAME="GaussianFilter.vhd" LINE_NUMBER="854"/>
+    <CELL NAME="bd_0_i/hls_inst/U0/mac_muladd_8ns_8ns_16ns_17_4_1_U9/GaussianFilter_mac_muladd_8ns_8ns_16ns_17_4_1_DSP48_0_U/add_ln93_9_reg_1121_reg[11]_i_15" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="GaussianFilter.vhd" LINE_NUMBER="854"/>
+    <CELL NAME="bd_0_i/hls_inst/U0/mac_muladd_8ns_8ns_16ns_17_4_1_U9/GaussianFilter_mac_muladd_8ns_8ns_16ns_17_4_1_DSP48_0_U/add_ln93_9_reg_1121_reg[15]_i_14" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="GaussianFilter.vhd" LINE_NUMBER="854"/>
+    <CELL NAME="bd_0_i/hls_inst/U0/mac_muladd_8ns_8ns_16ns_17_4_1_U12/GaussianFilter_mac_muladd_8ns_8ns_16ns_17_4_1_DSP48_0_U/add_ln93_9_reg_1121[15]_i_5" PRIMITIVE_TYPE="LUT.others.LUT2" FILE_NAME="GaussianFilter.vhd" LINE_NUMBER="873"/>
+    <CELL NAME="bd_0_i/hls_inst/U0/mac_muladd_8ns_8ns_16ns_17_4_1_U12/GaussianFilter_mac_muladd_8ns_8ns_16ns_17_4_1_DSP48_0_U/add_ln93_9_reg_1121_reg[15]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="GaussianFilter.vhd" LINE_NUMBER="854"/>
+    <CELL NAME="bd_0_i/hls_inst/U0/mac_muladd_8ns_8ns_16ns_17_4_1_U12/GaussianFilter_mac_muladd_8ns_8ns_16ns_17_4_1_DSP48_0_U/add_ln93_9_reg_1121_reg[17]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="GaussianFilter.vhd" LINE_NUMBER="854"/>
+    <CELL NAME="bd_0_i/hls_inst/U0/add_ln93_9_reg_1121_reg[16]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="GaussianFilter.vhd" LINE_NUMBER="767"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="5.923" DATAPATH_LOGIC_DELAY="2.714" DATAPATH_NET_DELAY="3.209" ENDPOINT_PIN="bd_0_i/hls_inst/U0/add_ln93_9_reg_1121_reg[17]/D" LOGIC_LEVELS="7" MAX_FANOUT="5" SLACK="2.039" STARTPOINT_PIN="bd_0_i/hls_inst/U0/p_ZZ14GaussianFilter7ap_uintILi8EES0_S0_S0_S0_E13data_in_array_0_2_load_reg_963_reg[5]/C">
+    <CELL NAME="bd_0_i/hls_inst/U0/p_ZZ14GaussianFilter7ap_uintILi8EES0_S0_S0_S0_E13data_in_array_0_2_load_reg_963_reg[5]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="GaussianFilter.vhd" LINE_NUMBER="801"/>
+    <CELL NAME="bd_0_i/hls_inst/U0/mac_muladd_8ns_8ns_16ns_17_4_1_U9/GaussianFilter_mac_muladd_8ns_8ns_16ns_17_4_1_DSP48_0_U/add_ln93_9_reg_1121[11]_i_16" PRIMITIVE_TYPE="LUT.others.LUT3" FILE_NAME="GaussianFilter.vhd" LINE_NUMBER="854"/>
+    <CELL NAME="bd_0_i/hls_inst/U0/mac_muladd_8ns_8ns_16ns_17_4_1_U9/GaussianFilter_mac_muladd_8ns_8ns_16ns_17_4_1_DSP48_0_U/add_ln93_9_reg_1121[11]_i_20" PRIMITIVE_TYPE="LUT.others.LUT4" FILE_NAME="GaussianFilter.vhd" LINE_NUMBER="854"/>
+    <CELL NAME="bd_0_i/hls_inst/U0/mac_muladd_8ns_8ns_16ns_17_4_1_U9/GaussianFilter_mac_muladd_8ns_8ns_16ns_17_4_1_DSP48_0_U/add_ln93_9_reg_1121_reg[11]_i_15" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="GaussianFilter.vhd" LINE_NUMBER="854"/>
+    <CELL NAME="bd_0_i/hls_inst/U0/mac_muladd_8ns_8ns_16ns_17_4_1_U9/GaussianFilter_mac_muladd_8ns_8ns_16ns_17_4_1_DSP48_0_U/add_ln93_9_reg_1121_reg[15]_i_14" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="GaussianFilter.vhd" LINE_NUMBER="854"/>
+    <CELL NAME="bd_0_i/hls_inst/U0/mac_muladd_8ns_8ns_16ns_17_4_1_U12/GaussianFilter_mac_muladd_8ns_8ns_16ns_17_4_1_DSP48_0_U/add_ln93_9_reg_1121[15]_i_5" PRIMITIVE_TYPE="LUT.others.LUT2" FILE_NAME="GaussianFilter.vhd" LINE_NUMBER="873"/>
+    <CELL NAME="bd_0_i/hls_inst/U0/mac_muladd_8ns_8ns_16ns_17_4_1_U12/GaussianFilter_mac_muladd_8ns_8ns_16ns_17_4_1_DSP48_0_U/add_ln93_9_reg_1121_reg[15]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="GaussianFilter.vhd" LINE_NUMBER="854"/>
+    <CELL NAME="bd_0_i/hls_inst/U0/mac_muladd_8ns_8ns_16ns_17_4_1_U12/GaussianFilter_mac_muladd_8ns_8ns_16ns_17_4_1_DSP48_0_U/add_ln93_9_reg_1121_reg[17]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="GaussianFilter.vhd" LINE_NUMBER="854"/>
+    <CELL NAME="bd_0_i/hls_inst/U0/add_ln93_9_reg_1121_reg[17]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="GaussianFilter.vhd" LINE_NUMBER="767"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="5.909" DATAPATH_LOGIC_DELAY="2.873" DATAPATH_NET_DELAY="3.036" ENDPOINT_PIN="bd_0_i/hls_inst/U0/add_ln93_4_reg_1116_reg[16]/D" LOGIC_LEVELS="7" MAX_FANOUT="6" SLACK="2.116" STARTPOINT_PIN="bd_0_i/hls_inst/U0/data_in_3_read_reg_1059_reg[3]/C">
+    <CELL NAME="bd_0_i/hls_inst/U0/data_in_3_read_reg_1059_reg[3]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="GaussianFilter.vhd" LINE_NUMBER="786"/>
+    <CELL NAME="bd_0_i/hls_inst/U0/mac_muladd_8ns_8ns_16ns_17_4_1_U10/GaussianFilter_mac_muladd_8ns_8ns_16ns_17_4_1_DSP48_0_U/add_ln93_4_reg_1116[11]_i_9" PRIMITIVE_TYPE="LUT.others.LUT3" FILE_NAME="GaussianFilter.vhd" LINE_NUMBER="857"/>
+    <CELL NAME="bd_0_i/hls_inst/U0/mac_muladd_8ns_8ns_16ns_17_4_1_U10/GaussianFilter_mac_muladd_8ns_8ns_16ns_17_4_1_DSP48_0_U/add_ln93_4_reg_1116[11]_i_13" PRIMITIVE_TYPE="LUT.others.LUT4" FILE_NAME="GaussianFilter.vhd" LINE_NUMBER="857"/>
+    <CELL NAME="bd_0_i/hls_inst/U0/mac_muladd_8ns_8ns_16ns_17_4_1_U10/GaussianFilter_mac_muladd_8ns_8ns_16ns_17_4_1_DSP48_0_U/add_ln93_4_reg_1116_reg[11]_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="GaussianFilter.vhd" LINE_NUMBER="855"/>
+    <CELL NAME="bd_0_i/hls_inst/U0/mac_muladd_8ns_8ns_16ns_17_4_1_U10/GaussianFilter_mac_muladd_8ns_8ns_16ns_17_4_1_DSP48_0_U/add_ln93_4_reg_1116_reg[15]_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="GaussianFilter.vhd" LINE_NUMBER="855"/>
+    <CELL NAME="bd_0_i/hls_inst/U0/mac_muladd_8ns_8ns_16ns_17_4_1_U10/GaussianFilter_mac_muladd_8ns_8ns_16ns_17_4_1_DSP48_0_U/add_ln93_4_reg_1116[15]_i_5" PRIMITIVE_TYPE="LUT.others.LUT2" FILE_NAME="GaussianFilter.vhd" LINE_NUMBER="870"/>
+    <CELL NAME="bd_0_i/hls_inst/U0/mac_muladd_8ns_8ns_16ns_17_4_1_U10/GaussianFilter_mac_muladd_8ns_8ns_16ns_17_4_1_DSP48_0_U/add_ln93_4_reg_1116_reg[15]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="GaussianFilter.vhd" LINE_NUMBER="855"/>
+    <CELL NAME="bd_0_i/hls_inst/U0/mac_muladd_8ns_8ns_16ns_17_4_1_U10/GaussianFilter_mac_muladd_8ns_8ns_16ns_17_4_1_DSP48_0_U/add_ln93_4_reg_1116_reg[17]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="GaussianFilter.vhd" LINE_NUMBER="855"/>
+    <CELL NAME="bd_0_i/hls_inst/U0/add_ln93_4_reg_1116_reg[16]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="GaussianFilter.vhd" LINE_NUMBER="766"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="5.856" DATAPATH_LOGIC_DELAY="2.647" DATAPATH_NET_DELAY="3.209" ENDPOINT_PIN="bd_0_i/hls_inst/U0/add_ln93_9_reg_1121_reg[15]/D" LOGIC_LEVELS="6" MAX_FANOUT="5" SLACK="2.122" STARTPOINT_PIN="bd_0_i/hls_inst/U0/p_ZZ14GaussianFilter7ap_uintILi8EES0_S0_S0_S0_E13data_in_array_0_2_load_reg_963_reg[5]/C">
+    <CELL NAME="bd_0_i/hls_inst/U0/p_ZZ14GaussianFilter7ap_uintILi8EES0_S0_S0_S0_E13data_in_array_0_2_load_reg_963_reg[5]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="GaussianFilter.vhd" LINE_NUMBER="801"/>
+    <CELL NAME="bd_0_i/hls_inst/U0/mac_muladd_8ns_8ns_16ns_17_4_1_U9/GaussianFilter_mac_muladd_8ns_8ns_16ns_17_4_1_DSP48_0_U/add_ln93_9_reg_1121[11]_i_16" PRIMITIVE_TYPE="LUT.others.LUT3" FILE_NAME="GaussianFilter.vhd" LINE_NUMBER="854"/>
+    <CELL NAME="bd_0_i/hls_inst/U0/mac_muladd_8ns_8ns_16ns_17_4_1_U9/GaussianFilter_mac_muladd_8ns_8ns_16ns_17_4_1_DSP48_0_U/add_ln93_9_reg_1121[11]_i_20" PRIMITIVE_TYPE="LUT.others.LUT4" FILE_NAME="GaussianFilter.vhd" LINE_NUMBER="854"/>
+    <CELL NAME="bd_0_i/hls_inst/U0/mac_muladd_8ns_8ns_16ns_17_4_1_U9/GaussianFilter_mac_muladd_8ns_8ns_16ns_17_4_1_DSP48_0_U/add_ln93_9_reg_1121_reg[11]_i_15" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="GaussianFilter.vhd" LINE_NUMBER="854"/>
+    <CELL NAME="bd_0_i/hls_inst/U0/mac_muladd_8ns_8ns_16ns_17_4_1_U9/GaussianFilter_mac_muladd_8ns_8ns_16ns_17_4_1_DSP48_0_U/add_ln93_9_reg_1121_reg[15]_i_14" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="GaussianFilter.vhd" LINE_NUMBER="854"/>
+    <CELL NAME="bd_0_i/hls_inst/U0/mac_muladd_8ns_8ns_16ns_17_4_1_U12/GaussianFilter_mac_muladd_8ns_8ns_16ns_17_4_1_DSP48_0_U/add_ln93_9_reg_1121[15]_i_5" PRIMITIVE_TYPE="LUT.others.LUT2" FILE_NAME="GaussianFilter.vhd" LINE_NUMBER="873"/>
+    <CELL NAME="bd_0_i/hls_inst/U0/mac_muladd_8ns_8ns_16ns_17_4_1_U12/GaussianFilter_mac_muladd_8ns_8ns_16ns_17_4_1_DSP48_0_U/add_ln93_9_reg_1121_reg[15]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="GaussianFilter.vhd" LINE_NUMBER="854"/>
+    <CELL NAME="bd_0_i/hls_inst/U0/add_ln93_9_reg_1121_reg[15]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="GaussianFilter.vhd" LINE_NUMBER="767"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="5.847" DATAPATH_LOGIC_DELAY="2.811" DATAPATH_NET_DELAY="3.036" ENDPOINT_PIN="bd_0_i/hls_inst/U0/add_ln93_4_reg_1116_reg[17]/D" LOGIC_LEVELS="7" MAX_FANOUT="6" SLACK="2.163" STARTPOINT_PIN="bd_0_i/hls_inst/U0/data_in_3_read_reg_1059_reg[3]/C">
+    <CELL NAME="bd_0_i/hls_inst/U0/data_in_3_read_reg_1059_reg[3]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="GaussianFilter.vhd" LINE_NUMBER="786"/>
+    <CELL NAME="bd_0_i/hls_inst/U0/mac_muladd_8ns_8ns_16ns_17_4_1_U10/GaussianFilter_mac_muladd_8ns_8ns_16ns_17_4_1_DSP48_0_U/add_ln93_4_reg_1116[11]_i_9" PRIMITIVE_TYPE="LUT.others.LUT3" FILE_NAME="GaussianFilter.vhd" LINE_NUMBER="857"/>
+    <CELL NAME="bd_0_i/hls_inst/U0/mac_muladd_8ns_8ns_16ns_17_4_1_U10/GaussianFilter_mac_muladd_8ns_8ns_16ns_17_4_1_DSP48_0_U/add_ln93_4_reg_1116[11]_i_13" PRIMITIVE_TYPE="LUT.others.LUT4" FILE_NAME="GaussianFilter.vhd" LINE_NUMBER="857"/>
+    <CELL NAME="bd_0_i/hls_inst/U0/mac_muladd_8ns_8ns_16ns_17_4_1_U10/GaussianFilter_mac_muladd_8ns_8ns_16ns_17_4_1_DSP48_0_U/add_ln93_4_reg_1116_reg[11]_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="GaussianFilter.vhd" LINE_NUMBER="855"/>
+    <CELL NAME="bd_0_i/hls_inst/U0/mac_muladd_8ns_8ns_16ns_17_4_1_U10/GaussianFilter_mac_muladd_8ns_8ns_16ns_17_4_1_DSP48_0_U/add_ln93_4_reg_1116_reg[15]_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="GaussianFilter.vhd" LINE_NUMBER="855"/>
+    <CELL NAME="bd_0_i/hls_inst/U0/mac_muladd_8ns_8ns_16ns_17_4_1_U10/GaussianFilter_mac_muladd_8ns_8ns_16ns_17_4_1_DSP48_0_U/add_ln93_4_reg_1116[15]_i_5" PRIMITIVE_TYPE="LUT.others.LUT2" FILE_NAME="GaussianFilter.vhd" LINE_NUMBER="870"/>
+    <CELL NAME="bd_0_i/hls_inst/U0/mac_muladd_8ns_8ns_16ns_17_4_1_U10/GaussianFilter_mac_muladd_8ns_8ns_16ns_17_4_1_DSP48_0_U/add_ln93_4_reg_1116_reg[15]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="GaussianFilter.vhd" LINE_NUMBER="855"/>
+    <CELL NAME="bd_0_i/hls_inst/U0/mac_muladd_8ns_8ns_16ns_17_4_1_U10/GaussianFilter_mac_muladd_8ns_8ns_16ns_17_4_1_DSP48_0_U/add_ln93_4_reg_1116_reg[17]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="GaussianFilter.vhd" LINE_NUMBER="855"/>
+    <CELL NAME="bd_0_i/hls_inst/U0/add_ln93_4_reg_1116_reg[17]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="GaussianFilter.vhd" LINE_NUMBER="766"/>
+  </TPATH>
+</TimingPaths>
+<VivadoReportFiles>
+  <ReportFile TYPE="design_analysis" PATH="vhdl/report/GaussianFilter_design_analysis_routed.rpt"/>
+  <ReportFile TYPE="failfast" PATH="vhdl/report/GaussianFilter_failfast_routed.rpt"/>
+  <ReportFile TYPE="power" PATH="vhdl/report/GaussianFilter_power_routed.rpt"/>
+  <ReportFile TYPE="status" PATH="vhdl/report/GaussianFilter_status_routed.rpt"/>
+  <ReportFile TYPE="timing" PATH="vhdl/report/GaussianFilter_timing_routed.rpt"/>
+  <ReportFile TYPE="timing_paths" PATH="vhdl/report/GaussianFilter_timing_paths_routed.rpt"/>
+  <ReportFile TYPE="utilization" PATH="vhdl/report/GaussianFilter_utilization_routed.rpt"/>
+  <ReportFile TYPE="utilization_hierarchical" PATH="vhdl/report/GaussianFilter_utilization_hierarchical_routed.rpt"/>
+</VivadoReportFiles>
+</profile>

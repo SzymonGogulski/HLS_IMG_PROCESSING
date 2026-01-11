@@ -1,0 +1,6 @@
+   Build using "/home/szymon/tools/Xilinx/2025.1/Vitis/lnx64/tools/vcxx/libexec//clang++"
+   Compiling apatb_GaussianFilter.cpp
+   Compiling GaussianFilter.cpp_pre.cpp.tb.cpp
+   Compiling tb_GaussianFilter.cpp_pre.cpp.tb.cpp
+   Compiling apatb_GaussianFilter_ir.ll
+   Generating cosim.tv.exe

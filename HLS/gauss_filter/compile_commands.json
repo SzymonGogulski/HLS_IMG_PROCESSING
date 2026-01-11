@@ -1,0 +1,27 @@
+[
+  {
+    "directory": "/home/szymon/Desktop/PBAWIZ/Gauss/HLS/gauss_filter",
+    "arguments": [
+      "/home/szymon/tools/Xilinx/2025.1/Vitis/vcxx/libexec/clang++",
+      "--gcc-toolchain=/home/szymon/tools/Xilinx/2025.1/Vitis/tps/lnx64/gcc-8.3.0",
+      "-fhls",
+      "-hls-syn-headers-dir=/home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/autopilot",
+      "-fhlstoplevel=GaussianFilter",
+      "-c",
+      "/home/szymon/Desktop/PBAWIZ/Gauss/Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp"
+    ],
+    "file": "/home/szymon/Desktop/PBAWIZ/Gauss/Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp"
+  },
+  {
+    "directory": "/home/szymon/Desktop/PBAWIZ/Gauss/HLS/gauss_filter",
+    "arguments": [
+      "/home/szymon/tools/Xilinx/2025.1/Vitis/vcxx/libexec/clang++",
+      "--gcc-toolchain=/home/szymon/tools/Xilinx/2025.1/Vitis/tps/lnx64/gcc-8.3.0",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=/home/szymon/tools/Xilinx/2025.1/Vitis/include",
+      "-c",
+      "/home/szymon/Desktop/PBAWIZ/Gauss/Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/tb_GaussianFilter.cpp"
+    ],
+    "file": "/home/szymon/Desktop/PBAWIZ/Gauss/Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/tb_GaussianFilter.cpp"
+  }
+]

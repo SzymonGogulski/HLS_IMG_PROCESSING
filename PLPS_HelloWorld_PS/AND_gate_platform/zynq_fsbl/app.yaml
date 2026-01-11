@@ -1,0 +1,4 @@
+domain_path: /home/szymon/Desktop/CORA_Z7/HelloWorld/PLPS_HelloWorld_PS/AND_gate_platform/zynq_fsbl/zynq_fsbl_bsp
+app_src_dir: /home/szymon/tools/Xilinx/2025.1/Vitis/data/embeddedsw/lib/sw_apps/zynq_fsbl
+template: zynq_fsbl
+lang: c

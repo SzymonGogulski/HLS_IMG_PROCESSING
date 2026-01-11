@@ -1,0 +1,201 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'GaussianFilter'" level="0">
+<item name = "Date">Sun Jan 11 14:51:05 2026
+</item>
+<item name = "Version">2025.1 (Build 6135595 on May 21 2025)</item>
+<item name = "Project">GaussianFilter</item>
+<item name = "Solution">hls (Vitis Kernel Flow Target)</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z007s-clg400-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">8.00 ns, 6.450 ns, 0.96 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">5, 5, 40.000 ns, 40.000 ns, 6, 6, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, 12, -, -, -</column>
+<column name="Expression">-, -, 0, 474, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">0, 0, 138, 439, -</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, 0, 46, -</column>
+<column name="Register">-, -, 331, -, -</column>
+<specialColumn name="Available">100, 66, 28800, 14400, 0</specialColumn>
+<specialColumn name="Utilization (%)">0, 18, 1, 6, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="CTRL_s_axi_U">CTRL_s_axi, 0, 0, 138, 184, 0</column>
+<column name="mul_8ns_9ns_16_1_1_U1">mul_8ns_9ns_16_1_1, 0, 0, 0, 51, 0</column>
+<column name="mul_8ns_9ns_16_1_1_U2">mul_8ns_9ns_16_1_1, 0, 0, 0, 51, 0</column>
+<column name="mul_8ns_9ns_16_1_1_U3">mul_8ns_9ns_16_1_1, 0, 0, 0, 51, 0</column>
+<column name="mul_8ns_9ns_16_1_1_U4">mul_8ns_9ns_16_1_1, 0, 0, 0, 51, 0</column>
+<column name="mul_8ns_9ns_16_1_1_U5">mul_8ns_9ns_16_1_1, 0, 0, 0, 51, 0</column>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+<column name="mac_muladd_8ns_8ns_16ns_17_4_1_U6">mac_muladd_8ns_8ns_16ns_17_4_1, i0 * i1 + i2</column>
+<column name="mac_muladd_8ns_8ns_16ns_17_4_1_U7">mac_muladd_8ns_8ns_16ns_17_4_1, i0 + i1 * i2</column>
+<column name="mac_muladd_8ns_8ns_16ns_17_4_1_U8">mac_muladd_8ns_8ns_16ns_17_4_1, i0 + i1 * i2</column>
+<column name="mac_muladd_8ns_8ns_16ns_17_4_1_U9">mac_muladd_8ns_8ns_16ns_17_4_1, i0 * i1 + i2</column>
+<column name="mac_muladd_8ns_8ns_16ns_17_4_1_U10">mac_muladd_8ns_8ns_16ns_17_4_1, i0 + i1 * i2</column>
+<column name="mac_muladd_8ns_8ns_16ns_17_4_1_U12">mac_muladd_8ns_8ns_16ns_17_4_1, i0 + i1 * i2</column>
+<column name="mac_muladd_8ns_8ns_16ns_17_4_1_U13">mac_muladd_8ns_8ns_16ns_17_4_1, i0 + i1 * i2</column>
+<column name="mac_muladd_8ns_8ns_16ns_17_4_1_U16">mac_muladd_8ns_8ns_16ns_17_4_1, i0 * i1 + i2</column>
+<column name="mac_muladd_8ns_8ns_16ns_17_4_1_U17">mac_muladd_8ns_8ns_16ns_17_4_1, i0 * i1 + i2</column>
+<column name="mac_muladd_8ns_8ns_17ns_17_4_1_U11">mac_muladd_8ns_8ns_17ns_17_4_1, i0 + i1 * i2</column>
+<column name="mac_muladd_8ns_8ns_17ns_17_4_1_U14">mac_muladd_8ns_8ns_17ns_17_4_1, i0 + i1 * i2</column>
+<column name="mac_muladd_8ns_8ns_17ns_17_4_1_U15">mac_muladd_8ns_8ns_17ns_17_4_1, i0 + i1 * i2</column>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="add_ln47_1_fu_596_p2">+, 0, 0, 23, 16, 16</column>
+<column name="add_ln47_2_fu_628_p2">+, 0, 0, 23, 16, 16</column>
+<column name="add_ln47_3_fu_662_p2">+, 0, 0, 23, 16, 16</column>
+<column name="add_ln47_4_fu_694_p2">+, 0, 0, 23, 16, 16</column>
+<column name="add_ln47_5_fu_374_p2">+, 0, 0, 23, 16, 16</column>
+<column name="add_ln47_6_fu_523_p2">+, 0, 0, 23, 16, 16</column>
+<column name="add_ln47_7_fu_555_p2">+, 0, 0, 23, 16, 16</column>
+<column name="add_ln47_fu_463_p2">+, 0, 0, 23, 16, 16</column>
+<column name="add_ln93_10_fu_795_p2">+, 0, 0, 26, 19, 19</column>
+<column name="add_ln93_15_fu_758_p2">+, 0, 0, 25, 18, 18</column>
+<column name="add_ln93_1_fu_704_p2">+, 0, 0, 24, 17, 17</column>
+<column name="add_ln93_20_fu_773_p2">+, 0, 0, 25, 18, 18</column>
+<column name="add_ln93_21_fu_783_p2">+, 0, 0, 26, 19, 19</column>
+<column name="add_ln93_22_fu_811_p2">+, 0, 0, 20, 20, 20</column>
+<column name="add_ln93_23_fu_817_p2">+, 0, 0, 20, 20, 20</column>
+<column name="add_ln93_3_fu_713_p2">+, 0, 0, 24, 17, 17</column>
+<column name="add_ln93_4_fu_722_p2">+, 0, 0, 25, 18, 18</column>
+<column name="add_ln93_6_fu_728_p2">+, 0, 0, 24, 17, 17</column>
+<column name="add_ln93_8_fu_737_p2">+, 0, 0, 24, 17, 17</column>
+<column name="add_ln93_9_fu_746_p2">+, 0, 0, 25, 18, 18</column>
+<column name="ap_block_state1">or, 0, 0, 2, 1, 1</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_NS_fsm">37, 7, 1, 7</column>
+<column name="ap_done">9, 2, 1, 2</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="add_ln93_15_reg_1126">18, 0, 18, 0</column>
+<column name="add_ln93_21_reg_1131">19, 0, 19, 0</column>
+<column name="add_ln93_4_reg_1116">18, 0, 18, 0</column>
+<column name="add_ln93_9_reg_1121">18, 0, 18, 0</column>
+<column name="ap_CS_fsm">6, 0, 6, 0</column>
+<column name="ap_done_reg">1, 0, 1, 0</column>
+<column name="ap_rst_n_inv">1, 0, 1, 0</column>
+<column name="ap_rst_reg_1">1, 0, 1, 0</column>
+<column name="ap_rst_reg_2">1, 0, 1, 0</column>
+<column name="data_in_0_read_reg_1038">8, 0, 8, 0</column>
+<column name="data_in_1_read_reg_1065">8, 0, 8, 0</column>
+<column name="data_in_3_read_reg_1059">8, 0, 8, 0</column>
+<column name="data_in_4_read_reg_1032">8, 0, 8, 0</column>
+<column name="p_ZZ14GaussianFilter7ap_uintILi8EES0_S0_S0_S0_E13data_in_array_0_0">8, 0, 8, 0</column>
+<column name="p_ZZ14GaussianFilter7ap_uintILi8EES0_S0_S0_S0_E13data_in_array_0_1">8, 0, 8, 0</column>
+<column name="p_ZZ14GaussianFilter7ap_uintILi8EES0_S0_S0_S0_E13data_in_array_0_2">8, 0, 8, 0</column>
+<column name="p_ZZ14GaussianFilter7ap_uintILi8EES0_S0_S0_S0_E13data_in_array_0_2_load_reg_963">8, 0, 8, 0</column>
+<column name="p_ZZ14GaussianFilter7ap_uintILi8EES0_S0_S0_S0_E13data_in_array_0_3">8, 0, 8, 0</column>
+<column name="p_ZZ14GaussianFilter7ap_uintILi8EES0_S0_S0_S0_E13data_in_array_1_0">8, 0, 8, 0</column>
+<column name="p_ZZ14GaussianFilter7ap_uintILi8EES0_S0_S0_S0_E13data_in_array_1_1">8, 0, 8, 0</column>
+<column name="p_ZZ14GaussianFilter7ap_uintILi8EES0_S0_S0_S0_E13data_in_array_1_2">8, 0, 8, 0</column>
+<column name="p_ZZ14GaussianFilter7ap_uintILi8EES0_S0_S0_S0_E13data_in_array_1_2_load_reg_969">8, 0, 8, 0</column>
+<column name="p_ZZ14GaussianFilter7ap_uintILi8EES0_S0_S0_S0_E13data_in_array_1_3">8, 0, 8, 0</column>
+<column name="p_ZZ14GaussianFilter7ap_uintILi8EES0_S0_S0_S0_E13data_in_array_2_0">8, 0, 8, 0</column>
+<column name="p_ZZ14GaussianFilter7ap_uintILi8EES0_S0_S0_S0_E13data_in_array_2_1">8, 0, 8, 0</column>
+<column name="p_ZZ14GaussianFilter7ap_uintILi8EES0_S0_S0_S0_E13data_in_array_2_1_load_reg_937">8, 0, 8, 0</column>
+<column name="p_ZZ14GaussianFilter7ap_uintILi8EES0_S0_S0_S0_E13data_in_array_2_2">8, 0, 8, 0</column>
+<column name="p_ZZ14GaussianFilter7ap_uintILi8EES0_S0_S0_S0_E13data_in_array_2_3">8, 0, 8, 0</column>
+<column name="p_ZZ14GaussianFilter7ap_uintILi8EES0_S0_S0_S0_E13data_in_array_2_3_load_reg_932">8, 0, 8, 0</column>
+<column name="p_ZZ14GaussianFilter7ap_uintILi8EES0_S0_S0_S0_E13data_in_array_3_0">8, 0, 8, 0</column>
+<column name="p_ZZ14GaussianFilter7ap_uintILi8EES0_S0_S0_S0_E13data_in_array_3_1">8, 0, 8, 0</column>
+<column name="p_ZZ14GaussianFilter7ap_uintILi8EES0_S0_S0_S0_E13data_in_array_3_1_load_reg_942">8, 0, 8, 0</column>
+<column name="p_ZZ14GaussianFilter7ap_uintILi8EES0_S0_S0_S0_E13data_in_array_3_2">8, 0, 8, 0</column>
+<column name="p_ZZ14GaussianFilter7ap_uintILi8EES0_S0_S0_S0_E13data_in_array_3_3">8, 0, 8, 0</column>
+<column name="p_ZZ14GaussianFilter7ap_uintILi8EES0_S0_S0_S0_E13data_in_array_3_3_load_reg_975">8, 0, 8, 0</column>
+<column name="p_ZZ14GaussianFilter7ap_uintILi8EES0_S0_S0_S0_E13data_in_array_4_0">8, 0, 8, 0</column>
+<column name="p_ZZ14GaussianFilter7ap_uintILi8EES0_S0_S0_S0_E13data_in_array_4_1">8, 0, 8, 0</column>
+<column name="p_ZZ14GaussianFilter7ap_uintILi8EES0_S0_S0_S0_E13data_in_array_4_2">8, 0, 8, 0</column>
+<column name="p_ZZ14GaussianFilter7ap_uintILi8EES0_S0_S0_S0_E13data_in_array_4_2_load_reg_981">8, 0, 8, 0</column>
+<column name="p_ZZ14GaussianFilter7ap_uintILi8EES0_S0_S0_S0_E13data_in_array_4_3">8, 0, 8, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="s_axi_CTRL_AWVALID">in, 1, s_axi, CTRL, scalar</column>
+<column name="s_axi_CTRL_AWREADY">out, 1, s_axi, CTRL, scalar</column>
+<column name="s_axi_CTRL_AWADDR">in, 6, s_axi, CTRL, scalar</column>
+<column name="s_axi_CTRL_WVALID">in, 1, s_axi, CTRL, scalar</column>
+<column name="s_axi_CTRL_WREADY">out, 1, s_axi, CTRL, scalar</column>
+<column name="s_axi_CTRL_WDATA">in, 32, s_axi, CTRL, scalar</column>
+<column name="s_axi_CTRL_WSTRB">in, 4, s_axi, CTRL, scalar</column>
+<column name="s_axi_CTRL_ARVALID">in, 1, s_axi, CTRL, scalar</column>
+<column name="s_axi_CTRL_ARREADY">out, 1, s_axi, CTRL, scalar</column>
+<column name="s_axi_CTRL_ARADDR">in, 6, s_axi, CTRL, scalar</column>
+<column name="s_axi_CTRL_RVALID">out, 1, s_axi, CTRL, scalar</column>
+<column name="s_axi_CTRL_RREADY">in, 1, s_axi, CTRL, scalar</column>
+<column name="s_axi_CTRL_RDATA">out, 32, s_axi, CTRL, scalar</column>
+<column name="s_axi_CTRL_RRESP">out, 2, s_axi, CTRL, scalar</column>
+<column name="s_axi_CTRL_BVALID">out, 1, s_axi, CTRL, scalar</column>
+<column name="s_axi_CTRL_BREADY">in, 1, s_axi, CTRL, scalar</column>
+<column name="s_axi_CTRL_BRESP">out, 2, s_axi, CTRL, scalar</column>
+<column name="ap_clk">in, 1, ap_ctrl_chain, GaussianFilter, return value</column>
+<column name="ap_rst_n">in, 1, ap_ctrl_chain, GaussianFilter, return value</column>
+<column name="interrupt">out, 1, ap_ctrl_chain, GaussianFilter, return value</column>
+</table>
+</item>
+</section>
+</profile>

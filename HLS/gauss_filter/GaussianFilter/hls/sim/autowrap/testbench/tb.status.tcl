@@ -1,0 +1,1 @@
+set ::AESL_AUTOSIM::gTopFileName /home/szymon/Desktop/PBAWIZ/Gauss/HLS/gauss_filter/GaussianFilter/hls/./sim/autowrap/testbench/GaussianFilter.cpp_pre.cpp.tb.cpp

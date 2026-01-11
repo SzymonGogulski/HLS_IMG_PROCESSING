@@ -1,0 +1,234 @@
+{
+    "rules": {
+        "['/home/szymon/Desktop/PBAWIZ/Gauss/HLS/gauss_filter/GaussianFilter/hls/csim/code_analyzer/.internal/build/GaussianFilter.cpp.0.bc', '/home/szymon/Desktop/PBAWIZ/Gauss/HLS/gauss_filter/GaussianFilter/hls/csim/code_analyzer/.internal/build/GaussianFilter.cpp.0.bc.d']": {
+            "command": [
+                "/home/szymon/tools/Xilinx/2025.1/lnx64/tools/vcxx/libexec/clang",
+                "-c",
+                "-emit-llvm",
+                "-MD",
+                "-MF",
+                "/home/szymon/Desktop/PBAWIZ/Gauss/HLS/gauss_filter/GaussianFilter/hls/csim/code_analyzer/.internal/build/GaussianFilter.cpp.0.bc.d",
+                "-fhls",
+                "-hls-syn-headers-dir=/home/szymon/tools/Xilinx/2025.1/lnx64/tools/vcxx/data/autopilot",
+                "-vitis-hls=/home/szymon/tools/Xilinx/2025.1/Vitis",
+                "--gcc-toolchain=/home/szymon/tools/Xilinx/2025.1/Vitis/tps/lnx64/gcc-8.3.0",
+                "-hls-clock-period=8.0",
+                "-fslxtrace",
+                "-fslx-compile-mode",
+                "-fhlstoplevel=GaussianFilter",
+                "/home/szymon/Desktop/PBAWIZ/Gauss/Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp",
+                "-o",
+                "/home/szymon/Desktop/PBAWIZ/Gauss/HLS/gauss_filter/GaussianFilter/hls/csim/code_analyzer/.internal/build/GaussianFilter.cpp.0.bc"
+            ],
+            "exectime": 1.41455078125,
+            "cwd": "/home/szymon/Desktop/PBAWIZ/Gauss/HLS/gauss_filter"
+        },
+        "['/home/szymon/Desktop/PBAWIZ/Gauss/HLS/gauss_filter/GaussianFilter/hls/csim/code_analyzer/.internal/build/GaussianFilter.cpp.0.o', '/home/szymon/Desktop/PBAWIZ/Gauss/HLS/gauss_filter/GaussianFilter/hls/csim/code_analyzer/.internal/build/GaussianFilter.cpp.0.o.d']": {
+            "command": [
+                "/home/szymon/tools/Xilinx/2025.1/lnx64/tools/vcxx/libexec/clang",
+                "-c",
+                "-MD",
+                "-MF",
+                "/home/szymon/Desktop/PBAWIZ/Gauss/HLS/gauss_filter/GaussianFilter/hls/csim/code_analyzer/.internal/build/GaussianFilter.cpp.0.o.d",
+                "-fhls-tb",
+                "-hls-sim-headers-dir=/home/szymon/tools/Xilinx/2025.1/lnx64/tools/vcxx/data/include",
+                "-vitis-hls=/home/szymon/tools/Xilinx/2025.1/Vitis",
+                "--gcc-toolchain=/home/szymon/tools/Xilinx/2025.1/Vitis/tps/lnx64/gcc-8.3.0",
+                "-fslxtrace",
+                "-fslx-compile-mode",
+                "-fslxskipfunctionbody",
+                "-fhlstoplevel=GaussianFilter",
+                "/home/szymon/Desktop/PBAWIZ/Gauss/Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp",
+                "-o",
+                "/home/szymon/Desktop/PBAWIZ/Gauss/HLS/gauss_filter/GaussianFilter/hls/csim/code_analyzer/.internal/build/GaussianFilter.cpp.0.o"
+            ],
+            "exectime": 1.7404193878173828,
+            "cwd": "/home/szymon/Desktop/PBAWIZ/Gauss/HLS/gauss_filter"
+        },
+        "['/home/szymon/Desktop/PBAWIZ/Gauss/HLS/gauss_filter/GaussianFilter/hls/csim/code_analyzer/.internal/build/tb_GaussianFilter.cpp.0.o', '/home/szymon/Desktop/PBAWIZ/Gauss/HLS/gauss_filter/GaussianFilter/hls/csim/code_analyzer/.internal/build/tb_GaussianFilter.cpp.0.o.d']": {
+            "command": [
+                "/home/szymon/tools/Xilinx/2025.1/lnx64/tools/vcxx/libexec/clang",
+                "-c",
+                "-MD",
+                "-MF",
+                "/home/szymon/Desktop/PBAWIZ/Gauss/HLS/gauss_filter/GaussianFilter/hls/csim/code_analyzer/.internal/build/tb_GaussianFilter.cpp.0.o.d",
+                "-fhls-tb",
+                "-hls-sim-headers-dir=/home/szymon/tools/Xilinx/2025.1/lnx64/tools/vcxx/data/include",
+                "-vitis-hls=/home/szymon/tools/Xilinx/2025.1/Vitis",
+                "--gcc-toolchain=/home/szymon/tools/Xilinx/2025.1/Vitis/tps/lnx64/gcc-8.3.0",
+                "-fslxtrace",
+                "-fslx-compile-mode",
+                "-fslxskipfunctionbody",
+                "-fhlstoplevel=GaussianFilter",
+                "/home/szymon/Desktop/PBAWIZ/Gauss/Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/tb_GaussianFilter.cpp",
+                "-o",
+                "/home/szymon/Desktop/PBAWIZ/Gauss/HLS/gauss_filter/GaussianFilter/hls/csim/code_analyzer/.internal/build/tb_GaussianFilter.cpp.0.o"
+            ],
+            "exectime": 1.8013226985931396,
+            "cwd": "/home/szymon/Desktop/PBAWIZ/Gauss/HLS/gauss_filter"
+        },
+        "['/home/szymon/Desktop/PBAWIZ/Gauss/HLS/gauss_filter/GaussianFilter/hls/csim/code_analyzer/.internal/build/syn_srcs.bc']": {
+            "command": [
+                "/home/szymon/tools/Xilinx/2025.1/lnx64/tools/vcxx/libexec/llvm-link",
+                "/home/szymon/Desktop/PBAWIZ/Gauss/HLS/gauss_filter/GaussianFilter/hls/csim/code_analyzer/.internal/build/GaussianFilter.cpp.0.bc",
+                "-o",
+                "/home/szymon/Desktop/PBAWIZ/Gauss/HLS/gauss_filter/GaussianFilter/hls/csim/code_analyzer/.internal/build/syn_srcs.bc"
+            ],
+            "exectime": 0.04121971130371094,
+            "cwd": "/home/szymon/Desktop/PBAWIZ/Gauss/HLS/gauss_filter"
+        },
+        "['/home/szymon/Desktop/PBAWIZ/Gauss/HLS/gauss_filter/GaussianFilter/hls/csim/code_analyzer/.internal/build/syn_srcs.opt.bc']": {
+            "command": [
+                "/home/szymon/tools/Xilinx/2025.1/lnx64/tools/vcxx/libexec/opt",
+                "-check-single-toplevel",
+                "-make-non-toplevel-internal",
+                "/home/szymon/Desktop/PBAWIZ/Gauss/HLS/gauss_filter/GaussianFilter/hls/csim/code_analyzer/.internal/build/syn_srcs.bc",
+                "-o",
+                "/home/szymon/Desktop/PBAWIZ/Gauss/HLS/gauss_filter/GaussianFilter/hls/csim/code_analyzer/.internal/build/syn_srcs.opt.bc"
+            ],
+            "exectime": 0.08994078636169434,
+            "cwd": "/home/szymon/Desktop/PBAWIZ/Gauss/HLS/gauss_filter"
+        },
+        "['/home/szymon/Desktop/PBAWIZ/Gauss/HLS/gauss_filter/GaussianFilter/hls/csim/code_analyzer/.internal/build/app.exe']": {
+            "command": [
+                "/home/szymon/tools/Xilinx/2025.1/lnx64/tools/vcxx/libexec/clang++",
+                "-o",
+                "/home/szymon/Desktop/PBAWIZ/Gauss/HLS/gauss_filter/GaussianFilter/hls/csim/code_analyzer/.internal/build/app.exe",
+                "/home/szymon/Desktop/PBAWIZ/Gauss/HLS/gauss_filter/GaussianFilter/hls/csim/code_analyzer/.internal/build/tb_GaussianFilter.cpp.0.o",
+                "/home/szymon/Desktop/PBAWIZ/Gauss/HLS/gauss_filter/GaussianFilter/hls/csim/code_analyzer/.internal/build/GaussianFilter.cpp.0.o",
+                "/home/szymon/Desktop/PBAWIZ/Gauss/HLS/gauss_filter/GaussianFilter/hls/csim/code_analyzer/.internal/build/syn_srcs.opt.bc",
+                "-fhls",
+                "-fhlstoplevel=GaussianFilter",
+                "-Wl,--as-needed",
+                "-L/home/szymon/tools/Xilinx/2025.1/Vitis/lnx64/tools/dds_v6_0",
+                "-lIp_dds_compiler_v6_0_bitacc_cmodel",
+                "-Wl,--disable-new-dtags",
+                "-Wl,-rpath=/home/szymon/tools/Xilinx/2025.1/Vitis/lnx64/tools/dds_v6_0",
+                "-L/home/szymon/tools/Xilinx/2025.1/Vitis/lnx64/tools/fft_v9_1",
+                "-lIp_xfft_v9_1_bitacc_cmodel",
+                "-Wl,-rpath=/home/szymon/tools/Xilinx/2025.1/Vitis/lnx64/tools/fft_v9_1",
+                "-L/home/szymon/tools/Xilinx/2025.1/Vitis/lnx64/tools/fir_v7_0",
+                "-lIp_fir_compiler_v7_2_bitacc_cmodel",
+                "-Wl,-rpath=/home/szymon/tools/Xilinx/2025.1/Vitis/lnx64/tools/fir_v7_0",
+                "-L/home/szymon/tools/Xilinx/2025.1/Vitis/lnx64/tools/fpo_v7_1",
+                "-lIp_floating_point_v7_1_bitacc_cmodel",
+                "-Wl,-rpath=/home/szymon/tools/Xilinx/2025.1/Vitis/lnx64/tools/fpo_v7_1",
+                "-lm",
+                "-L/home/szymon/tools/Xilinx/2025.1/Vitis/lnx64/lib/csim",
+                "-lhlsm-GCC46",
+                "-Wl,-rpath=/home/szymon/tools/Xilinx/2025.1/Vitis/lnx64/lib/csim",
+                "-lhlsmc++-GCC46",
+                "-lgmp",
+                "-lmpfr",
+                "-Wl,--no-as-needed",
+                "--gcc-toolchain=/home/szymon/tools/Xilinx/2025.1/Vitis/tps/lnx64/gcc-8.3.0",
+                "-Wl,--disable-new-dtags",
+                "-Wl,-rpath=/home/szymon/tools/Xilinx/2025.1/Vitis/tps/lnx64/gcc-8.3.0/lib64",
+                "-fslxtrace",
+                "-fslx-compile-mode",
+                "-Wl,-mllvm,-profilerOutputDirectory=/home/szymon/Desktop/PBAWIZ/Gauss/HLS/gauss_filter/GaussianFilter/hls/csim/code_analyzer/.internal/profiler/0",
+                "-fslxpthreads"
+            ],
+            "exectime": 0.6449131965637207,
+            "cwd": "/home/szymon/Desktop/PBAWIZ/Gauss/HLS/gauss_filter"
+        },
+        "['/home/szymon/Desktop/PBAWIZ/Gauss/HLS/gauss_filter/GaussianFilter/hls/csim/code_analyzer/.internal/instrument/app_0/hls_ir_info.json']": {
+            "command": [
+                "/home/szymon/tools/Xilinx/2025.1/lnx64/tools/vcxx/libexec/irInfoDump",
+                "--ir-module",
+                "/home/szymon/Desktop/PBAWIZ/Gauss/HLS/gauss_filter/GaussianFilter/hls/csim/code_analyzer/.internal/instrument/app_0/project.symbols.bc",
+                "--json-output",
+                "/home/szymon/Desktop/PBAWIZ/Gauss/HLS/gauss_filter/GaussianFilter/hls/csim/code_analyzer/.internal/instrument/app_0/hls_ir_info.json",
+                "--hw-function",
+                "GaussianFilter"
+            ],
+            "exectime": 0.06145358085632324,
+            "cwd": "/home/szymon/Desktop/PBAWIZ/Gauss/HLS/gauss_filter"
+        },
+        "['/home/szymon/Desktop/PBAWIZ/Gauss/HLS/gauss_filter/GaussianFilter/hls/csim/code_analyzer/.internal/instrument/app_0/binary_dependencies.json']": {
+            "command": [
+                "/home/szymon/tools/Xilinx/2025.1/lnx64/tools/vcxx/libexec/clang-scan-deps",
+                "--compilation-database=/home/szymon/Desktop/PBAWIZ/Gauss/HLS/gauss_filter/GaussianFilter/hls/csim/code_analyzer/.internal/instrument/app_0/compile_commands.json",
+                "--format=vitiscxx",
+                "--reuse-filemanager=false",
+                "--output=/home/szymon/Desktop/PBAWIZ/Gauss/HLS/gauss_filter/GaussianFilter/hls/csim/code_analyzer/.internal/instrument/app_0/binary_dependencies.json"
+            ],
+            "exectime": 0.08272957801818848,
+            "cwd": "/home/szymon/Desktop/PBAWIZ/Gauss/HLS/gauss_filter"
+        },
+        "['/home/szymon/Desktop/PBAWIZ/Gauss/HLS/gauss_filter/GaussianFilter/hls/csim/code_analyzer/bin/.tracing_stdout.txt', '/home/szymon/Desktop/PBAWIZ/Gauss/HLS/gauss_filter/GaussianFilter/hls/csim/code_analyzer/bin/.tracing_stderr.txt']": {
+            "command": [
+                "/home/szymon/tools/Xilinx/2025.1/lnx64/tools/vcxx/libexec/rwd",
+                "/home/szymon/Desktop/PBAWIZ/Gauss/HLS/gauss_filter/GaussianFilter/hls/csim/code_analyzer/.internal/build/app.exe"
+            ],
+            "exectime": 0.05405712127685547,
+            "cwd": "/home/szymon/Desktop/PBAWIZ/Gauss/HLS/gauss_filter/GaussianFilter/hls/csim/code_analyzer/tracing/csim/build"
+        },
+        "['/home/szymon/Desktop/PBAWIZ/Gauss/HLS/gauss_filter/GaussianFilter/hls/csim/code_analyzer/.internal/instrument/app_0/annotated.bc']": {
+            "command": [
+                "/home/szymon/tools/Xilinx/2025.1/lnx64/tools/vcxx/libexec/optimizer",
+                "-DFGPass",
+                "-outputDir",
+                "/home/szymon/Desktop/PBAWIZ/Gauss/HLS/gauss_filter/GaussianFilter/hls/csim/code_analyzer/output",
+                "-logDir",
+                "/home/szymon/Desktop/PBAWIZ/Gauss/HLS/gauss_filter/GaussianFilter/hls/csim/code_analyzer/log",
+                "/home/szymon/Desktop/PBAWIZ/Gauss/HLS/gauss_filter/GaussianFilter/hls/csim/code_analyzer/.internal/instrument/app_0/project.symbols.bc",
+                "-staticFile",
+                "/home/szymon/Desktop/PBAWIZ/Gauss/HLS/gauss_filter/GaussianFilter/hls/csim/code_analyzer/.internal/instrument/app_0/static.xml",
+                "-traceFile",
+                "/home/szymon/Desktop/PBAWIZ/Gauss/HLS/gauss_filter/GaussianFilter/hls/csim/code_analyzer/.internal/profiler/0/app_0_1/thread0000-trace.txt",
+                "-o",
+                "/home/szymon/Desktop/PBAWIZ/Gauss/HLS/gauss_filter/GaussianFilter/hls/csim/code_analyzer/.internal/instrument/app_0/annotated.bc"
+            ],
+            "exectime": 0.14157485961914062,
+            "cwd": "/home/szymon/Desktop/PBAWIZ/Gauss/HLS/gauss_filter"
+        },
+        "['/home/szymon/Desktop/PBAWIZ/Gauss/HLS/gauss_filter/GaussianFilter/hls/csim/code_analyzer/.internal/dataflow/0/taskgraph.json']": {
+            "command": [
+                "/home/szymon/tools/Xilinx/2025.1/lnx64/tools/vcxx/libexec/parallelismSelector",
+                "--basepath",
+                "/home/szymon/Desktop/PBAWIZ/Gauss/HLS/gauss_filter",
+                "--fpga-part",
+                "xc7z007s-clg400-1",
+                "--device-totals",
+                "/home/szymon/tools/Xilinx/2025.1/lnx64/tools/vcxx/data/platform/logic/fpga.devicetotals",
+                "--clock-frequency",
+                "125.0",
+                "--out-dir",
+                "/home/szymon/Desktop/PBAWIZ/Gauss/HLS/gauss_filter/GaussianFilter/hls/csim/code_analyzer/output",
+                "--log-dir",
+                "/home/szymon/Desktop/PBAWIZ/Gauss/HLS/gauss_filter/GaussianFilter/hls/csim/code_analyzer/log",
+                "--objective",
+                "none",
+                "--performance-target",
+                "target_both",
+                "--max-array-optimization-factor",
+                "1024",
+                "--complete-partition-limit",
+                "4",
+                "--lut-constraint",
+                "100.0",
+                "--ff-constraint",
+                "100.0",
+                "--dsp-constraint",
+                "100.0",
+                "--bram-constraint",
+                "100.0",
+                "--uram-constraint",
+                "100.0",
+                "--max-iterations",
+                "1000",
+                "--max-iterations-branch-full-log",
+                "20",
+                "--ir-module",
+                "/home/szymon/Desktop/PBAWIZ/Gauss/HLS/gauss_filter/GaussianFilter/hls/csim/code_analyzer/.internal/instrument/app_0/annotated.bc",
+                "--df-id",
+                "0",
+                "--df-target",
+                "%F331"
+            ],
+            "exectime": 0.6986379623413086,
+            "cwd": "/home/szymon/Desktop/PBAWIZ/Gauss/HLS/gauss_filter"
+        }
+    }
+}

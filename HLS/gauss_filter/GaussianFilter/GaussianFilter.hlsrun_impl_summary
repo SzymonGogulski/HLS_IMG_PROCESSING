@@ -1,0 +1,269 @@
+<ENTRY>
+{
+ "thisFile": "/home/szymon/Desktop/PBAWIZ/Gauss/HLS/gauss_filter/GaussianFilter/GaussianFilter.hlsrun_impl_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Sun Jan 11 14:53:42 2026",
+ "timestampMillis": "1768139622558",
+ "buildStep": {
+  "cmdId": "2a644c6b-4ff2-4b44-925d-7ab9e370eec1",
+  "name": "vitis-run",
+  "logFile": "/home/szymon/Desktop/PBAWIZ/Gauss/HLS/gauss_filter/GaussianFilter/logs/GaussianFilter.steps.log",
+  "commandLine": "/home/szymon/tools/Xilinx/2025.1/Vitis/bin/unwrapped/lnx64.o/vitis-run  --mode hls --impl --config /home/szymon/Desktop/PBAWIZ/Gauss/HLS/gauss_filter/hls_config.cfg --work_dir GaussianFilter ",
+  "args": [
+   "--mode",
+   "hls",
+   "--impl",
+   "--config",
+   "/home/szymon/Desktop/PBAWIZ/Gauss/HLS/gauss_filter/hls_config.cfg",
+   "--work_dir",
+   "GaussianFilter"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/szymon/Desktop/PBAWIZ/Gauss/HLS/gauss_filter"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Jan 11 14:53:42 2026",
+ "timestampMillis": "1768139622558",
+ "status": {
+  "cmdId": "2a644c6b-4ff2-4b44-925d-7ab9e370eec1",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Sun Jan 11 14:53:47 2026",
+ "timestampMillis": "1768139627382",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_IMPL",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "GaussianFilter",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/szymon/Desktop/PBAWIZ/Gauss/Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp",
+     "/home/szymon/Desktop/PBAWIZ/Gauss/Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.h"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2025.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Sun Jan 11 14:53:47 2026",
+ "timestampMillis": "1768139627383",
+ "buildStep": {
+  "cmdId": "1f47f560-7d77-4d7f-9351-96c2592ee5ea",
+  "name": "",
+  "logFile": "/home/szymon/Desktop/PBAWIZ/Gauss/HLS/gauss_filter/GaussianFilter/hls/hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/szymon/Desktop/PBAWIZ/Gauss/HLS/gauss_filter"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Jan 11 14:53:47 2026",
+ "timestampMillis": "1768139627383",
+ "status": {
+  "cmdId": "1f47f560-7d77-4d7f-9351-96c2592ee5ea",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Jan 11 14:53:47 2026",
+ "timestampMillis": "1768139627384",
+ "report": {
+  "path": "/home/szymon/Desktop/PBAWIZ/Gauss/HLS/gauss_filter/GaussianFilter/hls/impl/vhdl",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Jan 11 14:53:47 2026",
+ "timestampMillis": "1768139627385",
+ "report": {
+  "path": "/home/szymon/Desktop/PBAWIZ/Gauss/HLS/gauss_filter/GaussianFilter/hls/impl/report/vhdl/export_syn.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Jan 11 14:53:47 2026",
+ "timestampMillis": "1768139627385",
+ "report": {
+  "path": "/home/szymon/Desktop/PBAWIZ/Gauss/HLS/gauss_filter/GaussianFilter/hls/impl/report/vhdl/export_syn.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Jan 11 14:53:47 2026",
+ "timestampMillis": "1768139627385",
+ "report": {
+  "path": "/home/szymon/Desktop/PBAWIZ/Gauss/HLS/gauss_filter/GaussianFilter/hls/impl/vhdl",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Jan 11 14:53:47 2026",
+ "timestampMillis": "1768139627386",
+ "report": {
+  "path": "/home/szymon/Desktop/PBAWIZ/Gauss/HLS/gauss_filter/GaussianFilter/hls/impl/report/vhdl/export_impl.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Jan 11 14:53:47 2026",
+ "timestampMillis": "1768139627386",
+ "report": {
+  "path": "/home/szymon/Desktop/PBAWIZ/Gauss/HLS/gauss_filter/GaussianFilter/hls/impl/report/vhdl/export_impl.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Jan 11 14:57:09 2026",
+ "timestampMillis": "1768139829172",
+ "report": {
+  "path": "/home/szymon/Desktop/PBAWIZ/Gauss/HLS/gauss_filter/GaussianFilter/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Jan 11 14:57:09 2026",
+ "timestampMillis": "1768139829173",
+ "report": {
+  "path": "/home/szymon/Desktop/PBAWIZ/Gauss/HLS/gauss_filter/GaussianFilter/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Jan 11 14:57:09 2026",
+ "timestampMillis": "1768139829173",
+ "status": {
+  "cmdId": "1f47f560-7d77-4d7f-9351-96c2592ee5ea",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Jan 11 14:57:09 2026",
+ "timestampMillis": "1768139829286",
+ "status": {
+  "cmdId": "2a644c6b-4ff2-4b44-925d-7ab9e370eec1",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Jan 11 14:57:09 2026",
+ "timestampMillis": "1768139829287",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Jan 11 14:57:09 2026",
+ "timestampMillis": "1768139829288",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

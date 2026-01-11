@@ -1,0 +1,20 @@
+{
+    "0": {
+        "name": "GaussianFilter",
+        "file": "GaussianFilter.cpp",
+        "fileloc": "3",
+        "instructions": "204",
+        "total_instructions": "204",
+        "calls": "",
+        "basicblocks": "1",
+        "memory_accesses": "0",
+        "control_depth": "0",
+        "def_use_depth": "8",
+        "loads": {
+            "G": "20"
+        },
+        "stores": {
+            "G": "20"
+        }
+    }
+}

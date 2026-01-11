@@ -1,0 +1,640 @@
+<profile>
+    <ReportVersion>
+        <Version>2025.1</Version>
+    </ReportVersion>
+    <UserAssignments>
+        <unit>ns</unit>
+        <ProductFamily>zynq</ProductFamily>
+        <Part>xc7z007s-clg400-1</Part>
+        <TopModelName>GaussianFilter</TopModelName>
+        <TargetClockPeriod>8.00</TargetClockPeriod>
+        <ClockUncertainty>0.96</ClockUncertainty>
+        <FlowTarget>vitis</FlowTarget>
+    </UserAssignments>
+    <PerformanceEstimates>
+        <PipelineType>no</PipelineType>
+        <SummaryOfTimingAnalysis>
+            <unit>ns</unit>
+            <EstimatedClockPeriod>6.450</EstimatedClockPeriod>
+        </SummaryOfTimingAnalysis>
+        <SummaryOfOverallLatency>
+            <unit>clock cycles</unit>
+            <Best-caseLatency>5</Best-caseLatency>
+            <Average-caseLatency>5</Average-caseLatency>
+            <Worst-caseLatency>5</Worst-caseLatency>
+            <Best-caseRealTimeLatency>40.000 ns</Best-caseRealTimeLatency>
+            <Average-caseRealTimeLatency>40.000 ns</Average-caseRealTimeLatency>
+            <Worst-caseRealTimeLatency>40.000 ns</Worst-caseRealTimeLatency>
+            <Interval-min>6</Interval-min>
+            <Interval-max>6</Interval-max>
+            <PerformancePragma>-</PerformancePragma>
+        </SummaryOfOverallLatency>
+        <SummaryOfViolations>
+            <IssueType>-</IssueType>
+            <ViolationType>-</ViolationType>
+            <SourceLocation>/home/szymon/Desktop/PBAWIZ/Gauss/Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp:3</SourceLocation>
+        </SummaryOfViolations>
+    </PerformanceEstimates>
+    <AreaEstimates>
+        <Resources>
+            <BRAM_18K>0</BRAM_18K>
+            <DSP>12</DSP>
+            <FF>469</FF>
+            <LUT>959</LUT>
+            <URAM>0</URAM>
+        </Resources>
+        <AvailableResources>
+            <BRAM_18K>100</BRAM_18K>
+            <DSP>66</DSP>
+            <FF>28800</FF>
+            <LUT>14400</LUT>
+            <URAM>0</URAM>
+        </AvailableResources>
+    </AreaEstimates>
+    <InterfaceSummary>
+        <RtlPorts>
+            <name>s_axi_CTRL_AWVALID</name>
+            <Object>CTRL</Object>
+            <Type>scalar</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_AWREADY</name>
+            <Object>CTRL</Object>
+            <Type>scalar</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_AWADDR</name>
+            <Object>CTRL</Object>
+            <Type>scalar</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>6</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_WVALID</name>
+            <Object>CTRL</Object>
+            <Type>scalar</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_WREADY</name>
+            <Object>CTRL</Object>
+            <Type>scalar</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_WDATA</name>
+            <Object>CTRL</Object>
+            <Type>scalar</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>32</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_WSTRB</name>
+            <Object>CTRL</Object>
+            <Type>scalar</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>4</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_ARVALID</name>
+            <Object>CTRL</Object>
+            <Type>scalar</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_ARREADY</name>
+            <Object>CTRL</Object>
+            <Type>scalar</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_ARADDR</name>
+            <Object>CTRL</Object>
+            <Type>scalar</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>6</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_RVALID</name>
+            <Object>CTRL</Object>
+            <Type>scalar</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_RREADY</name>
+            <Object>CTRL</Object>
+            <Type>scalar</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_RDATA</name>
+            <Object>CTRL</Object>
+            <Type>scalar</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>32</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_RRESP</name>
+            <Object>CTRL</Object>
+            <Type>scalar</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>2</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_BVALID</name>
+            <Object>CTRL</Object>
+            <Type>scalar</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_BREADY</name>
+            <Object>CTRL</Object>
+            <Type>scalar</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_BRESP</name>
+            <Object>CTRL</Object>
+            <Type>scalar</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>2</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_clk</name>
+            <Object>GaussianFilter</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_chain</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_rst_n</name>
+            <Object>GaussianFilter</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_chain</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>interrupt</name>
+            <Object>GaussianFilter</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_chain</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+        </RtlPorts>
+    </InterfaceSummary>
+    <RTLDesignHierarchy>
+        <TopModule MAX_DEPTH="2">
+            <ModuleName>GaussianFilter</ModuleName>
+            <BindInstances>mul_8ns_9ns_16_1_1_U3 add_ln47_fu_463_p2 mac_muladd_8ns_8ns_16ns_17_4_1_U9 mac_muladd_8ns_8ns_16ns_17_4_1_U9 add_ln47_1_fu_596_p2 mac_muladd_8ns_8ns_16ns_17_4_1_U10 mac_muladd_8ns_8ns_16ns_17_4_1_U10 add_ln47_2_fu_628_p2 mac_muladd_8ns_8ns_17ns_17_4_1_U11 mac_muladd_8ns_8ns_17ns_17_4_1_U11 mac_muladd_8ns_8ns_16ns_17_4_1_U12 mac_muladd_8ns_8ns_16ns_17_4_1_U12 mul_8ns_9ns_16_1_1_U4 add_ln47_3_fu_662_p2 mac_muladd_8ns_8ns_16ns_17_4_1_U13 mac_muladd_8ns_8ns_16ns_17_4_1_U13 mac_muladd_8ns_8ns_16ns_17_4_1_U6 mac_muladd_8ns_8ns_16ns_17_4_1_U6 mac_muladd_8ns_8ns_17ns_17_4_1_U14 mac_muladd_8ns_8ns_17ns_17_4_1_U14 mac_muladd_8ns_8ns_16ns_17_4_1_U7 mac_muladd_8ns_8ns_16ns_17_4_1_U7 mul_8ns_9ns_16_1_1_U1 add_ln47_4_fu_694_p2 mac_muladd_8ns_8ns_16ns_17_4_1_U8 mac_muladd_8ns_8ns_16ns_17_4_1_U8 mul_8ns_9ns_16_1_1_U2 mac_muladd_8ns_8ns_17ns_17_4_1_U15 mac_muladd_8ns_8ns_17ns_17_4_1_U15 add_ln47_5_fu_374_p2 mul_8ns_9ns_16_1_1_U5 add_ln47_6_fu_523_p2 mac_muladd_8ns_8ns_16ns_17_4_1_U16 mac_muladd_8ns_8ns_16ns_17_4_1_U16 add_ln47_7_fu_555_p2 mac_muladd_8ns_8ns_16ns_17_4_1_U17 mac_muladd_8ns_8ns_16ns_17_4_1_U17 mac_muladd_8ns_8ns_16ns_17_4_1_U13 add_ln93_1_fu_704_p2 mac_muladd_8ns_8ns_16ns_17_4_1_U10 add_ln93_3_fu_713_p2 add_ln93_4_fu_722_p2 mac_muladd_8ns_8ns_16ns_17_4_1_U9 add_ln93_6_fu_728_p2 mac_muladd_8ns_8ns_16ns_17_4_1_U12 add_ln93_8_fu_737_p2 add_ln93_9_fu_746_p2 add_ln93_10_fu_795_p2 mac_muladd_8ns_8ns_16ns_17_4_1_U7 mac_muladd_8ns_8ns_17ns_17_4_1_U11 mac_muladd_8ns_8ns_16ns_17_4_1_U6 mac_muladd_8ns_8ns_17ns_17_4_1_U14 add_ln93_15_fu_758_p2 mac_muladd_8ns_8ns_16ns_17_4_1_U8 mac_muladd_8ns_8ns_17ns_17_4_1_U15 mac_muladd_8ns_8ns_16ns_17_4_1_U17 mac_muladd_8ns_8ns_16ns_17_4_1_U16 add_ln93_20_fu_773_p2 add_ln93_21_fu_783_p2 CTRL_s_axi_U</BindInstances>
+        </TopModule>
+    </RTLDesignHierarchy>
+    <ModuleInformation>
+        <Module>
+            <Name>GaussianFilter</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>8.00</TargetClockPeriod>
+                    <ClockUncertainty>0.96</ClockUncertainty>
+                    <EstimatedClockPeriod>6.450</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>5</Best-caseLatency>
+                    <Average-caseLatency>5</Average-caseLatency>
+                    <Worst-caseLatency>5</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>40.000 ns</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>40.000 ns</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>40.000 ns</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>6</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                    <PerformancePragma>-</PerformancePragma>
+                </SummaryOfOverallLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>/home/szymon/Desktop/PBAWIZ/Gauss/Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp:3</SourceLocation>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>100</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>12</DSP>
+                    <AVAIL_DSP>66</AVAIL_DSP>
+                    <UTIL_DSP>18</UTIL_DSP>
+                    <FF>469</FF>
+                    <AVAIL_FF>28800</AVAIL_FF>
+                    <UTIL_FF>1</UTIL_FF>
+                    <LUT>959</LUT>
+                    <AVAIL_LUT>14400</AVAIL_LUT>
+                    <UTIL_LUT>6</UTIL_LUT>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8ns_9ns_16_1_1_U3" SOURCE="/home/szymon/Desktop/PBAWIZ/Gauss/Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp:47" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln47" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln47_fu_463_p2" SOURCE="/home/szymon/Desktop/PBAWIZ/Gauss/Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp:47" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln47" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_17_4_1_U9" SOURCE="/home/szymon/Desktop/PBAWIZ/Gauss/Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp:47" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln47_1" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op zext" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="zext" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_17_4_1_U9" SOURCE="/home/szymon/Desktop/PBAWIZ/Gauss/Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp:47" STORAGESUBTYPE="" URAM="0" VARIABLE="zext_ln47_5" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln47_1_fu_596_p2" SOURCE="/home/szymon/Desktop/PBAWIZ/Gauss/Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp:47" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln47_1" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_17_4_1_U10" SOURCE="/home/szymon/Desktop/PBAWIZ/Gauss/Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp:47" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln47_2" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op zext" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="zext" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_17_4_1_U10" SOURCE="/home/szymon/Desktop/PBAWIZ/Gauss/Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp:47" STORAGESUBTYPE="" URAM="0" VARIABLE="zext_ln47_9" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln47_2_fu_628_p2" SOURCE="/home/szymon/Desktop/PBAWIZ/Gauss/Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp:47" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln47_2" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_17ns_17_4_1_U11" SOURCE="/home/szymon/Desktop/PBAWIZ/Gauss/Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp:47" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln47_3" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op zext" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="zext" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_17ns_17_4_1_U11" SOURCE="/home/szymon/Desktop/PBAWIZ/Gauss/Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp:47" STORAGESUBTYPE="" URAM="0" VARIABLE="zext_ln47_13" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_17_4_1_U12" SOURCE="/home/szymon/Desktop/PBAWIZ/Gauss/Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp:47" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln47_4" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op zext" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="zext" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_17_4_1_U12" SOURCE="/home/szymon/Desktop/PBAWIZ/Gauss/Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp:47" STORAGESUBTYPE="" URAM="0" VARIABLE="zext_ln47_15" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8ns_9ns_16_1_1_U4" SOURCE="/home/szymon/Desktop/PBAWIZ/Gauss/Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp:47" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln47_5" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln47_3_fu_662_p2" SOURCE="/home/szymon/Desktop/PBAWIZ/Gauss/Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp:47" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln47_3" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_17_4_1_U13" SOURCE="/home/szymon/Desktop/PBAWIZ/Gauss/Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp:47" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln47_6" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op zext" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="zext" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_17_4_1_U13" SOURCE="/home/szymon/Desktop/PBAWIZ/Gauss/Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp:47" STORAGESUBTYPE="" URAM="0" VARIABLE="zext_ln47_21" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_17_4_1_U6" SOURCE="/home/szymon/Desktop/PBAWIZ/Gauss/Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp:47" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln47_7" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op zext" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="zext" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_17_4_1_U6" SOURCE="/home/szymon/Desktop/PBAWIZ/Gauss/Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp:47" STORAGESUBTYPE="" URAM="0" VARIABLE="zext_ln47_23" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_17ns_17_4_1_U14" SOURCE="/home/szymon/Desktop/PBAWIZ/Gauss/Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp:47" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln47_8" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op zext" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="zext" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_17ns_17_4_1_U14" SOURCE="/home/szymon/Desktop/PBAWIZ/Gauss/Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp:47" STORAGESUBTYPE="" URAM="0" VARIABLE="zext_ln47_25" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_17_4_1_U7" SOURCE="/home/szymon/Desktop/PBAWIZ/Gauss/Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp:47" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln47_9" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op zext" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="zext" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_17_4_1_U7" SOURCE="/home/szymon/Desktop/PBAWIZ/Gauss/Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp:47" STORAGESUBTYPE="" URAM="0" VARIABLE="zext_ln47_27" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8ns_9ns_16_1_1_U1" SOURCE="/home/szymon/Desktop/PBAWIZ/Gauss/Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp:47" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln47_10" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln47_4_fu_694_p2" SOURCE="/home/szymon/Desktop/PBAWIZ/Gauss/Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp:47" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln47_4" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_17_4_1_U8" SOURCE="/home/szymon/Desktop/PBAWIZ/Gauss/Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp:47" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln47_11" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op zext" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="zext" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_17_4_1_U8" SOURCE="/home/szymon/Desktop/PBAWIZ/Gauss/Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp:47" STORAGESUBTYPE="" URAM="0" VARIABLE="zext_ln47_33" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8ns_9ns_16_1_1_U2" SOURCE="/home/szymon/Desktop/PBAWIZ/Gauss/Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp:47" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln47_12" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_17ns_17_4_1_U15" SOURCE="/home/szymon/Desktop/PBAWIZ/Gauss/Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp:47" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln47_13" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op zext" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="zext" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_17ns_17_4_1_U15" SOURCE="/home/szymon/Desktop/PBAWIZ/Gauss/Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp:47" STORAGESUBTYPE="" URAM="0" VARIABLE="zext_ln47_37" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln47_5_fu_374_p2" SOURCE="/home/szymon/Desktop/PBAWIZ/Gauss/Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp:47" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln47_5" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8ns_9ns_16_1_1_U5" SOURCE="/home/szymon/Desktop/PBAWIZ/Gauss/Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp:47" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln47_14" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln47_6_fu_523_p2" SOURCE="/home/szymon/Desktop/PBAWIZ/Gauss/Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp:47" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln47_6" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_17_4_1_U16" SOURCE="/home/szymon/Desktop/PBAWIZ/Gauss/Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp:47" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln47_15" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op zext" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="zext" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_17_4_1_U16" SOURCE="/home/szymon/Desktop/PBAWIZ/Gauss/Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp:47" STORAGESUBTYPE="" URAM="0" VARIABLE="zext_ln47_45" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln47_7_fu_555_p2" SOURCE="/home/szymon/Desktop/PBAWIZ/Gauss/Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp:47" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln47_7" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_17_4_1_U17" SOURCE="/home/szymon/Desktop/PBAWIZ/Gauss/Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp:47" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln47_16" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op zext" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="zext" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_17_4_1_U17" SOURCE="/home/szymon/Desktop/PBAWIZ/Gauss/Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp:93" STORAGESUBTYPE="" URAM="0" VARIABLE="zext_ln93" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_17_4_1_U13" SOURCE="/home/szymon/Desktop/PBAWIZ/Gauss/Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp:93" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln93" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln93_1_fu_704_p2" SOURCE="/home/szymon/Desktop/PBAWIZ/Gauss/Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp:93" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln93_1" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_17_4_1_U10" SOURCE="/home/szymon/Desktop/PBAWIZ/Gauss/Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp:93" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln93_2" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln93_3_fu_713_p2" SOURCE="/home/szymon/Desktop/PBAWIZ/Gauss/Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp:93" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln93_3" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln93_4_fu_722_p2" SOURCE="/home/szymon/Desktop/PBAWIZ/Gauss/Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp:93" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln93_4" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_17_4_1_U9" SOURCE="/home/szymon/Desktop/PBAWIZ/Gauss/Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp:93" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln93_5" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln93_6_fu_728_p2" SOURCE="/home/szymon/Desktop/PBAWIZ/Gauss/Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp:93" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln93_6" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_17_4_1_U12" SOURCE="/home/szymon/Desktop/PBAWIZ/Gauss/Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp:93" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln93_7" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln93_8_fu_737_p2" SOURCE="/home/szymon/Desktop/PBAWIZ/Gauss/Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp:93" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln93_8" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln93_9_fu_746_p2" SOURCE="/home/szymon/Desktop/PBAWIZ/Gauss/Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp:93" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln93_9" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln93_10_fu_795_p2" SOURCE="/home/szymon/Desktop/PBAWIZ/Gauss/Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp:93" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln93_10" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_17_4_1_U7" SOURCE="/home/szymon/Desktop/PBAWIZ/Gauss/Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp:93" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln93_11" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_17ns_17_4_1_U11" SOURCE="/home/szymon/Desktop/PBAWIZ/Gauss/Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp:93" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln93_12" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_17_4_1_U6" SOURCE="/home/szymon/Desktop/PBAWIZ/Gauss/Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp:93" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln93_13" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_17ns_17_4_1_U14" SOURCE="/home/szymon/Desktop/PBAWIZ/Gauss/Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp:93" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln93_14" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln93_15_fu_758_p2" SOURCE="/home/szymon/Desktop/PBAWIZ/Gauss/Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp:93" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln93_15" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_17_4_1_U8" SOURCE="/home/szymon/Desktop/PBAWIZ/Gauss/Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp:93" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln93_16" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_17ns_17_4_1_U15" SOURCE="/home/szymon/Desktop/PBAWIZ/Gauss/Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp:93" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln93_17" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_17_4_1_U17" SOURCE="/home/szymon/Desktop/PBAWIZ/Gauss/Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp:93" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln93_18" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8ns_8ns_16ns_17_4_1_U16" SOURCE="/home/szymon/Desktop/PBAWIZ/Gauss/Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp:93" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln93_19" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln93_20_fu_773_p2" SOURCE="/home/szymon/Desktop/PBAWIZ/Gauss/Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp:93" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln93_20" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln93_21_fu_783_p2" SOURCE="/home/szymon/Desktop/PBAWIZ/Gauss/Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp:93" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln93_21" VISIBLE="true"/>
+                <BindNode BINDTYPE="adapter" BRAM="0" BUNDLEDNAME="CTRL" DISPNAME="bind_adapter " DSP="0" ID="" IMPL="" LATENCY="" LOOP="" OPTYPE="" PRAGMA="" RTLNAME="CTRL_s_axi_U" SOURCE="" STORAGESIZE="" STORAGESUBTYPE="s_axilite" STORAGEUSAGE="interface" URAM="0" VARIABLE=""/>
+            </BindNodes>
+        </Module>
+    </ModuleInformation>
+    <FIFOInformation/>
+    <UserConfigCommands>
+        <config_csim code_analyzer="1"/>
+        <config_export display_name="gaussian_filter" output="/home/szymon/Desktop/PBAWIZ/Gauss/HLS/gauss_filter/gaussian_filter" rtl="vhdl"/>
+    </UserConfigCommands>
+    <Args>
+        <Arg ArgName="data_in_0" index="0" direction="in" srcType="ap_uint&lt;8&gt;" srcSize="8">
+            <hwRefs>
+                <hwRef type="register" interface="s_axi_CTRL" name="data_in_0" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="data_in_1" index="1" direction="in" srcType="ap_uint&lt;8&gt;" srcSize="8">
+            <hwRefs>
+                <hwRef type="register" interface="s_axi_CTRL" name="data_in_1" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="data_in_2" index="2" direction="in" srcType="ap_uint&lt;8&gt;" srcSize="8">
+            <hwRefs>
+                <hwRef type="register" interface="s_axi_CTRL" name="data_in_2" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="data_in_3" index="3" direction="in" srcType="ap_uint&lt;8&gt;" srcSize="8">
+            <hwRefs>
+                <hwRef type="register" interface="s_axi_CTRL" name="data_in_3" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="data_in_4" index="4" direction="in" srcType="ap_uint&lt;8&gt;" srcSize="8">
+            <hwRefs>
+                <hwRef type="register" interface="s_axi_CTRL" name="data_in_4" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+    </Args>
+    <ReturnValue ReturnValueName="srcType">ap_uint&lt;32&gt;</ReturnValue>
+    <ReturnValue ReturnValueName="srcSize">32</ReturnValue>
+    <ReturnValue ReturnValueName="hwRefs" type="register" interface="s_axi_CTRL" name="ap_return" usage="data" direction="out"/>
+    <Interfaces>
+        <Interface InterfaceName="s_axi_CTRL" type="axi4lite" busTypeName="aximm" mode="slave" dataWidth="32" addrWidth="6" portPrefix="s_axi_CTRL_" paramPrefix="C_S_AXI_CTRL_">
+            <ports>
+                <port>s_axi_CTRL_ARADDR</port>
+                <port>s_axi_CTRL_ARREADY</port>
+                <port>s_axi_CTRL_ARVALID</port>
+                <port>s_axi_CTRL_AWADDR</port>
+                <port>s_axi_CTRL_AWREADY</port>
+                <port>s_axi_CTRL_AWVALID</port>
+                <port>s_axi_CTRL_BREADY</port>
+                <port>s_axi_CTRL_BRESP</port>
+                <port>s_axi_CTRL_BVALID</port>
+                <port>s_axi_CTRL_RDATA</port>
+                <port>s_axi_CTRL_RREADY</port>
+                <port>s_axi_CTRL_RRESP</port>
+                <port>s_axi_CTRL_RVALID</port>
+                <port>s_axi_CTRL_WDATA</port>
+                <port>s_axi_CTRL_WREADY</port>
+                <port>s_axi_CTRL_WSTRB</port>
+                <port>s_axi_CTRL_WVALID</port>
+            </ports>
+            <registers>
+                <register offset="0x00" name="CTRL" access="RW" description="Control signals" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="AP_START" access="RW" description="Control signal Register for 'ap_start'."/>
+                        <field offset="1" width="1" name="AP_DONE" access="R" description="Control signal Register for 'ap_done'."/>
+                        <field offset="2" width="1" name="AP_IDLE" access="R" description="Control signal Register for 'ap_idle'."/>
+                        <field offset="3" width="1" name="AP_READY" access="R" description="Control signal Register for 'ap_ready'."/>
+                        <field offset="4" width="1" name="AP_CONTINUE" access="R" description="Control signal Register for 'ap_continue'."/>
+                        <field offset="5" width="2" name="RESERVED_1" access="R" description="Reserved.  0s on read."/>
+                        <field offset="7" width="1" name="AUTO_RESTART" access="RW" description="Control signal Register for 'auto_restart'."/>
+                        <field offset="8" width="1" name="RESERVED_2" access="R" description="Reserved.  0s on read."/>
+                        <field offset="9" width="1" name="INTERRUPT" access="R" description="Control signal Register for 'interrupt'."/>
+                        <field offset="10" width="22" name="RESERVED_3" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x04" name="GIER" access="RW" description="Global Interrupt Enable Register" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="Enable" access="RW" description="Master enable for the device interrupt output to the system interrupt controller: 0 = Disabled, 1 = Enabled"/>
+                        <field offset="1" width="31" name="RESERVED" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x08" name="IP_IER" access="RW" description="IP Interrupt Enable Register" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="CHAN0_INT_EN" access="RW" description="Enable Channel 0 (ap_done) Interrupt.  0 = Disabled, 1 = Enabled."/>
+                        <field offset="1" width="1" name="CHAN1_INT_EN" access="RW" description="Enable Channel 1 (ap_ready) Interrupt.  0 = Disabled, 1 = Enabled."/>
+                        <field offset="2" width="30" name="RESERVED_0" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x0c" name="IP_ISR" access="RW" description="IP Interrupt Status Register" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="CHAN0_INT_ST" access="RTOW" description="Channel 0 (ap_done) Interrupt Status. 0 = No Channel 0 interrupt, 1 = Channel 0 interrupt."/>
+                        <field offset="1" width="1" name="CHAN1_INT_ST" access="RTOW" description="Channel 1 (ap_ready) Interrupt Status. 0 = No Channel 1 interrupt, 1 = Channel 1 interrupt."/>
+                        <field offset="2" width="30" name="RESERVED_0" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x10" name="ap_return" access="R" description="Data signal of ap_return" range="32">
+                    <fields>
+                        <field offset="0" width="32" name="ap_return" access="R" description="Bit 31 to 0 of ap_return"/>
+                    </fields>
+                </register>
+                <register offset="0x18" name="data_in_0" access="W" description="Data signal of data_in_0" range="32">
+                    <fields>
+                        <field offset="0" width="8" name="data_in_0" access="W" description="Bit 7 to 0 of data_in_0"/>
+                        <field offset="8" width="24" name="RESERVED" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x20" name="data_in_1" access="W" description="Data signal of data_in_1" range="32">
+                    <fields>
+                        <field offset="0" width="8" name="data_in_1" access="W" description="Bit 7 to 0 of data_in_1"/>
+                        <field offset="8" width="24" name="RESERVED" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x28" name="data_in_2" access="W" description="Data signal of data_in_2" range="32">
+                    <fields>
+                        <field offset="0" width="8" name="data_in_2" access="W" description="Bit 7 to 0 of data_in_2"/>
+                        <field offset="8" width="24" name="RESERVED" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x30" name="data_in_3" access="W" description="Data signal of data_in_3" range="32">
+                    <fields>
+                        <field offset="0" width="8" name="data_in_3" access="W" description="Bit 7 to 0 of data_in_3"/>
+                        <field offset="8" width="24" name="RESERVED" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x38" name="data_in_4" access="W" description="Data signal of data_in_4" range="32">
+                    <fields>
+                        <field offset="0" width="8" name="data_in_4" access="W" description="Bit 7 to 0 of data_in_4"/>
+                        <field offset="8" width="24" name="RESERVED" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+            </registers>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="24" argName="data_in_0"/>
+                <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="32" argName="data_in_1"/>
+                <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="40" argName="data_in_2"/>
+                <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="48" argName="data_in_3"/>
+                <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="56" argName="data_in_4"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="ap_clk" type="clock" busTypeName="clock" mode="slave">
+            <busParams>
+                <busParam busParamName="ASSOCIATED_BUSIF">s_axi_CTRL</busParam>
+                <busParam busParamName="ASSOCIATED_RESET">ap_rst_n</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_clk">CLK</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_clk</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="ap_rst_n" type="reset" busTypeName="reset" mode="slave">
+            <busParams>
+                <busParam busParamName="POLARITY">ACTIVE_LOW</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_rst_n">RST</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_rst_n</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="interrupt" type="interrupt" busTypeName="interrupt" mode="master" dataWidth="1">
+            <busParams>
+                <busParam busParamName="SENSITIVITY">LEVEL_HIGH</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="interrupt">INTERRUPT</portMap>
+            </portMaps>
+            <ports>
+                <port>interrupt</port>
+            </ports>
+        </Interface>
+    </Interfaces>
+    <ReportHWInterface>
+        <section name="HW Interfaces" level="0">
+            <item name="S_AXILITE Interfaces">
+                <table>
+                    <keys size="5">Interface, Data Width, Address Width, Offset, Register</keys>
+                    <column name="s_axi_CTRL">32, 6, 24, 0</column>
+                </table>
+            </item>
+            <item name="S_AXILITE Registers">
+                <table>
+                    <keys size="7">Interface, Register, Offset, Width, Access, Description, Bit Fields</keys>
+                    <column name="s_axi_CTRL">CTRL, 0x00, 32, RW, Control signals, 0=AP_START 1=AP_DONE 2=AP_IDLE 3=AP_READY 4=AP_CONTINUE 7=AUTO_RESTART 9=INTERRUPT</column>
+                    <column name="s_axi_CTRL">GIER, 0x04, 32, RW, Global Interrupt Enable Register, 0=Enable</column>
+                    <column name="s_axi_CTRL">IP_IER, 0x08, 32, RW, IP Interrupt Enable Register, 0=CHAN0_INT_EN 1=CHAN1_INT_EN</column>
+                    <column name="s_axi_CTRL">IP_ISR, 0x0c, 32, RW, IP Interrupt Status Register, 0=CHAN0_INT_ST 1=CHAN1_INT_ST</column>
+                    <column name="s_axi_CTRL">ap_return, 0x10, 32, R, Data signal of ap_return, </column>
+                    <column name="s_axi_CTRL">data_in_0, 0x18, 32, W, Data signal of data_in_0, </column>
+                    <column name="s_axi_CTRL">data_in_1, 0x20, 32, W, Data signal of data_in_1, </column>
+                    <column name="s_axi_CTRL">data_in_2, 0x28, 32, W, Data signal of data_in_2, </column>
+                    <column name="s_axi_CTRL">data_in_3, 0x30, 32, W, Data signal of data_in_3, </column>
+                    <column name="s_axi_CTRL">data_in_4, 0x38, 32, W, Data signal of data_in_4, </column>
+                </table>
+            </item>
+            <item name="TOP LEVEL CONTROL">
+                <table>
+                    <keys size="3">Interface, Type, Ports</keys>
+                    <column name="ap_clk">clock, ap_clk</column>
+                    <column name="ap_rst_n">reset, ap_rst_n</column>
+                    <column name="interrupt">interrupt, interrupt</column>
+                    <column name="ap_ctrl">ap_ctrl_chain, </column>
+                </table>
+            </item>
+        </section>
+    </ReportHWInterface>
+    <ReportSWInterface>
+        <section name="SW I/O Information" level="0">
+            <item name="Top Function Arguments">
+                <table>
+                    <keys size="3">Argument, Direction, Datatype</keys>
+                    <column name="data_in_0">in, ap_uint&lt;8&gt;</column>
+                    <column name="data_in_1">in, ap_uint&lt;8&gt;</column>
+                    <column name="data_in_2">in, ap_uint&lt;8&gt;</column>
+                    <column name="data_in_3">in, ap_uint&lt;8&gt;</column>
+                    <column name="data_in_4">in, ap_uint&lt;8&gt;</column>
+                    <column name="return">out, ap_uint&lt;32&gt;</column>
+                </table>
+            </item>
+            <item name="SW-to-HW Mapping">
+                <table>
+                    <keys size="4">Argument, HW Interface, HW Type, HW Info</keys>
+                    <column name="data_in_0">s_axi_CTRL, register, name=data_in_0 offset=0x18 range=32</column>
+                    <column name="data_in_1">s_axi_CTRL, register, name=data_in_1 offset=0x20 range=32</column>
+                    <column name="data_in_2">s_axi_CTRL, register, name=data_in_2 offset=0x28 range=32</column>
+                    <column name="data_in_3">s_axi_CTRL, register, name=data_in_3 offset=0x30 range=32</column>
+                    <column name="data_in_4">s_axi_CTRL, register, name=data_in_4 offset=0x38 range=32</column>
+                    <column name="return">s_axi_CTRL, register, name=ap_return offset=0x10 range=32</column>
+                </table>
+            </item>
+        </section>
+    </ReportSWInterface>
+    <ResolutionUrl key="ZZZ">docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&amp;url=ug1448-hls-guidance&amp;resourceid=ZZZ.html</ResolutionUrl>
+    <PragmaReport>
+        <Pragma type="interface" location="../../Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp:10" status="valid" parentFunction="gaussianfilter" variable="data_in_0" isDirective="0" options="s_axilite port=data_in_0 bundle=CTRL"/>
+        <Pragma type="interface" location="../../Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp:11" status="valid" parentFunction="gaussianfilter" variable="data_in_1" isDirective="0" options="s_axilite port=data_in_1 bundle=CTRL"/>
+        <Pragma type="interface" location="../../Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp:12" status="valid" parentFunction="gaussianfilter" variable="data_in_2" isDirective="0" options="s_axilite port=data_in_2 bundle=CTRL"/>
+        <Pragma type="interface" location="../../Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp:13" status="valid" parentFunction="gaussianfilter" variable="data_in_3" isDirective="0" options="s_axilite port=data_in_3 bundle=CTRL"/>
+        <Pragma type="interface" location="../../Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp:14" status="valid" parentFunction="gaussianfilter" variable="data_in_4" isDirective="0" options="s_axilite port=data_in_4 bundle=CTRL"/>
+        <Pragma type="interface" location="../../Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp:15" status="valid" parentFunction="gaussianfilter" variable="return" isDirective="0" options="s_axilite port=return bundle=CTRL"/>
+        <Pragma type="unroll" location="../../Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp:26" status="valid" parentFunction="gaussianfilter" variable="" isDirective="0" options=""/>
+        <Pragma type="unroll" location="../../Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp:28" status="valid" parentFunction="gaussianfilter" variable="" isDirective="0" options=""/>
+        <Pragma type="unroll" location="../../Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp:44" status="valid" parentFunction="gaussianfilter" variable="" isDirective="0" options=""/>
+        <Pragma type="unroll" location="../../Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp:46" status="valid" parentFunction="gaussianfilter" variable="" isDirective="0" options=""/>
+        <Pragma type="unroll" location="../../Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp:55" status="valid" parentFunction="gaussianfilter" variable="" isDirective="0" options=""/>
+        <Pragma type="unroll" location="../../Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp:57" status="valid" parentFunction="gaussianfilter" variable="" isDirective="0" options=""/>
+        <Pragma type="unroll" location="../../Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp:65" status="valid" parentFunction="gaussianfilter" variable="" isDirective="0" options=""/>
+        <Pragma type="unroll" location="../../Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp:72" status="valid" parentFunction="gaussianfilter" variable="" isDirective="0" options=""/>
+        <Pragma type="unroll" location="../../Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp:81" status="valid" parentFunction="gaussianfilter" variable="" isDirective="0" options=""/>
+    </PragmaReport>
+</profile>
+

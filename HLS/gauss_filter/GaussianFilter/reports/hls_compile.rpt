@@ -1,0 +1,196 @@
+
+
+================================================================
+== Synthesis Summary Report of 'GaussianFilter'
+================================================================
++ General Information: 
+    * Date:           Sun Jan 11 14:51:05 2026
+    * Version:        2025.1 (Build 6135595 on May 21 2025)
+    * Project:        GaussianFilter
+    * Solution:       hls (Vitis Kernel Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z007s-clg400-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +------------------+------+------+---------+--------+----------+---------+------+----------+------+----------+----------+----------+-----+
+    |      Modules     | Issue|      |      Latency     | Iteration|         | Trip |          |      |          |          |          |     |
+    |      & Loops     | Type | Slack| (cycles)|  (ns)  |  Latency | Interval| Count| Pipelined| BRAM |    DSP   |    FF    |    LUT   | URAM|
+    +------------------+------+------+---------+--------+----------+---------+------+----------+------+----------+----------+----------+-----+
+    |+ GaussianFilter  |     -|  0.59|        5|  40.000|         -|        6|     -|        no|     -|  12 (18%)|  469 (1%)|  959 (6%)|    -|
+    +------------------+------+------+---------+--------+----------+---------+------+----------+------+----------+----------+----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* S_AXILITE Interfaces
++------------+------------+---------------+--------+----------+
+| Interface  | Data Width | Address Width | Offset | Register |
++------------+------------+---------------+--------+----------+
+| s_axi_CTRL | 32         | 6             | 24     | 0        |
++------------+------------+---------------+--------+----------+
+
+* S_AXILITE Registers
++------------+-----------+--------+-------+--------+----------------------------------+------------------------------------------------------------------------------------+
+| Interface  | Register  | Offset | Width | Access | Description                      | Bit Fields                                                                         |
++------------+-----------+--------+-------+--------+----------------------------------+------------------------------------------------------------------------------------+
+| s_axi_CTRL | CTRL      | 0x00   | 32    | RW     | Control signals                  | 0=AP_START 1=AP_DONE 2=AP_IDLE 3=AP_READY 4=AP_CONTINUE 7=AUTO_RESTART 9=INTERRUPT |
+| s_axi_CTRL | GIER      | 0x04   | 32    | RW     | Global Interrupt Enable Register | 0=Enable                                                                           |
+| s_axi_CTRL | IP_IER    | 0x08   | 32    | RW     | IP Interrupt Enable Register     | 0=CHAN0_INT_EN 1=CHAN1_INT_EN                                                      |
+| s_axi_CTRL | IP_ISR    | 0x0c   | 32    | RW     | IP Interrupt Status Register     | 0=CHAN0_INT_ST 1=CHAN1_INT_ST                                                      |
+| s_axi_CTRL | ap_return | 0x10   | 32    | R      | Data signal of ap_return         |                                                                                    |
+| s_axi_CTRL | data_in_0 | 0x18   | 32    | W      | Data signal of data_in_0         |                                                                                    |
+| s_axi_CTRL | data_in_1 | 0x20   | 32    | W      | Data signal of data_in_1         |                                                                                    |
+| s_axi_CTRL | data_in_2 | 0x28   | 32    | W      | Data signal of data_in_2         |                                                                                    |
+| s_axi_CTRL | data_in_3 | 0x30   | 32    | W      | Data signal of data_in_3         |                                                                                    |
+| s_axi_CTRL | data_in_4 | 0x38   | 32    | W      | Data signal of data_in_4         |                                                                                    |
++------------+-----------+--------+-------+--------+----------------------------------+------------------------------------------------------------------------------------+
+
+* TOP LEVEL CONTROL
++-----------+---------------+-----------+
+| Interface | Type          | Ports     |
++-----------+---------------+-----------+
+| ap_clk    | clock         | ap_clk    |
+| ap_rst_n  | reset         | ap_rst_n  |
+| interrupt | interrupt     | interrupt |
+| ap_ctrl   | ap_ctrl_chain |           |
++-----------+---------------+-----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++-----------+-----------+-------------+
+| Argument  | Direction | Datatype    |
++-----------+-----------+-------------+
+| data_in_0 | in        | ap_uint<8>  |
+| data_in_1 | in        | ap_uint<8>  |
+| data_in_2 | in        | ap_uint<8>  |
+| data_in_3 | in        | ap_uint<8>  |
+| data_in_4 | in        | ap_uint<8>  |
+| return    | out       | ap_uint<32> |
++-----------+-----------+-------------+
+
+* SW-to-HW Mapping
++-----------+--------------+----------+-------------------------------------+
+| Argument  | HW Interface | HW Type  | HW Info                             |
++-----------+--------------+----------+-------------------------------------+
+| data_in_0 | s_axi_CTRL   | register | name=data_in_0 offset=0x18 range=32 |
+| data_in_1 | s_axi_CTRL   | register | name=data_in_1 offset=0x20 range=32 |
+| data_in_2 | s_axi_CTRL   | register | name=data_in_2 offset=0x28 range=32 |
+| data_in_3 | s_axi_CTRL   | register | name=data_in_3 offset=0x30 range=32 |
+| data_in_4 | s_axi_CTRL   | register | name=data_in_4 offset=0x38 range=32 |
+| return    | s_axi_CTRL   | register | name=ap_return offset=0x10 range=32 |
++-----------+--------------+----------+-------------------------------------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++--------------------------------------+-----+--------+--------------+------+-----------+---------+
+| Name                                 | DSP | Pragma | Variable     | Op   | Impl      | Latency |
++--------------------------------------+-----+--------+--------------+------+-----------+---------+
+| + GaussianFilter                     | 12  |        |              |      |           |         |
+|   mul_8ns_9ns_16_1_1_U3              |     |        | mul_ln47     | mul  | auto      | 0       |
+|   add_ln47_fu_463_p2                 |     |        | add_ln47     | add  | fabric    | 0       |
+|   mac_muladd_8ns_8ns_16ns_17_4_1_U9  | 1   |        | mul_ln47_1   | mul  | dsp_slice | 3       |
+|   mac_muladd_8ns_8ns_16ns_17_4_1_U9  | 1   |        | zext_ln47_5  | zext | dsp_slice | 3       |
+|   add_ln47_1_fu_596_p2               |     |        | add_ln47_1   | add  | fabric    | 0       |
+|   mac_muladd_8ns_8ns_16ns_17_4_1_U10 | 1   |        | mul_ln47_2   | mul  | dsp_slice | 3       |
+|   mac_muladd_8ns_8ns_16ns_17_4_1_U10 | 1   |        | zext_ln47_9  | zext | dsp_slice | 3       |
+|   add_ln47_2_fu_628_p2               |     |        | add_ln47_2   | add  | fabric    | 0       |
+|   mac_muladd_8ns_8ns_17ns_17_4_1_U11 | 1   |        | mul_ln47_3   | mul  | dsp_slice | 3       |
+|   mac_muladd_8ns_8ns_17ns_17_4_1_U11 | 1   |        | zext_ln47_13 | zext | dsp_slice | 3       |
+|   mac_muladd_8ns_8ns_16ns_17_4_1_U12 | 1   |        | mul_ln47_4   | mul  | dsp_slice | 3       |
+|   mac_muladd_8ns_8ns_16ns_17_4_1_U12 | 1   |        | zext_ln47_15 | zext | dsp_slice | 3       |
+|   mul_8ns_9ns_16_1_1_U4              |     |        | mul_ln47_5   | mul  | auto      | 0       |
+|   add_ln47_3_fu_662_p2               |     |        | add_ln47_3   | add  | fabric    | 0       |
+|   mac_muladd_8ns_8ns_16ns_17_4_1_U13 | 1   |        | mul_ln47_6   | mul  | dsp_slice | 3       |
+|   mac_muladd_8ns_8ns_16ns_17_4_1_U13 | 1   |        | zext_ln47_21 | zext | dsp_slice | 3       |
+|   mac_muladd_8ns_8ns_16ns_17_4_1_U6  | 1   |        | mul_ln47_7   | mul  | dsp_slice | 3       |
+|   mac_muladd_8ns_8ns_16ns_17_4_1_U6  | 1   |        | zext_ln47_23 | zext | dsp_slice | 3       |
+|   mac_muladd_8ns_8ns_17ns_17_4_1_U14 | 1   |        | mul_ln47_8   | mul  | dsp_slice | 3       |
+|   mac_muladd_8ns_8ns_17ns_17_4_1_U14 | 1   |        | zext_ln47_25 | zext | dsp_slice | 3       |
+|   mac_muladd_8ns_8ns_16ns_17_4_1_U7  | 1   |        | mul_ln47_9   | mul  | dsp_slice | 3       |
+|   mac_muladd_8ns_8ns_16ns_17_4_1_U7  | 1   |        | zext_ln47_27 | zext | dsp_slice | 3       |
+|   mul_8ns_9ns_16_1_1_U1              |     |        | mul_ln47_10  | mul  | auto      | 0       |
+|   add_ln47_4_fu_694_p2               |     |        | add_ln47_4   | add  | fabric    | 0       |
+|   mac_muladd_8ns_8ns_16ns_17_4_1_U8  | 1   |        | mul_ln47_11  | mul  | dsp_slice | 3       |
+|   mac_muladd_8ns_8ns_16ns_17_4_1_U8  | 1   |        | zext_ln47_33 | zext | dsp_slice | 3       |
+|   mul_8ns_9ns_16_1_1_U2              |     |        | mul_ln47_12  | mul  | auto      | 0       |
+|   mac_muladd_8ns_8ns_17ns_17_4_1_U15 | 1   |        | mul_ln47_13  | mul  | dsp_slice | 3       |
+|   mac_muladd_8ns_8ns_17ns_17_4_1_U15 | 1   |        | zext_ln47_37 | zext | dsp_slice | 3       |
+|   add_ln47_5_fu_374_p2               |     |        | add_ln47_5   | add  | fabric    | 0       |
+|   mul_8ns_9ns_16_1_1_U5              |     |        | mul_ln47_14  | mul  | auto      | 0       |
+|   add_ln47_6_fu_523_p2               |     |        | add_ln47_6   | add  | fabric    | 0       |
+|   mac_muladd_8ns_8ns_16ns_17_4_1_U16 | 1   |        | mul_ln47_15  | mul  | dsp_slice | 3       |
+|   mac_muladd_8ns_8ns_16ns_17_4_1_U16 | 1   |        | zext_ln47_45 | zext | dsp_slice | 3       |
+|   add_ln47_7_fu_555_p2               |     |        | add_ln47_7   | add  | fabric    | 0       |
+|   mac_muladd_8ns_8ns_16ns_17_4_1_U17 | 1   |        | mul_ln47_16  | mul  | dsp_slice | 3       |
+|   mac_muladd_8ns_8ns_16ns_17_4_1_U17 | 1   |        | zext_ln93    | zext | dsp_slice | 3       |
+|   mac_muladd_8ns_8ns_16ns_17_4_1_U13 | 1   |        | add_ln93     | add  | dsp_slice | 3       |
+|   add_ln93_1_fu_704_p2               |     |        | add_ln93_1   | add  | fabric    | 0       |
+|   mac_muladd_8ns_8ns_16ns_17_4_1_U10 | 1   |        | add_ln93_2   | add  | dsp_slice | 3       |
+|   add_ln93_3_fu_713_p2               |     |        | add_ln93_3   | add  | fabric    | 0       |
+|   add_ln93_4_fu_722_p2               |     |        | add_ln93_4   | add  | fabric    | 0       |
+|   mac_muladd_8ns_8ns_16ns_17_4_1_U9  | 1   |        | add_ln93_5   | add  | dsp_slice | 3       |
+|   add_ln93_6_fu_728_p2               |     |        | add_ln93_6   | add  | fabric    | 0       |
+|   mac_muladd_8ns_8ns_16ns_17_4_1_U12 | 1   |        | add_ln93_7   | add  | dsp_slice | 3       |
+|   add_ln93_8_fu_737_p2               |     |        | add_ln93_8   | add  | fabric    | 0       |
+|   add_ln93_9_fu_746_p2               |     |        | add_ln93_9   | add  | fabric    | 0       |
+|   add_ln93_10_fu_795_p2              |     |        | add_ln93_10  | add  | fabric    | 0       |
+|   mac_muladd_8ns_8ns_16ns_17_4_1_U7  | 1   |        | add_ln93_11  | add  | dsp_slice | 3       |
+|   mac_muladd_8ns_8ns_17ns_17_4_1_U11 | 1   |        | add_ln93_12  | add  | dsp_slice | 3       |
+|   mac_muladd_8ns_8ns_16ns_17_4_1_U6  | 1   |        | add_ln93_13  | add  | dsp_slice | 3       |
+|   mac_muladd_8ns_8ns_17ns_17_4_1_U14 | 1   |        | add_ln93_14  | add  | dsp_slice | 3       |
+|   add_ln93_15_fu_758_p2              |     |        | add_ln93_15  | add  | fabric    | 0       |
+|   mac_muladd_8ns_8ns_16ns_17_4_1_U8  | 1   |        | add_ln93_16  | add  | dsp_slice | 3       |
+|   mac_muladd_8ns_8ns_17ns_17_4_1_U15 | 1   |        | add_ln93_17  | add  | dsp_slice | 3       |
+|   mac_muladd_8ns_8ns_16ns_17_4_1_U17 | 1   |        | add_ln93_18  | add  | dsp_slice | 3       |
+|   mac_muladd_8ns_8ns_16ns_17_4_1_U16 | 1   |        | add_ln93_19  | add  | dsp_slice | 3       |
+|   add_ln93_20_fu_773_p2              |     |        | add_ln93_20  | add  | fabric    | 0       |
+|   add_ln93_21_fu_783_p2              |     |        | add_ln93_21  | add  | fabric    | 0       |
++--------------------------------------+-----+--------+--------------+------+-----------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
++------------------+-----------+-----------+------+------+--------+----------+------+---------+------------------+
+| Name             | Usage     | Type      | BRAM | URAM | Pragma | Variable | Impl | Latency | Bitwidth, Depth, |
+|                  |           |           |      |      |        |          |      |         | Banks            |
++------------------+-----------+-----------+------+------+--------+----------+------+---------+------------------+
+| + GaussianFilter |           |           | 0    | 0    |        |          |      |         |                  |
+|   CTRL_s_axi_U   | interface | s_axilite |      |      |        |          |      |         |                  |
++------------------+-----------+-----------+------+------+--------+----------+------+---------+------------------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------+--------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+
+| Type      | Options                              | Location                                                                                                                       |
++-----------+--------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+
+| INTERFACE | s_axilite port=data_in_0 bundle=CTRL | ../../Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp:10 in gaussianfilter, data_in_0 |
+| INTERFACE | s_axilite port=data_in_1 bundle=CTRL | ../../Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp:11 in gaussianfilter, data_in_1 |
+| INTERFACE | s_axilite port=data_in_2 bundle=CTRL | ../../Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp:12 in gaussianfilter, data_in_2 |
+| INTERFACE | s_axilite port=data_in_3 bundle=CTRL | ../../Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp:13 in gaussianfilter, data_in_3 |
+| INTERFACE | s_axilite port=data_in_4 bundle=CTRL | ../../Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp:14 in gaussianfilter, data_in_4 |
+| INTERFACE | s_axilite port=return bundle=CTRL    | ../../Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp:15 in gaussianfilter, return    |
+| UNROLL    |                                      | ../../Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp:26 in gaussianfilter            |
+| UNROLL    |                                      | ../../Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp:28 in gaussianfilter            |
+| UNROLL    |                                      | ../../Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp:44 in gaussianfilter            |
+| UNROLL    |                                      | ../../Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp:46 in gaussianfilter            |
+| UNROLL    |                                      | ../../Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp:55 in gaussianfilter            |
+| UNROLL    |                                      | ../../Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp:57 in gaussianfilter            |
+| UNROLL    |                                      | ../../Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp:65 in gaussianfilter            |
+| UNROLL    |                                      | ../../Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp:72 in gaussianfilter            |
+| UNROLL    |                                      | ../../Gaussian-Filter-Implementation-Using-Vitis-HLS/GaussianFilterVitisHLS/GaussianFilter.cpp:81 in gaussianfilter            |
++-----------+--------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+
+
+
