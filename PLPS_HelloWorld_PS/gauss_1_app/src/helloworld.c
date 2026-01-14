@@ -2,13 +2,11 @@
 #include "platform.h"
 #include "xil_printf.h"
 #include "sleep.h"
-
 #include "xgaussianfilter.h"
 #include "xparameters.h"
 
 
-static int gf_init(XGaussianfilter *gf)
-{
+static int gf_init(XGaussianfilter *gf){
     int status = XGaussianfilter_Initialize(gf, XPAR_GAUSSIANFILTER_0_BASEADDR);
     if (status != XST_SUCCESS) {
         xil_printf("ERROR: XGaussianfilter_Initialize failed: %d\r\n", status);
@@ -21,9 +19,7 @@ static int gf_init(XGaussianfilter *gf)
     return XST_SUCCESS;
 }
 
-static u32 gf_run_one_stateful(XGaussianfilter *gf,
-                              u8 d0, u8 d1, u8 d2, u8 d3, u8 d4)
-{
+static u32 gf_run_one_stateful(XGaussianfilter *gf, u8 d0, u8 d1, u8 d2, u8 d3, u8 d4){
     // 1) Wait until core is ready (not strictly required everywhere, but safe)
     while (!XGaussianfilter_IsReady(gf)) { }
 
@@ -49,8 +45,7 @@ static u32 gf_run_one_stateful(XGaussianfilter *gf,
     return res;
 }
 
-static void print_u32_as_bytes(u32 res)
-{
+static void print_u32_as_bytes(u32 res){
     u8 b3 = (res >> 24) & 0xFF;
     u8 b2 = (res >> 16) & 0xFF;
     u8 b1 = (res >>  8) & 0xFF;

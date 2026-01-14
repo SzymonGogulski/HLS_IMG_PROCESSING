@@ -144,3 +144,11 @@
 3393	3521	1768153197521008123	libsrc/xiltimer/src/libxiltimer.a	5016d734aa77bc99
 1919	3630	1768153197637007804	libsrc/standalone/src/CMakeFiles/xilstandalone.dir/common/xil_sutil.c.obj	2501e7611f2b85b
 3631	3697	1768153197704007620	libsrc/standalone/src/libxilstandalone.a	8d3f0c4cb4dd5dd3
+13	53	0	libsrc/CMakeFiles/combined	8f9e4e05056de328
+13	53	0	/home/szymon/Desktop/CORA_Z7/projekt/PLPS_HelloWorld_PS/hello_2_platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/CMakeFiles/combined	8f9e4e05056de328
+4	39	0	libsrc/CMakeFiles/combined	8f9e4e05056de328
+4	39	0	/home/szymon/Desktop/CORA_Z7/projekt/PLPS_HelloWorld_PS/hello_2_platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/CMakeFiles/combined	8f9e4e05056de328
+4	35	0	libsrc/CMakeFiles/combined	8f9e4e05056de328
+4	35	0	/home/szymon/Desktop/CORA_Z7/projekt/PLPS_HelloWorld_PS/hello_2_platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/CMakeFiles/combined	8f9e4e05056de328
+3	37	0	libsrc/CMakeFiles/combined	8f9e4e05056de328
+3	37	0	/home/szymon/Desktop/CORA_Z7/projekt/PLPS_HelloWorld_PS/hello_2_platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/CMakeFiles/combined	8f9e4e05056de328
