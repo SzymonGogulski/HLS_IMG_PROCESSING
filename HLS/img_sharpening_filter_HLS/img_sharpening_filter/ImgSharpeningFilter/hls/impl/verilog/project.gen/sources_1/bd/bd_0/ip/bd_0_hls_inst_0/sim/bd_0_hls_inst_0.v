@@ -48,7 +48,7 @@
 
 
 // IP VLNV: xilinx.com:hls:ImgSharpeningFilter:1.0
-// IP Revision: 2114440503
+// IP Revision: 2114440537
 
 `timescale 1ns/1ps
 

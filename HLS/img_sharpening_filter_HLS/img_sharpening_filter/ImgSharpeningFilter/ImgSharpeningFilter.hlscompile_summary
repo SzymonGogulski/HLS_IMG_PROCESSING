@@ -9,10 +9,10 @@
 <ENTRY>
 {
  "type": "ET_CmdStep",
- "dateTimestamp": "Sat Jan 17 20:47:52 2026",
- "timestampMillis": "1768679272273",
+ "dateTimestamp": "Sat Jan 17 21:36:23 2026",
+ "timestampMillis": "1768682183147",
  "buildStep": {
-  "cmdId": "b6b8fe92-e432-4b5c-ba46-6cdb0424c093",
+  "cmdId": "f9db4a35-8693-40a7-a45c-cc076e7d791f",
   "name": "v++",
   "logFile": "/home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/logs/ImgSharpeningFilter.steps.log",
   "commandLine": "/home/szymon/tools/Xilinx/2025.1/Vitis/bin/unwrapped/lnx64.o/v++  -c --mode hls --config /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/hls_config.cfg --work_dir ImgSharpeningFilter ",
@@ -28,7 +28,7 @@
   "iniFiles": [
    {
     "path": "/home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/hls_config.cfg",
-    "content": "part=xc7z007sclg400-1\n\n[hls]\nflow_target=vitis\npackage.output.format=ip_catalog\npackage.output.syn=0\nsyn.top=ImgSharpeningFilter\nsyn.file=/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/img_sharpening_filter.h\nsyn.file=/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/img_sharpening_filter.cpp\ntb.file=/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/golden_output.txt\ntb.file=/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/golden_input.txt\ntb.file=/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/tb_img_sharpening_filter.cpp\nclock=8ns\nclock_uncertainty=12%\ncsim.code_analyzer=1\ncsim.clean=1"
+    "content": "part=xc7z007sclg400-1\n\n[hls]\nflow_target=vitis\npackage.output.format=ip_catalog\npackage.output.syn=1\nsyn.top=ImgSharpeningFilter\nsyn.file=/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/img_sharpening_filter.h\nsyn.file=/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/img_sharpening_filter.cpp\ntb.file=/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/golden_output.txt\ntb.file=/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/golden_input.txt\ntb.file=/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/tb_img_sharpening_filter.cpp\nclock=8ns\nclock_uncertainty=12%\ncsim.code_analyzer=1\ncsim.clean=1\npackage.ip.display_name=ImgSharpeningFilter"
    }
   ],
   "cwd": "/home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter"
@@ -38,10 +38,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Sat Jan 17 20:47:52 2026",
- "timestampMillis": "1768679272273",
+ "dateTimestamp": "Sat Jan 17 21:36:23 2026",
+ "timestampMillis": "1768682183147",
  "status": {
-  "cmdId": "b6b8fe92-e432-4b5c-ba46-6cdb0424c093",
+  "cmdId": "f9db4a35-8693-40a7-a45c-cc076e7d791f",
   "state": "CS_RUNNING"
  }
 }
@@ -49,8 +49,8 @@
 <ENTRY>
 {
  "type": "ET_FlowMetaData",
- "dateTimestamp": "Sat Jan 17 20:47:56 2026",
- "timestampMillis": "1768679276930",
+ "dateTimestamp": "Sat Jan 17 21:36:27 2026",
+ "timestampMillis": "1768682187724",
  "buildSummary": {
   "hardwarePlatform": "",
   "hardwareDsa": "",
@@ -64,7 +64,7 @@
     "base": {
      "type": "KERNEL",
      "name": "ImgSharpeningFilter",
-     "file": "",
+     "file": "/home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/ImgSharpeningFilter.zip",
      "reports": [],
      "uuid": ""
     },
@@ -86,10 +86,10 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "Sat Jan 17 20:47:56 2026",
- "timestampMillis": "1768679276931",
+ "dateTimestamp": "Sat Jan 17 21:36:27 2026",
+ "timestampMillis": "1768682187725",
  "buildStep": {
-  "cmdId": "f78414f8-3e2a-4400-9c1f-39768698a47f",
+  "cmdId": "953f9011-6ca0-4a84-abe6-b9f6f4bc1652",
   "name": "",
   "logFile": "/home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls/hls.log",
   "commandLine": "",
@@ -102,10 +102,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Sat Jan 17 20:47:56 2026",
- "timestampMillis": "1768679276931",
+ "dateTimestamp": "Sat Jan 17 21:36:27 2026",
+ "timestampMillis": "1768682187726",
  "status": {
-  "cmdId": "f78414f8-3e2a-4400-9c1f-39768698a47f",
+  "cmdId": "953f9011-6ca0-4a84-abe6-b9f6f4bc1652",
   "state": "CS_RUNNING"
  }
 }
@@ -113,8 +113,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Sat Jan 17 20:47:56 2026",
- "timestampMillis": "1768679276931",
+ "dateTimestamp": "Sat Jan 17 21:36:27 2026",
+ "timestampMillis": "1768682187726",
  "report": {
   "path": "/home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls/hls_data.json",
   "name": "",
@@ -127,8 +127,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Sat Jan 17 20:47:56 2026",
- "timestampMillis": "1768679276932",
+ "dateTimestamp": "Sat Jan 17 21:36:27 2026",
+ "timestampMillis": "1768682187726",
  "report": {
   "path": "/home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls/syn/report/csynth.rpt",
   "name": "",
@@ -141,8 +141,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Sat Jan 17 20:47:56 2026",
- "timestampMillis": "1768679276932",
+ "dateTimestamp": "Sat Jan 17 21:36:27 2026",
+ "timestampMillis": "1768682187727",
  "report": {
   "path": "/home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls/syn/report/csynth.xml",
   "name": "",
@@ -155,8 +155,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Sat Jan 17 20:48:11 2026",
- "timestampMillis": "1768679291041",
+ "dateTimestamp": "Sat Jan 17 21:36:41 2026",
+ "timestampMillis": "1768682201621",
  "report": {
   "path": "/home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls",
   "name": "",
@@ -169,8 +169,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Sat Jan 17 20:48:11 2026",
- "timestampMillis": "1768679291042",
+ "dateTimestamp": "Sat Jan 17 21:36:41 2026",
+ "timestampMillis": "1768682201622",
  "report": {
   "path": "/home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls",
   "name": "",
@@ -183,8 +183,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Sat Jan 17 20:48:11 2026",
- "timestampMillis": "1768679291042",
+ "dateTimestamp": "Sat Jan 17 21:36:41 2026",
+ "timestampMillis": "1768682201622",
  "report": {
   "path": "/home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls",
   "name": "",
@@ -197,10 +197,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Sat Jan 17 20:48:11 2026",
- "timestampMillis": "1768679291042",
+ "dateTimestamp": "Sat Jan 17 21:36:41 2026",
+ "timestampMillis": "1768682201622",
  "status": {
-  "cmdId": "f78414f8-3e2a-4400-9c1f-39768698a47f",
+  "cmdId": "953f9011-6ca0-4a84-abe6-b9f6f4bc1652",
   "state": "CS_PASSED"
  }
 }
@@ -208,10 +208,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Sat Jan 17 20:48:11 2026",
- "timestampMillis": "1768679291152",
+ "dateTimestamp": "Sat Jan 17 21:37:00 2026",
+ "timestampMillis": "1768682220826",
  "status": {
-  "cmdId": "b6b8fe92-e432-4b5c-ba46-6cdb0424c093",
+  "cmdId": "f9db4a35-8693-40a7-a45c-cc076e7d791f",
   "state": "CS_PASSED"
  }
 }
@@ -219,8 +219,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Sat Jan 17 20:48:11 2026",
- "timestampMillis": "1768679291192",
+ "dateTimestamp": "Sat Jan 17 21:37:00 2026",
+ "timestampMillis": "1768682220869",
  "report": {
   "path": "/home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/reports/v++_compile_ImgSharpeningFilter_guidance.html",
   "name": "",
@@ -233,8 +233,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Sat Jan 17 20:48:11 2026",
- "timestampMillis": "1768679291192",
+ "dateTimestamp": "Sat Jan 17 21:37:00 2026",
+ "timestampMillis": "1768682220870",
  "report": {
   "path": "/home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/reports/.db/v++_compile_ImgSharpeningFilter_guidance.pb3",
   "name": "",

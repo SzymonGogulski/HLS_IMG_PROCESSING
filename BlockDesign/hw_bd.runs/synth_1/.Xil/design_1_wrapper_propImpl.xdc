@@ -1,0 +1,5 @@
+set_property SRC_FILE_INFO {cfile:/home/szymon/Desktop/CORA_Z7/projekt/BlockDesign/hw_bd.srcs/constrs_1/new/physical.xdc rfile:../../../hw_bd.srcs/constrs_1/new/physical.xdc id:1} [current_design]
+set_property src_info {type:XDC file:1 line:3 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN G17 [get_ports {led_green_tri_o[0]}]
+set_property src_info {type:XDC file:1 line:4 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN M15 [get_ports {led_red_tri_o[0]}]

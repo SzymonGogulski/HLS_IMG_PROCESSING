@@ -2,7 +2,7 @@
 == Vivado RTL Synthesis Results
 ================================================================
 + General Information:
-    * Date:            Sat Jan 17 21:06:24 CET 2026
+    * Date:            Sat Jan 17 21:40:51 CET 2026
     * Version:         2025.1 (Build 6135595 on May 21 2025)
     * Project:         ImgSharpeningFilter
     * Solution:        hls (Vitis Kernel Flow Target)

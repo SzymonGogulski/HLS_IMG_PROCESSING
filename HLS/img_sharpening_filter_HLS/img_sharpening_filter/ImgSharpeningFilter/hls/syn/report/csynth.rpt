@@ -4,7 +4,7 @@
 == Synthesis Summary Report of 'ImgSharpeningFilter'
 ================================================================
 + General Information: 
-    * Date:           Sat Jan 17 20:48:10 2026
+    * Date:           Sat Jan 17 21:36:40 2026
     * Version:        2025.1 (Build 6135595 on May 21 2025)
     * Project:        ImgSharpeningFilter
     * Solution:       hls (Vitis Kernel Flow Target)

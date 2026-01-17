@@ -338,6 +338,7 @@
     <FIFOInformation/>
     <UserConfigCommands>
         <config_csim clean="1" code_analyzer="1"/>
+        <config_export display_name="ImgSharpeningFilter"/>
     </UserConfigCommands>
     <Args>
         <Arg ArgName="data_in_0" index="0" direction="in" srcType="ap_uint&lt;8&gt;" srcSize="8">

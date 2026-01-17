@@ -1,0 +1,4 @@
+domain_path: /home/szymon/Desktop/CORA_Z7/projekt/ZynqSoftware/zynq_hw/export/zynq_hw/sw/standalone_ps7_cortexa9_0
+app_src_dir: /home/szymon/tools/Xilinx/2025.1/Vitis/data/embeddedsw/lib/sw_apps/hello_world
+template: hello_world
+lang: c

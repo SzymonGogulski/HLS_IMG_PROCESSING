@@ -238,3 +238,180 @@ Sat Jan 17 21:07:42 2026: SERVER: destructor for server bound to port 43775
 Sat Jan 17 21:07:42 2026: XCD main fifo: Good unlink of /tmp/xcdmaina972dc3e-5550-48b1-b2e8-49f2d10e646d
 Sat Jan 17 21:07:42 2026: Server exiting with status 0.
 Sat Jan 17 21:07:42 2026: Closing log file.
+Sat Jan 17 21:31:00 2026: Running xcd server. This server was built by gradle.
+Sat Jan 17 21:31:00 2026: Server was asked to start on port: '35999'
+Sat Jan 17 21:31:00 2026: Server is using token UUID: 'b8fdae76-1863-4010-aa7b-e1cbaba4230f'
+Sat Jan 17 21:31:00 2026: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+Sat Jan 17 21:31:00 2026: Attempting to start server on port '35999'
+Sat Jan 17 21:31:00 2026: XCD main fifo: created main fifo '/tmp/xcdmainb8fdae76-1863-4010-aa7b-e1cbaba4230f', fd read = 12
+Sat Jan 17 21:31:00 2026: Running Dispatch Server
+Sat Jan 17 21:31:00 2026: Version 2.2.0
+Sat Jan 17 21:31:01 2026: Dispatch Server: Accepted socket connection from client
+Sat Jan 17 21:31:01 2026: Starting Socket connection
+Sat Jan 17 21:31:01 2026: EXCHANGE_TOKEN received, server token: b8fdae76-1863-4010-aa7b-e1cbaba4230f, passed token: b8fdae76-1863-4010-aa7b-e1cbaba4230f
+Sat Jan 17 21:31:01 2026: DISPATCH_HANDLER: Adding handler from function makeHandler in library libxv_system_diagram
+Sat Jan 17 21:31:01 2026: SESSION_MGR: creating session with session uuid: 'bdaff564-2509-40bd-b411-a79d8e9aab96' and name 'vitis-run_compile_ImgSharpeningFilter'
+Sat Jan 17 21:31:01 2026: KERNEL_SVC: creating session with uuid: 'bdaff564-2509-40bd-b411-a79d8e9aab96' and name 'vitis-run_compile_ImgSharpeningFilter'
+Sat Jan 17 21:31:01 2026: GUIDANCE_SMGR: creating guidance session with uuid: 'bdaff564-2509-40bd-b411-a79d8e9aab96' and name 'vitis-run_compile_ImgSharpeningFilter'
+Sat Jan 17 21:31:01 2026: SYSTEM_DIAGRAM: creating session with uuid: 'bdaff564-2509-40bd-b411-a79d8e9aab96' and name 'vitis-run_compile_ImgSharpeningFilter'
+Sat Jan 17 21:31:05 2026: Dispatch Server: Accepted socket connection from client
+Sat Jan 17 21:31:05 2026: Starting Socket connection
+Sat Jan 17 21:31:37 2026: SESSION_MGR: closing session for UUID 'bdaff564-2509-40bd-b411-a79d8e9aab96' with name 'vitis-run_compile_ImgSharpeningFilter'
+Sat Jan 17 21:31:37 2026: KERNEL_SVC: closing session for UUID 'bdaff564-2509-40bd-b411-a79d8e9aab96' with name 'vitis-run_compile_ImgSharpeningFilter'
+Sat Jan 17 21:31:37 2026: GUIDANCE_SMGR: closing session for UUID 'bdaff564-2509-40bd-b411-a79d8e9aab96' with name 'vitis-run_compile_ImgSharpeningFilter'
+Sat Jan 17 21:31:37 2026: SYSTEM_DIAGRAM: closing session for UUID 'bdaff564-2509-40bd-b411-a79d8e9aab96' with name 'vitis-run_compile_ImgSharpeningFilter'
+Sat Jan 17 21:31:37 2026: STOP_SERVER received, server token: b8fdae76-1863-4010-aa7b-e1cbaba4230f, passed token: b8fdae76-1863-4010-aa7b-e1cbaba4230f
+Sat Jan 17 21:31:37 2026: Socket received request to stop server.
+Sat Jan 17 21:31:37 2026: Dispatch Server: do_await_stop
+Sat Jan 17 21:31:37 2026: Dispatch Server: stopping mainFifo_
+Sat Jan 17 21:31:37 2026: XCD main fifo: Stopping
+Sat Jan 17 21:31:37 2026: XCD main fifo: do_read error code: Operation canceled
+Sat Jan 17 21:31:37 2026: XCD main fifo: bytes_transferred: 0
+Sat Jan 17 21:31:37 2026: SERVER: destructor for server bound to port 35999
+Sat Jan 17 21:31:37 2026: XCD main fifo: Good unlink of /tmp/xcdmainb8fdae76-1863-4010-aa7b-e1cbaba4230f
+Sat Jan 17 21:31:37 2026: Server exiting with status 0.
+Sat Jan 17 21:31:37 2026: Closing log file.
+Sat Jan 17 21:32:50 2026: Running xcd server. This server was built by gradle.
+Sat Jan 17 21:32:50 2026: Server was asked to start on port: '42265'
+Sat Jan 17 21:32:50 2026: Server is using token UUID: 'b0e9d591-125e-441d-b1c9-1b23a547f919'
+Sat Jan 17 21:32:50 2026: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+Sat Jan 17 21:32:50 2026: Attempting to start server on port '42265'
+Sat Jan 17 21:32:50 2026: XCD main fifo: created main fifo '/tmp/xcdmainb0e9d591-125e-441d-b1c9-1b23a547f919', fd read = 12
+Sat Jan 17 21:32:50 2026: Running Dispatch Server
+Sat Jan 17 21:32:50 2026: Version 2.2.0
+Sat Jan 17 21:32:51 2026: Dispatch Server: Accepted socket connection from client
+Sat Jan 17 21:32:51 2026: Starting Socket connection
+Sat Jan 17 21:32:51 2026: EXCHANGE_TOKEN received, server token: b0e9d591-125e-441d-b1c9-1b23a547f919, passed token: b0e9d591-125e-441d-b1c9-1b23a547f919
+Sat Jan 17 21:32:52 2026: DISPATCH_HANDLER: Adding handler from function makeHandler in library libxv_system_diagram
+Sat Jan 17 21:32:52 2026: SESSION_MGR: creating session with session uuid: '06c52d03-0ba3-4afd-a8c9-a44d14f7a62f' and name 'vitis-run_compile_ImgSharpeningFilter'
+Sat Jan 17 21:32:52 2026: KERNEL_SVC: creating session with uuid: '06c52d03-0ba3-4afd-a8c9-a44d14f7a62f' and name 'vitis-run_compile_ImgSharpeningFilter'
+Sat Jan 17 21:32:52 2026: GUIDANCE_SMGR: creating guidance session with uuid: '06c52d03-0ba3-4afd-a8c9-a44d14f7a62f' and name 'vitis-run_compile_ImgSharpeningFilter'
+Sat Jan 17 21:32:52 2026: SYSTEM_DIAGRAM: creating session with uuid: '06c52d03-0ba3-4afd-a8c9-a44d14f7a62f' and name 'vitis-run_compile_ImgSharpeningFilter'
+Sat Jan 17 21:32:56 2026: Dispatch Server: Accepted socket connection from client
+Sat Jan 17 21:32:56 2026: Starting Socket connection
+Sat Jan 17 21:33:33 2026: Dispatch Server: Accepted socket connection from client
+Sat Jan 17 21:33:33 2026: Starting Socket connection
+Sat Jan 17 21:34:15 2026: Dispatch Server: Accepted socket connection from client
+Sat Jan 17 21:34:15 2026: Starting Socket connection
+Sat Jan 17 21:35:12 2026: Dispatch Server: Accepted socket connection from client
+Sat Jan 17 21:35:12 2026: Starting Socket connection
+Sat Jan 17 21:36:05 2026: SESSION_MGR: closing session for UUID '06c52d03-0ba3-4afd-a8c9-a44d14f7a62f' with name 'vitis-run_compile_ImgSharpeningFilter'
+Sat Jan 17 21:36:05 2026: KERNEL_SVC: closing session for UUID '06c52d03-0ba3-4afd-a8c9-a44d14f7a62f' with name 'vitis-run_compile_ImgSharpeningFilter'
+Sat Jan 17 21:36:05 2026: GUIDANCE_SMGR: closing session for UUID '06c52d03-0ba3-4afd-a8c9-a44d14f7a62f' with name 'vitis-run_compile_ImgSharpeningFilter'
+Sat Jan 17 21:36:05 2026: SYSTEM_DIAGRAM: closing session for UUID '06c52d03-0ba3-4afd-a8c9-a44d14f7a62f' with name 'vitis-run_compile_ImgSharpeningFilter'
+Sat Jan 17 21:36:05 2026: STOP_SERVER received, server token: b0e9d591-125e-441d-b1c9-1b23a547f919, passed token: b0e9d591-125e-441d-b1c9-1b23a547f919
+Sat Jan 17 21:36:05 2026: Socket received request to stop server.
+Sat Jan 17 21:36:05 2026: Dispatch Server: do_await_stop
+Sat Jan 17 21:36:05 2026: Dispatch Server: stopping mainFifo_
+Sat Jan 17 21:36:05 2026: XCD main fifo: Stopping
+Sat Jan 17 21:36:05 2026: XCD main fifo: do_read error code: Operation canceled
+Sat Jan 17 21:36:05 2026: XCD main fifo: bytes_transferred: 0
+Sat Jan 17 21:36:05 2026: SERVER: destructor for server bound to port 42265
+Sat Jan 17 21:36:05 2026: XCD main fifo: Good unlink of /tmp/xcdmainb0e9d591-125e-441d-b1c9-1b23a547f919
+Sat Jan 17 21:36:05 2026: Server exiting with status 0.
+Sat Jan 17 21:36:05 2026: Closing log file.
+Sat Jan 17 21:36:22 2026: Running xcd server. This server was built by gradle.
+Sat Jan 17 21:36:22 2026: Server was asked to start on port: '42939'
+Sat Jan 17 21:36:22 2026: Server is using token UUID: '1591bb1b-43b6-4af8-91d0-a998f072a35d'
+Sat Jan 17 21:36:22 2026: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+Sat Jan 17 21:36:22 2026: Attempting to start server on port '42939'
+Sat Jan 17 21:36:22 2026: XCD main fifo: created main fifo '/tmp/xcdmain1591bb1b-43b6-4af8-91d0-a998f072a35d', fd read = 12
+Sat Jan 17 21:36:22 2026: Running Dispatch Server
+Sat Jan 17 21:36:22 2026: Version 2.2.0
+Sat Jan 17 21:36:23 2026: Dispatch Server: Accepted socket connection from client
+Sat Jan 17 21:36:23 2026: Starting Socket connection
+Sat Jan 17 21:36:23 2026: EXCHANGE_TOKEN received, server token: 1591bb1b-43b6-4af8-91d0-a998f072a35d, passed token: 1591bb1b-43b6-4af8-91d0-a998f072a35d
+Sat Jan 17 21:36:23 2026: DISPATCH_HANDLER: Adding handler from function makeHandler in library libxv_system_diagram
+Sat Jan 17 21:36:23 2026: SESSION_MGR: creating session with session uuid: 'de974d29-ec24-40fb-bbd5-6079307dd46a' and name 'v++_compile_ImgSharpeningFilter'
+Sat Jan 17 21:36:23 2026: KERNEL_SVC: creating session with uuid: 'de974d29-ec24-40fb-bbd5-6079307dd46a' and name 'v++_compile_ImgSharpeningFilter'
+Sat Jan 17 21:36:23 2026: GUIDANCE_SMGR: creating guidance session with uuid: 'de974d29-ec24-40fb-bbd5-6079307dd46a' and name 'v++_compile_ImgSharpeningFilter'
+Sat Jan 17 21:36:23 2026: SYSTEM_DIAGRAM: creating session with uuid: 'de974d29-ec24-40fb-bbd5-6079307dd46a' and name 'v++_compile_ImgSharpeningFilter'
+Sat Jan 17 21:36:27 2026: Dispatch Server: Accepted socket connection from client
+Sat Jan 17 21:36:27 2026: Starting Socket connection
+Sat Jan 17 21:37:00 2026: SESSION_MGR: closing session for UUID 'de974d29-ec24-40fb-bbd5-6079307dd46a' with name 'v++_compile_ImgSharpeningFilter'
+Sat Jan 17 21:37:00 2026: KERNEL_SVC: closing session for UUID 'de974d29-ec24-40fb-bbd5-6079307dd46a' with name 'v++_compile_ImgSharpeningFilter'
+Sat Jan 17 21:37:00 2026: GUIDANCE_SMGR: closing session for UUID 'de974d29-ec24-40fb-bbd5-6079307dd46a' with name 'v++_compile_ImgSharpeningFilter'
+Sat Jan 17 21:37:00 2026: SYSTEM_DIAGRAM: closing session for UUID 'de974d29-ec24-40fb-bbd5-6079307dd46a' with name 'v++_compile_ImgSharpeningFilter'
+Sat Jan 17 21:37:00 2026: STOP_SERVER received, server token: 1591bb1b-43b6-4af8-91d0-a998f072a35d, passed token: 1591bb1b-43b6-4af8-91d0-a998f072a35d
+Sat Jan 17 21:37:00 2026: Socket received request to stop server.
+Sat Jan 17 21:37:00 2026: Dispatch Server: do_await_stop
+Sat Jan 17 21:37:00 2026: Dispatch Server: stopping mainFifo_
+Sat Jan 17 21:37:00 2026: XCD main fifo: Stopping
+Sat Jan 17 21:37:00 2026: XCD main fifo: do_read error code: Operation canceled
+Sat Jan 17 21:37:00 2026: XCD main fifo: bytes_transferred: 0
+Sat Jan 17 21:37:00 2026: SERVER: destructor for server bound to port 42939
+Sat Jan 17 21:37:00 2026: XCD main fifo: Good unlink of /tmp/xcdmain1591bb1b-43b6-4af8-91d0-a998f072a35d
+Sat Jan 17 21:37:00 2026: Server exiting with status 0.
+Sat Jan 17 21:37:00 2026: Closing log file.
+Sat Jan 17 21:37:34 2026: Running xcd server. This server was built by gradle.
+Sat Jan 17 21:37:34 2026: Server was asked to start on port: '44491'
+Sat Jan 17 21:37:34 2026: Server is using token UUID: 'dbb873f3-8d3a-45a5-9437-ab1340c9659f'
+Sat Jan 17 21:37:34 2026: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+Sat Jan 17 21:37:34 2026: Attempting to start server on port '44491'
+Sat Jan 17 21:37:34 2026: XCD main fifo: created main fifo '/tmp/xcdmaindbb873f3-8d3a-45a5-9437-ab1340c9659f', fd read = 12
+Sat Jan 17 21:37:34 2026: Running Dispatch Server
+Sat Jan 17 21:37:34 2026: Version 2.2.0
+Sat Jan 17 21:37:35 2026: Dispatch Server: Accepted socket connection from client
+Sat Jan 17 21:37:35 2026: Starting Socket connection
+Sat Jan 17 21:37:35 2026: EXCHANGE_TOKEN received, server token: dbb873f3-8d3a-45a5-9437-ab1340c9659f, passed token: dbb873f3-8d3a-45a5-9437-ab1340c9659f
+Sat Jan 17 21:37:35 2026: DISPATCH_HANDLER: Adding handler from function makeHandler in library libxv_system_diagram
+Sat Jan 17 21:37:35 2026: SESSION_MGR: creating session with session uuid: '58b16b04-9cb9-41e6-a905-5c555013f880' and name 'vitis-run_compile_ImgSharpeningFilter'
+Sat Jan 17 21:37:35 2026: KERNEL_SVC: creating session with uuid: '58b16b04-9cb9-41e6-a905-5c555013f880' and name 'vitis-run_compile_ImgSharpeningFilter'
+Sat Jan 17 21:37:35 2026: GUIDANCE_SMGR: creating guidance session with uuid: '58b16b04-9cb9-41e6-a905-5c555013f880' and name 'vitis-run_compile_ImgSharpeningFilter'
+Sat Jan 17 21:37:35 2026: SYSTEM_DIAGRAM: creating session with uuid: '58b16b04-9cb9-41e6-a905-5c555013f880' and name 'vitis-run_compile_ImgSharpeningFilter'
+Sat Jan 17 21:37:40 2026: Dispatch Server: Accepted socket connection from client
+Sat Jan 17 21:37:40 2026: Starting Socket connection
+Sat Jan 17 21:38:16 2026: Dispatch Server: Accepted socket connection from client
+Sat Jan 17 21:38:16 2026: Starting Socket connection
+Sat Jan 17 21:39:01 2026: Dispatch Server: Accepted socket connection from client
+Sat Jan 17 21:39:01 2026: Starting Socket connection
+Sat Jan 17 21:39:58 2026: Dispatch Server: Accepted socket connection from client
+Sat Jan 17 21:39:58 2026: Starting Socket connection
+Sat Jan 17 21:40:51 2026: SESSION_MGR: closing session for UUID '58b16b04-9cb9-41e6-a905-5c555013f880' with name 'vitis-run_compile_ImgSharpeningFilter'
+Sat Jan 17 21:40:51 2026: KERNEL_SVC: closing session for UUID '58b16b04-9cb9-41e6-a905-5c555013f880' with name 'vitis-run_compile_ImgSharpeningFilter'
+Sat Jan 17 21:40:51 2026: GUIDANCE_SMGR: closing session for UUID '58b16b04-9cb9-41e6-a905-5c555013f880' with name 'vitis-run_compile_ImgSharpeningFilter'
+Sat Jan 17 21:40:51 2026: SYSTEM_DIAGRAM: closing session for UUID '58b16b04-9cb9-41e6-a905-5c555013f880' with name 'vitis-run_compile_ImgSharpeningFilter'
+Sat Jan 17 21:40:51 2026: STOP_SERVER received, server token: dbb873f3-8d3a-45a5-9437-ab1340c9659f, passed token: dbb873f3-8d3a-45a5-9437-ab1340c9659f
+Sat Jan 17 21:40:51 2026: Socket received request to stop server.
+Sat Jan 17 21:40:51 2026: Dispatch Server: do_await_stop
+Sat Jan 17 21:40:51 2026: Dispatch Server: stopping mainFifo_
+Sat Jan 17 21:40:51 2026: XCD main fifo: Stopping
+Sat Jan 17 21:40:51 2026: XCD main fifo: do_read error code: Operation canceled
+Sat Jan 17 21:40:51 2026: XCD main fifo: bytes_transferred: 0
+Sat Jan 17 21:40:51 2026: SERVER: destructor for server bound to port 44491
+Sat Jan 17 21:40:51 2026: XCD main fifo: Good unlink of /tmp/xcdmaindbb873f3-8d3a-45a5-9437-ab1340c9659f
+Sat Jan 17 21:40:51 2026: Server exiting with status 0.
+Sat Jan 17 21:40:51 2026: Closing log file.
+Sat Jan 17 21:41:46 2026: Running xcd server. This server was built by gradle.
+Sat Jan 17 21:41:46 2026: Server was asked to start on port: '37921'
+Sat Jan 17 21:41:46 2026: Server is using token UUID: '14fa763c-bfe0-453f-9e56-a7667573e84e'
+Sat Jan 17 21:41:46 2026: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+Sat Jan 17 21:41:46 2026: Attempting to start server on port '37921'
+Sat Jan 17 21:41:46 2026: XCD main fifo: created main fifo '/tmp/xcdmain14fa763c-bfe0-453f-9e56-a7667573e84e', fd read = 12
+Sat Jan 17 21:41:46 2026: Running Dispatch Server
+Sat Jan 17 21:41:46 2026: Version 2.2.0
+Sat Jan 17 21:41:47 2026: Dispatch Server: Accepted socket connection from client
+Sat Jan 17 21:41:47 2026: Starting Socket connection
+Sat Jan 17 21:41:47 2026: EXCHANGE_TOKEN received, server token: 14fa763c-bfe0-453f-9e56-a7667573e84e, passed token: 14fa763c-bfe0-453f-9e56-a7667573e84e
+Sat Jan 17 21:41:47 2026: DISPATCH_HANDLER: Adding handler from function makeHandler in library libxv_system_diagram
+Sat Jan 17 21:41:47 2026: SESSION_MGR: creating session with session uuid: '1e7e1208-0739-49ae-9380-595150205890' and name 'vitis-run_compile_ImgSharpeningFilter'
+Sat Jan 17 21:41:47 2026: KERNEL_SVC: creating session with uuid: '1e7e1208-0739-49ae-9380-595150205890' and name 'vitis-run_compile_ImgSharpeningFilter'
+Sat Jan 17 21:41:47 2026: GUIDANCE_SMGR: creating guidance session with uuid: '1e7e1208-0739-49ae-9380-595150205890' and name 'vitis-run_compile_ImgSharpeningFilter'
+Sat Jan 17 21:41:47 2026: SYSTEM_DIAGRAM: creating session with uuid: '1e7e1208-0739-49ae-9380-595150205890' and name 'vitis-run_compile_ImgSharpeningFilter'
+Sat Jan 17 21:41:52 2026: Dispatch Server: Accepted socket connection from client
+Sat Jan 17 21:41:52 2026: Starting Socket connection
+Sat Jan 17 21:42:08 2026: SESSION_MGR: closing session for UUID '1e7e1208-0739-49ae-9380-595150205890' with name 'vitis-run_compile_ImgSharpeningFilter'
+Sat Jan 17 21:42:08 2026: KERNEL_SVC: closing session for UUID '1e7e1208-0739-49ae-9380-595150205890' with name 'vitis-run_compile_ImgSharpeningFilter'
+Sat Jan 17 21:42:08 2026: GUIDANCE_SMGR: closing session for UUID '1e7e1208-0739-49ae-9380-595150205890' with name 'vitis-run_compile_ImgSharpeningFilter'
+Sat Jan 17 21:42:08 2026: SYSTEM_DIAGRAM: closing session for UUID '1e7e1208-0739-49ae-9380-595150205890' with name 'vitis-run_compile_ImgSharpeningFilter'
+Sat Jan 17 21:42:08 2026: STOP_SERVER received, server token: 14fa763c-bfe0-453f-9e56-a7667573e84e, passed token: 14fa763c-bfe0-453f-9e56-a7667573e84e
+Sat Jan 17 21:42:08 2026: Socket received request to stop server.
+Sat Jan 17 21:42:08 2026: Dispatch Server: do_await_stop
+Sat Jan 17 21:42:08 2026: Dispatch Server: stopping mainFifo_
+Sat Jan 17 21:42:08 2026: XCD main fifo: Stopping
+Sat Jan 17 21:42:08 2026: XCD main fifo: do_read error code: Operation canceled
+Sat Jan 17 21:42:08 2026: XCD main fifo: bytes_transferred: 0
+Sat Jan 17 21:42:08 2026: SERVER: destructor for server bound to port 37921
+Sat Jan 17 21:42:08 2026: XCD main fifo: Good unlink of /tmp/xcdmain14fa763c-bfe0-453f-9e56-a7667573e84e
+Sat Jan 17 21:42:08 2026: Server exiting with status 0.
+Sat Jan 17 21:42:08 2026: Closing log file.

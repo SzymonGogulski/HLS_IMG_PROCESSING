@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Wed May 21 22:58:25 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Sat Jan 17 22:11:21 2026
+# Process ID         : 44664
+# Current directory  : /home/szymon/Desktop/CORA_Z7/projekt/BlockDesign/hw_bd.runs/synth_1
+# Command line       : vivado -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
+# Log file           : /home/szymon/Desktop/CORA_Z7/projekt/BlockDesign/hw_bd.runs/synth_1/design_1_wrapper.vds
+# Journal file       : /home/szymon/Desktop/CORA_Z7/projekt/BlockDesign/hw_bd.runs/synth_1/vivado.jou
+# Running On         : szymon
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.3 LTS
+# Processor Detail   : AMD Ryzen 7 4700U with Radeon Graphics
+# CPU Frequency      : 4184.356 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 8
+# Host memory        : 16157 MB
+# Swap memory        : 4294 MB
+# Total Virtual      : 20452 MB
+# Available Virtual  : 13399 MB
+#-----------------------------------------------------------
+source design_1_wrapper.tcl -notrace

@@ -48,11 +48,11 @@
 
 
 // IP VLNV: xilinx.com:hls:ImgSharpeningFilter:1.0
-// IP Revision: 2114440503
+// IP Revision: 2114440537
 
 (* X_CORE_INFO = "ImgSharpeningFilter,Vivado 2025.1" *)
 (* CHECK_LICENSE_TYPE = "bd_0_hls_inst_0,ImgSharpeningFilter,{}" *)
-(* CORE_GENERATION_INFO = "bd_0_hls_inst_0,ImgSharpeningFilter,{x_ipProduct=Vivado 2025.1,x_ipVendor=xilinx.com,x_ipLibrary=hls,x_ipName=ImgSharpeningFilter,x_ipVersion=1.0,x_ipCoreRevision=2114440503,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_S_AXI_CTRL_ADDR_WIDTH=6,C_S_AXI_CTRL_DATA_WIDTH=32}" *)
+(* CORE_GENERATION_INFO = "bd_0_hls_inst_0,ImgSharpeningFilter,{x_ipProduct=Vivado 2025.1,x_ipVendor=xilinx.com,x_ipLibrary=hls,x_ipName=ImgSharpeningFilter,x_ipVersion=1.0,x_ipCoreRevision=2114440537,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_S_AXI_CTRL_ADDR_WIDTH=6,C_S_AXI_CTRL_DATA_WIDTH=32}" *)
 (* IP_DEFINITION_SOURCE = "HLS" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module bd_0_hls_inst_0 (

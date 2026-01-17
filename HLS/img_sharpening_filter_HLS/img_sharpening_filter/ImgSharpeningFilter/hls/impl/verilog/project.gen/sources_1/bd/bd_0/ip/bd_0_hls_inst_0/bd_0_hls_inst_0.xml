@@ -1012,7 +1012,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:da1e03ae</spirit:value>
+            <spirit:value>9:7bf4ac4b</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1026,11 +1026,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sat Jan 17 20:04:25 UTC 2026</spirit:value>
+            <spirit:value>Sat Jan 17 20:38:44 UTC 2026</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:da1e03ae</spirit:value>
+            <spirit:value>9:7bf4ac4b</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1044,11 +1044,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sat Jan 17 20:03:48 UTC 2026</spirit:value>
+            <spirit:value>Sat Jan 17 20:38:08 UTC 2026</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:da1e03ae</spirit:value>
+            <spirit:value>9:7bf4ac4b</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1059,7 +1059,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:da1e03ae</spirit:value>
+            <spirit:value>9:7bf4ac4b</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1075,11 +1075,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sat Jan 17 20:03:48 UTC 2026</spirit:value>
+            <spirit:value>Sat Jan 17 20:38:08 UTC 2026</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:f8b96a81</spirit:value>
+            <spirit:value>9:5953c564</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1095,11 +1095,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sat Jan 17 20:03:48 UTC 2026</spirit:value>
+            <spirit:value>Sat Jan 17 20:38:08 UTC 2026</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:f8b96a81</spirit:value>
+            <spirit:value>9:5953c564</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1115,11 +1115,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sat Jan 17 20:03:48 UTC 2026</spirit:value>
+            <spirit:value>Sat Jan 17 20:38:08 UTC 2026</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:da1e03ae</spirit:value>
+            <spirit:value>9:7bf4ac4b</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1135,11 +1135,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sat Jan 17 20:03:48 UTC 2026</spirit:value>
+            <spirit:value>Sat Jan 17 20:38:08 UTC 2026</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:da1e03ae</spirit:value>
+            <spirit:value>9:7bf4ac4b</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1528,12 +1528,12 @@
     <spirit:fileSet>
       <spirit:name>xilinx_verilogbehavioralsimulation_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ipshared/987e/hdl/verilog/ImgSharpeningFilter_CTRL_s_axi.v</spirit:name>
+        <spirit:name>../../ipshared/0930/hdl/verilog/ImgSharpeningFilter_CTRL_s_axi.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/987e/hdl/verilog/ImgSharpeningFilter.v</spirit:name>
+        <spirit:name>../../ipshared/0930/hdl/verilog/ImgSharpeningFilter.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -1554,11 +1554,11 @@
         <spirit:userFileType>USED_IN_out_of_context</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/987e/hdl/verilog/ImgSharpeningFilter_CTRL_s_axi.v</spirit:name>
+        <spirit:name>../../ipshared/0930/hdl/verilog/ImgSharpeningFilter_CTRL_s_axi.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/987e/hdl/verilog/ImgSharpeningFilter.v</spirit:name>
+        <spirit:name>../../ipshared/0930/hdl/verilog/ImgSharpeningFilter.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
     </spirit:fileSet>
@@ -1635,9 +1635,9 @@
   </spirit:parameters>
   <spirit:vendorExtensions>
     <xilinx:coreExtensions>
-      <xilinx:displayName>Imgsharpeningfilter</xilinx:displayName>
+      <xilinx:displayName>ImgSharpeningFilter</xilinx:displayName>
       <xilinx:definitionSource>HLS</xilinx:definitionSource>
-      <xilinx:coreRevision>2114440503</xilinx:coreRevision>
+      <xilinx:coreRevision>2114440537</xilinx:coreRevision>
       <xilinx:sdxKernelAttributes>
         <xilinx:sdx_kernel>true</xilinx:sdx_kernel>
         <xilinx:sdx_kernel_type>hls</xilinx:sdx_kernel_type>

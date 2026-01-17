@@ -574,7 +574,7 @@
                                     "line": 43,
                                     "column": 22
                                 },
-                                "id": "V_0x0x59b7692a36c8_!c?(?,?)",
+                                "id": "V_0x0x55d03f6f24b8_!c?(?,?)",
                                 "name": "AddRes.0",
                                 "display_name": "i32 AddRes.0"
                             },
@@ -663,7 +663,7 @@
                                     "line": 43,
                                     "column": 22
                                 },
-                                "id": "V_0x0x59b7692a36c8_!c?(?,?)",
+                                "id": "V_0x0x55d03f6f24b8_!c?(?,?)",
                                 "name": "AddRes.0",
                                 "display_name": "i32 AddRes.0"
                             },
@@ -708,7 +708,7 @@
                                     "line": 0,
                                     "column": 0
                                 },
-                                "id": "V_0x0x59b7692a2da8_!c?(?,?)",
+                                "id": "V_0x0x55d03c9a16e8_!c?(?,?)",
                                 "name": "AddRes.2",
                                 "display_name": "i32 AddRes.2"
                             },
@@ -780,7 +780,7 @@
                                     "line": 0,
                                     "column": 0
                                 },
-                                "id": "V_0x0x59b7692a2da8_!c?(?,?)",
+                                "id": "V_0x0x55d03c9a16e8_!c?(?,?)",
                                 "name": "AddRes.2",
                                 "display_name": "i32 AddRes.2"
                             },
@@ -825,7 +825,7 @@
                                     "line": 0,
                                     "column": 0
                                 },
-                                "id": "V_0x0x59b7692a2708_!c?(?,?)",
+                                "id": "V_0x0x55d03c9a1588_!c?(?,?)",
                                 "name": "AddRes.3",
                                 "display_name": "i32 AddRes.3"
                             },
@@ -931,7 +931,7 @@
                                     "line": 0,
                                     "column": 0
                                 },
-                                "id": "V_0x0x59b7692a2708_!c?(?,?)",
+                                "id": "V_0x0x55d03c9a1588_!c?(?,?)",
                                 "name": "AddRes.3",
                                 "display_name": "i32 AddRes.3"
                             },
@@ -1157,7 +1157,7 @@
             },
             "AddRes.0_RAW_6_7_#11": {
                 "name": "AddRes.0_RAW_6_7_#11",
-                "variable_id": "V_0x0x59b7692a36c8_!c?(?,?)",
+                "variable_id": "V_0x0x55d03f6f24b8_!c?(?,?)",
                 "variable_name": "AddRes.0",
                 "declaration": "i32 AddRes.0",
                 "kind": "SSA",
@@ -1173,7 +1173,7 @@
             },
             "AddRes.2_RAW_7_8_#12": {
                 "name": "AddRes.2_RAW_7_8_#12",
-                "variable_id": "V_0x0x59b7692a2da8_!c?(?,?)",
+                "variable_id": "V_0x0x55d03c9a16e8_!c?(?,?)",
                 "variable_name": "AddRes.2",
                 "declaration": "i32 AddRes.2",
                 "kind": "SSA",
@@ -1189,7 +1189,7 @@
             },
             "AddRes.3_RAW_8_9_#13": {
                 "name": "AddRes.3_RAW_8_9_#13",
-                "variable_id": "V_0x0x59b7692a2708_!c?(?,?)",
+                "variable_id": "V_0x0x55d03c9a1588_!c?(?,?)",
                 "variable_name": "AddRes.3",
                 "declaration": "i32 AddRes.3",
                 "kind": "SSA",

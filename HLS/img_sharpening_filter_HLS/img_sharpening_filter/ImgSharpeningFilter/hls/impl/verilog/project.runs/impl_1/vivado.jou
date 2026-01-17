@@ -3,8 +3,8 @@
 # SW Build 6140274 on Wed May 21 22:58:25 MDT 2025
 # IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
 # SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
-# Start of session at: Sat Jan 17 21:05:34 2026
-# Process ID         : 9820
+# Start of session at: Sat Jan 17 21:39:56 2026
+# Process ID         : 32530
 # Current directory  : /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls/impl/verilog/project.runs/impl_1
 # Command line       : vivado -log bd_0_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source bd_0_wrapper.tcl -notrace
 # Log file           : /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls/impl/verilog/project.runs/impl_1/bd_0_wrapper.vdi
@@ -13,12 +13,12 @@
 # Platform           : Ubuntu
 # Operating System   : Ubuntu 24.04.3 LTS
 # Processor Detail   : AMD Ryzen 7 4700U with Radeon Graphics
-# CPU Frequency      : 1863.153 MHz
+# CPU Frequency      : 4191.935 MHz
 # CPU Physical cores : 8
 # CPU Logical cores  : 8
 # Host memory        : 16157 MB
 # Swap memory        : 4294 MB
 # Total Virtual      : 20452 MB
-# Available Virtual  : 14351 MB
+# Available Virtual  : 13143 MB
 #-----------------------------------------------------------
 source bd_0_wrapper.tcl -notrace

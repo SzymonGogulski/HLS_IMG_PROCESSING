@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2025.1 (lin64) Build 6140274 Wed May 21 22:58:25 MDT 2025
-| Date         : Sat Jan 17 21:05:52 2026
+| Date         : Sat Jan 17 21:40:14 2026
 | Host         : szymon running 64-bit Ubuntu 24.04.3 LTS
 | Command      : report_control_sets -verbose -file bd_0_wrapper_control_sets_placed.rpt
 | Design       : bd_0_wrapper
@@ -77,10 +77,10 @@ Table of Contents
 |  ap_clk      | bd_0_i/hls_inst/inst/CTRL_s_axi_U/waddr                    |                                                    |                1 |              4 |         4.00 |
 |  ap_clk      | bd_0_i/hls_inst/inst/CTRL_s_axi_U/ar_hs                    | bd_0_i/hls_inst/inst/CTRL_s_axi_U/rdata[7]_i_1_n_0 |                2 |              4 |         2.00 |
 |  ap_clk      | bd_0_i/hls_inst/inst/CTRL_s_axi_U/ar_hs                    |                                                    |                3 |              5 |         1.67 |
+|  ap_clk      | bd_0_i/hls_inst/inst/CTRL_s_axi_U/ap_done                  | bd_0_i/hls_inst/inst/ap_rst_n_inv                  |                1 |              8 |         8.00 |
 |  ap_clk      | bd_0_i/hls_inst/inst/CTRL_s_axi_U/int_data_in_2[7]_i_1_n_0 | bd_0_i/hls_inst/inst/ap_rst_n_inv                  |                2 |              8 |         4.00 |
 |  ap_clk      | bd_0_i/hls_inst/inst/CTRL_s_axi_U/int_data_in_1[7]_i_1_n_0 | bd_0_i/hls_inst/inst/ap_rst_n_inv                  |                2 |              8 |         4.00 |
 |  ap_clk      | bd_0_i/hls_inst/inst/CTRL_s_axi_U/int_data_in_0[7]_i_1_n_0 | bd_0_i/hls_inst/inst/ap_rst_n_inv                  |                1 |              8 |         8.00 |
-|  ap_clk      | bd_0_i/hls_inst/inst/CTRL_s_axi_U/ap_done                  | bd_0_i/hls_inst/inst/ap_rst_n_inv                  |                1 |              8 |         8.00 |
 |  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state2                      | bd_0_i/hls_inst/inst/tmp_2_reg_254[2]_i_1_n_0      |                3 |             11 |         3.67 |
 |  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state3                      |                                                    |                4 |             16 |         4.00 |
 |  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state2                      |                                                    |                3 |             16 |         5.33 |

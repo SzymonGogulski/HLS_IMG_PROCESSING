@@ -1,0 +1,29 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Wed May 21 22:58:25 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Sat Jan 17 22:07:42 2026
+# Process ID         : 43650
+# Current directory  : /home/szymon/Desktop/CORA_Z7/projekt/BlockDesign/hw_bd.runs/design_1_axi_gpio_0_0_synth_1
+# Command line       : vivado -log design_1_axi_gpio_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_axi_gpio_0_0.tcl
+# Log file           : /home/szymon/Desktop/CORA_Z7/projekt/BlockDesign/hw_bd.runs/design_1_axi_gpio_0_0_synth_1/design_1_axi_gpio_0_0.vds
+# Journal file       : /home/szymon/Desktop/CORA_Z7/projekt/BlockDesign/hw_bd.runs/design_1_axi_gpio_0_0_synth_1/vivado.jou
+# Running On         : szymon
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.3 LTS
+# Processor Detail   : AMD Ryzen 7 4700U with Radeon Graphics
+# CPU Frequency      : 4188.109 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 8
+# Host memory        : 16157 MB
+# Swap memory        : 4294 MB
+# Total Virtual      : 20452 MB
+# Available Virtual  : 13490 MB
+#-----------------------------------------------------------
+source design_1_axi_gpio_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/ImgSharpeningFilter'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/szymon/tools/Xilinx/2025.1/Vivado/data/ip'.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP design_1_axi_gpio_0_0, cache-ID = 50e83448657c535b.
+INFO: [Common 17-206] Exiting Vivado at Sat Jan 17 22:07:46 2026...

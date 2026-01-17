@@ -20,7 +20,7 @@
                 "-o",
                 "/home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls/csim/code_analyzer/.internal/build/img_sharpening_filter.cpp.0.bc"
             ],
-            "exectime": 1.2716283798217773,
+            "exectime": 1.3894622325897217,
             "cwd": "/home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter"
         },
         "['/home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls/csim/code_analyzer/.internal/build/img_sharpening_filter.cpp.0.o', '/home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls/csim/code_analyzer/.internal/build/img_sharpening_filter.cpp.0.o.d']": {
@@ -42,7 +42,7 @@
                 "-o",
                 "/home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls/csim/code_analyzer/.internal/build/img_sharpening_filter.cpp.0.o"
             ],
-            "exectime": 1.5787415504455566,
+            "exectime": 1.6990313529968262,
             "cwd": "/home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter"
         },
         "['/home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls/csim/code_analyzer/.internal/build/tb_img_sharpening_filter.cpp.0.o', '/home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls/csim/code_analyzer/.internal/build/tb_img_sharpening_filter.cpp.0.o.d']": {
@@ -64,7 +64,7 @@
                 "-o",
                 "/home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls/csim/code_analyzer/.internal/build/tb_img_sharpening_filter.cpp.0.o"
             ],
-            "exectime": 1.5991332530975342,
+            "exectime": 1.7127199172973633,
             "cwd": "/home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter"
         },
         "['/home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls/csim/code_analyzer/.internal/build/syn_srcs.bc']": {
@@ -74,7 +74,7 @@
                 "-o",
                 "/home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls/csim/code_analyzer/.internal/build/syn_srcs.bc"
             ],
-            "exectime": 0.03314709663391113,
+            "exectime": 0.03513336181640625,
             "cwd": "/home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter"
         },
         "['/home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls/csim/code_analyzer/.internal/build/syn_srcs.opt.bc']": {
@@ -86,7 +86,7 @@
                 "-o",
                 "/home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls/csim/code_analyzer/.internal/build/syn_srcs.opt.bc"
             ],
-            "exectime": 0.05301308631896973,
+            "exectime": 0.08751940727233887,
             "cwd": "/home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter"
         },
         "['/home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls/csim/code_analyzer/.internal/build/app.exe']": {
@@ -129,7 +129,7 @@
                 "-Wl,-mllvm,-profilerOutputDirectory=/home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls/csim/code_analyzer/.internal/profiler/0",
                 "-fslxpthreads"
             ],
-            "exectime": 0.3914964199066162,
+            "exectime": 0.4155235290527344,
             "cwd": "/home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter"
         },
         "['/home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls/csim/code_analyzer/.internal/instrument/app_0/hls_ir_info.json']": {
@@ -142,7 +142,7 @@
                 "--hw-function",
                 "ImgSharpeningFilter"
             ],
-            "exectime": 0.04070591926574707,
+            "exectime": 0.04950547218322754,
             "cwd": "/home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter"
         },
         "['/home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls/csim/code_analyzer/.internal/instrument/app_0/binary_dependencies.json']": {
@@ -153,7 +153,7 @@
                 "--reuse-filemanager=false",
                 "--output=/home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls/csim/code_analyzer/.internal/instrument/app_0/binary_dependencies.json"
             ],
-            "exectime": 0.07853507995605469,
+            "exectime": 0.08576059341430664,
             "cwd": "/home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter"
         },
         "['/home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls/csim/code_analyzer/bin/.tracing_stdout.txt', '/home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls/csim/code_analyzer/bin/.tracing_stderr.txt']": {
@@ -161,7 +161,7 @@
                 "/home/szymon/tools/Xilinx/2025.1/lnx64/tools/vcxx/libexec/rwd",
                 "/home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls/csim/code_analyzer/.internal/build/app.exe"
             ],
-            "exectime": 3.9089012145996094,
+            "exectime": 3.9594995975494385,
             "cwd": "/home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls/csim/code_analyzer/tracing/csim/build"
         },
         "['/home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls/csim/code_analyzer/.internal/instrument/app_0/annotated.bc']": {
@@ -180,7 +180,7 @@
                 "-o",
                 "/home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls/csim/code_analyzer/.internal/instrument/app_0/annotated.bc"
             ],
-            "exectime": 21.72715997695923,
+            "exectime": 20.979113340377808,
             "cwd": "/home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter"
         },
         "['/home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls/csim/code_analyzer/.internal/dataflow/0/taskgraph.json']": {
@@ -227,7 +227,7 @@
                 "--df-target",
                 "%F279"
             ],
-            "exectime": 0.6046130657196045,
+            "exectime": 0.6029567718505859,
             "cwd": "/home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter"
         }
     }

@@ -1,1 +1,0 @@
-set ::AESL_AUTOSIM::gTopFileName /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls/./sim/autowrap/testbench/img_sharpening_filter.cpp_pre.cpp.tb.cpp
