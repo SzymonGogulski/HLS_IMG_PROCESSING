@@ -1,0 +1,6 @@
+   Build using "/home/szymon/tools/Xilinx/2025.1/Vitis/lnx64/tools/vcxx/libexec//clang++"
+   Compiling apatb_ImgSharpeningFilter.cpp
+   Compiling img_sharpening_filter.cpp_pre.cpp.tb.cpp
+   Compiling tb_img_sharpening_filter.cpp_pre.cpp.tb.cpp
+   Compiling apatb_ImgSharpeningFilter_ir.ll
+   Generating cosim.tv.exe

@@ -1,0 +1,127 @@
+<profile>
+<RunData>
+  <RUN_TYPE>synth</RUN_TYPE>
+  <VIVADO_VERSION>v.2025.1</VIVADO_VERSION>
+  <ROOT_MODULE_CELL>bd_0_i/hls_inst</ROOT_MODULE_CELL>
+</RunData>
+<TimingReport>
+  <TargetClockPeriod>8.000</TargetClockPeriod>
+  <AchievedClockPeriod>7.127</AchievedClockPeriod>
+  <CLOCK_NAME>ap_clk</CLOCK_NAME>
+  <CP_FINAL>7.127</CP_FINAL>
+  <CP_ROUTE>NA</CP_ROUTE>
+  <CP_SYNTH>7.127</CP_SYNTH>
+  <CP_TARGET>8.000</CP_TARGET>
+  <SLACK_FINAL>0.873</SLACK_FINAL>
+  <SLACK_ROUTE></SLACK_ROUTE>
+  <SLACK_SYNTH>0.873</SLACK_SYNTH>
+  <TIMING_MET>TRUE</TIMING_MET>
+  <TNS_FINAL>0.000</TNS_FINAL>
+  <TNS_ROUTE>NA</TNS_ROUTE>
+  <TNS_SYNTH>0.000</TNS_SYNTH>
+  <WNS_FINAL>0.873</WNS_FINAL>
+  <WNS_ROUTE>NA</WNS_ROUTE>
+  <WNS_SYNTH>0.873</WNS_SYNTH>
+</TimingReport>
+<AreaReport>
+  <Resources>
+    <BRAM>0</BRAM>
+    <CLB>0</CLB>
+    <DSP>0</DSP>
+    <FF>131</FF>
+    <LATCH>0</LATCH>
+    <LUT>110</LUT>
+    <SRL>0</SRL>
+    <URAM>0</URAM>
+  </Resources>
+  <AvailableResources>
+    <BRAM>100</BRAM>
+    <CLB>0</CLB>
+    <DSP>66</DSP>
+    <FF>28800</FF>
+    <LUT>14400</LUT>
+    <URAM>0</URAM>
+  </AvailableResources>
+</AreaReport>
+<RtlModules>
+  <RtlModule CELL="inst" DEPTH="0" FILE_NAME="bd_0_hls_inst_0.v" ORIG_REF_NAME="ImgSharpeningFilter" TOP_CELL="bd_0_i/hls_inst/inst">
+    <SubModules count="1">CTRL_s_axi_U</SubModules>
+    <Resources FF="131" LUT="110" LogicLUT="110"/>
+    <LocalResources FF="67" LUT="35" LogicLUT="35"/>
+  </RtlModule>
+  <RtlModule CELL="inst/CTRL_s_axi_U" DEPTH="1" FILE_NAME="ImgSharpeningFilter.v" ORIG_REF_NAME="ImgSharpeningFilter_CTRL_s_axi">
+    <Resources FF="64" LUT="75" LogicLUT="75"/>
+  </RtlModule>
+</RtlModules>
+<TimingPaths>
+  <TPATH DATAPATH_DELAY="6.519" DATAPATH_LOGIC_DELAY="2.765" DATAPATH_NET_DELAY="3.754" ENDPOINT_PIN="bd_0_i/hls_inst/inst/tmp_2_reg_254_reg[0]/R" LOGIC_LEVELS="8" MAX_FANOUT="11" SLACK="0.873" STARTPOINT_PIN="bd_0_i/hls_inst/inst/add_ln49_reg_249_reg[1]/C">
+    <CELL NAME="bd_0_i/hls_inst/inst/add_ln49_reg_249_reg[1]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="200"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/trunc_ln58_reg_259[7]_i_17" PRIMITIVE_TYPE="LUT.others.LUT2" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="284"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/trunc_ln58_reg_259_reg[7]_i_13" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="280"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/trunc_ln58_reg_259[7]_i_14" PRIMITIVE_TYPE="LUT.others.LUT3" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="9"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/trunc_ln58_reg_259[7]_i_5" PRIMITIVE_TYPE="LUT.others.LUT5" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="280"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/trunc_ln58_reg_259[7]_i_9" PRIMITIVE_TYPE="LUT.others.LUT6" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="280"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/trunc_ln58_reg_259_reg[7]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="280"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/tmp_2_reg_254_reg[2]_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="280"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/tmp_2_reg_254[2]_i_1" PRIMITIVE_TYPE="LUT.others.LUT2" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="9"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/tmp_2_reg_254_reg[0]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="216"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="6.519" DATAPATH_LOGIC_DELAY="2.765" DATAPATH_NET_DELAY="3.754" ENDPOINT_PIN="bd_0_i/hls_inst/inst/tmp_2_reg_254_reg[1]/R" LOGIC_LEVELS="8" MAX_FANOUT="11" SLACK="0.873" STARTPOINT_PIN="bd_0_i/hls_inst/inst/add_ln49_reg_249_reg[1]/C">
+    <CELL NAME="bd_0_i/hls_inst/inst/add_ln49_reg_249_reg[1]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="200"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/trunc_ln58_reg_259[7]_i_17" PRIMITIVE_TYPE="LUT.others.LUT2" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="284"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/trunc_ln58_reg_259_reg[7]_i_13" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="280"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/trunc_ln58_reg_259[7]_i_14" PRIMITIVE_TYPE="LUT.others.LUT3" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="9"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/trunc_ln58_reg_259[7]_i_5" PRIMITIVE_TYPE="LUT.others.LUT5" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="280"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/trunc_ln58_reg_259[7]_i_9" PRIMITIVE_TYPE="LUT.others.LUT6" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="280"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/trunc_ln58_reg_259_reg[7]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="280"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/tmp_2_reg_254_reg[2]_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="280"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/tmp_2_reg_254[2]_i_1" PRIMITIVE_TYPE="LUT.others.LUT2" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="9"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/tmp_2_reg_254_reg[1]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="216"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="6.519" DATAPATH_LOGIC_DELAY="2.765" DATAPATH_NET_DELAY="3.754" ENDPOINT_PIN="bd_0_i/hls_inst/inst/tmp_2_reg_254_reg[2]/R" LOGIC_LEVELS="8" MAX_FANOUT="11" SLACK="0.873" STARTPOINT_PIN="bd_0_i/hls_inst/inst/add_ln49_reg_249_reg[1]/C">
+    <CELL NAME="bd_0_i/hls_inst/inst/add_ln49_reg_249_reg[1]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="200"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/trunc_ln58_reg_259[7]_i_17" PRIMITIVE_TYPE="LUT.others.LUT2" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="284"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/trunc_ln58_reg_259_reg[7]_i_13" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="280"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/trunc_ln58_reg_259[7]_i_14" PRIMITIVE_TYPE="LUT.others.LUT3" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="9"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/trunc_ln58_reg_259[7]_i_5" PRIMITIVE_TYPE="LUT.others.LUT5" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="280"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/trunc_ln58_reg_259[7]_i_9" PRIMITIVE_TYPE="LUT.others.LUT6" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="280"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/trunc_ln58_reg_259_reg[7]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="280"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/tmp_2_reg_254_reg[2]_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="280"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/tmp_2_reg_254[2]_i_1" PRIMITIVE_TYPE="LUT.others.LUT2" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="9"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/tmp_2_reg_254_reg[2]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="216"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="6.519" DATAPATH_LOGIC_DELAY="2.765" DATAPATH_NET_DELAY="3.754" ENDPOINT_PIN="bd_0_i/hls_inst/inst/trunc_ln58_reg_259_reg[0]/R" LOGIC_LEVELS="8" MAX_FANOUT="11" SLACK="0.873" STARTPOINT_PIN="bd_0_i/hls_inst/inst/add_ln49_reg_249_reg[1]/C">
+    <CELL NAME="bd_0_i/hls_inst/inst/add_ln49_reg_249_reg[1]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="200"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/trunc_ln58_reg_259[7]_i_17" PRIMITIVE_TYPE="LUT.others.LUT2" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="284"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/trunc_ln58_reg_259_reg[7]_i_13" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="280"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/trunc_ln58_reg_259[7]_i_14" PRIMITIVE_TYPE="LUT.others.LUT3" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="9"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/trunc_ln58_reg_259[7]_i_5" PRIMITIVE_TYPE="LUT.others.LUT5" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="280"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/trunc_ln58_reg_259[7]_i_9" PRIMITIVE_TYPE="LUT.others.LUT6" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="280"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/trunc_ln58_reg_259_reg[7]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="280"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/tmp_2_reg_254_reg[2]_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="280"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/tmp_2_reg_254[2]_i_1" PRIMITIVE_TYPE="LUT.others.LUT2" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="9"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/trunc_ln58_reg_259_reg[0]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="217"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="6.519" DATAPATH_LOGIC_DELAY="2.765" DATAPATH_NET_DELAY="3.754" ENDPOINT_PIN="bd_0_i/hls_inst/inst/trunc_ln58_reg_259_reg[1]/R" LOGIC_LEVELS="8" MAX_FANOUT="11" SLACK="0.873" STARTPOINT_PIN="bd_0_i/hls_inst/inst/add_ln49_reg_249_reg[1]/C">
+    <CELL NAME="bd_0_i/hls_inst/inst/add_ln49_reg_249_reg[1]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="200"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/trunc_ln58_reg_259[7]_i_17" PRIMITIVE_TYPE="LUT.others.LUT2" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="284"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/trunc_ln58_reg_259_reg[7]_i_13" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="280"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/trunc_ln58_reg_259[7]_i_14" PRIMITIVE_TYPE="LUT.others.LUT3" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="9"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/trunc_ln58_reg_259[7]_i_5" PRIMITIVE_TYPE="LUT.others.LUT5" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="280"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/trunc_ln58_reg_259[7]_i_9" PRIMITIVE_TYPE="LUT.others.LUT6" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="280"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/trunc_ln58_reg_259_reg[7]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="280"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/tmp_2_reg_254_reg[2]_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="280"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/tmp_2_reg_254[2]_i_1" PRIMITIVE_TYPE="LUT.others.LUT2" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="9"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/trunc_ln58_reg_259_reg[1]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="217"/>
+  </TPATH>
+</TimingPaths>
+<VivadoReportFiles>
+  <ReportFile TYPE="design_analysis" PATH="verilog/report/ImgSharpeningFilter_design_analysis_synth.rpt"/>
+  <ReportFile TYPE="failfast" PATH="verilog/report/ImgSharpeningFilter_failfast_synth.rpt"/>
+  <ReportFile TYPE="power" PATH="verilog/report/ImgSharpeningFilter_power_synth.rpt"/>
+  <ReportFile TYPE="timing" PATH="verilog/report/ImgSharpeningFilter_timing_synth.rpt"/>
+  <ReportFile TYPE="timing_paths" PATH="verilog/report/ImgSharpeningFilter_timing_paths_synth.rpt"/>
+  <ReportFile TYPE="utilization" PATH="verilog/report/ImgSharpeningFilter_utilization_synth.rpt"/>
+  <ReportFile TYPE="utilization_hierarchical" PATH="verilog/report/ImgSharpeningFilter_utilization_hierarchical_synth.rpt"/>
+</VivadoReportFiles>
+</profile>

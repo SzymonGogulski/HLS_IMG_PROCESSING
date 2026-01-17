@@ -1,0 +1,157 @@
+<ENTRY>
+{
+ "thisFile": "/home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/ImgSharpeningFilter.hlsrun_package_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Sat Jan 17 21:07:18 2026",
+ "timestampMillis": "1768680438462",
+ "buildStep": {
+  "cmdId": "5e25fc5a-95db-44ba-a2b9-d47cf732369c",
+  "name": "vitis-run",
+  "logFile": "/home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/logs/ImgSharpeningFilter.steps.log",
+  "commandLine": "/home/szymon/tools/Xilinx/2025.1/Vitis/bin/unwrapped/lnx64.o/vitis-run  --mode hls --package --config /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/hls_config.cfg --work_dir ImgSharpeningFilter ",
+  "args": [
+   "--mode",
+   "hls",
+   "--package",
+   "--config",
+   "/home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/hls_config.cfg",
+   "--work_dir",
+   "ImgSharpeningFilter"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Jan 17 21:07:18 2026",
+ "timestampMillis": "1768680438462",
+ "status": {
+  "cmdId": "5e25fc5a-95db-44ba-a2b9-d47cf732369c",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Sat Jan 17 21:07:23 2026",
+ "timestampMillis": "1768680443285",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_IP",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "ImgSharpeningFilter",
+     "file": "/home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/ImgSharpeningFilter.zip",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/img_sharpening_filter.h",
+     "/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/img_sharpening_filter.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2025.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Sat Jan 17 21:07:23 2026",
+ "timestampMillis": "1768680443286",
+ "buildStep": {
+  "cmdId": "320b9993-2a9d-4fd7-b287-a9e2a957e996",
+  "name": "",
+  "logFile": "/home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls/hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Jan 17 21:07:23 2026",
+ "timestampMillis": "1768680443286",
+ "status": {
+  "cmdId": "320b9993-2a9d-4fd7-b287-a9e2a957e996",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Jan 17 21:07:42 2026",
+ "timestampMillis": "1768680462239",
+ "status": {
+  "cmdId": "320b9993-2a9d-4fd7-b287-a9e2a957e996",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Jan 17 21:07:42 2026",
+ "timestampMillis": "1768680462347",
+ "status": {
+  "cmdId": "5e25fc5a-95db-44ba-a2b9-d47cf732369c",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sat Jan 17 21:07:42 2026",
+ "timestampMillis": "1768680462347",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sat Jan 17 21:07:42 2026",
+ "timestampMillis": "1768680462347",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

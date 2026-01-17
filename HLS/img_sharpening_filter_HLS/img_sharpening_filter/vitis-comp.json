@@ -1,0 +1,13 @@
+{
+  "name": "img_sharpening_filter",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": [
+      "hls_config.cfg"
+    ],
+    "work_dir": "ImgSharpeningFilter"
+  },
+  "useSysrootToolchain": false,
+  "template": "empty_hls_component"
+}

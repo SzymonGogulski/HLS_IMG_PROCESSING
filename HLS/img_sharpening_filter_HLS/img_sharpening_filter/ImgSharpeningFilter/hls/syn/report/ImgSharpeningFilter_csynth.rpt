@@ -1,0 +1,163 @@
+
+
+================================================================
+== Vitis HLS Report for 'ImgSharpeningFilter'
+================================================================
+* Date:           Sat Jan 17 20:48:10 2026
+
+* Version:        2025.1 (Build 6135595 on May 21 2025)
+* Project:        ImgSharpeningFilter
+* Solution:       hls (Vitis Kernel Flow Target)
+* Product family: zynq
+* Target device:  xc7z007s-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  8.00 ns|  6.301 ns|     0.96 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+    |   min   |   max   |    min    |    max    | min | max |   Type  |
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |        2|        2|  16.000 ns|  16.000 ns|    3|    3|       no|
+    +---------+---------+-----------+-----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+----+-------+-------+-----+
+|       Name      | BRAM_18K| DSP|   FF  |  LUT  | URAM|
++-----------------+---------+----+-------+-------+-----+
+|DSP              |        -|   -|      -|      -|    -|
+|Expression       |        -|   -|      0|     95|    -|
+|FIFO             |        -|   -|      -|      -|    -|
+|Instance         |        0|   -|     86|    104|    -|
+|Memory           |        -|   -|      -|      -|    -|
+|Multiplexer      |        -|   -|      0|     29|    -|
+|Register         |        -|   -|     67|      -|    -|
++-----------------+---------+----+-------+-------+-----+
+|Total            |        0|   0|    153|    228|    0|
++-----------------+---------+----+-------+-------+-----+
+|Available        |      100|  66|  28800|  14400|    0|
++-----------------+---------+----+-------+-------+-----+
+|Utilization (%)  |        0|   0|     ~0|      1|    0|
++-----------------+---------+----+-------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +--------------+------------+---------+----+----+-----+-----+
+    |   Instance   |   Module   | BRAM_18K| DSP| FF | LUT | URAM|
+    +--------------+------------+---------+----+----+-----+-----+
+    |CTRL_s_axi_U  |CTRL_s_axi  |        0|   0|  86|  104|    0|
+    +--------------+------------+---------+----+----+-----+-----+
+    |Total         |            |        0|   0|  86|  104|    0|
+    +--------------+------------+---------+----+----+-----+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------+----------+----+---+----+------------+------------+
+    |     Variable Name    | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------+----------+----+---+----+------------+------------+
+    |add_ln49_1_fu_164_p2  |         +|   0|  0|  13|          10|          10|
+    |add_ln49_2_fu_151_p2  |         +|   0|  0|  12|          11|          11|
+    |add_ln49_fu_98_p2     |         +|   0|  0|  14|           9|           9|
+    |AddRes_3_fu_174_p2    |         -|   0|  0|  12|          12|          12|
+    |AddRes_fu_180_p2      |         -|   0|  0|  12|          12|          12|
+    |icmp_ln55_fu_232_p2   |      icmp|   0|  0|  11|           3|           1|
+    |ap_block_state1       |        or|   0|  0|   2|           1|           1|
+    |AddRes_2_fu_198_p3    |    select|   0|  0|  11|           1|           1|
+    |ap_return             |    select|   0|  0|   8|           1|           2|
+    +----------------------+----------+----+---+----+------------+------------+
+    |Total                 |          |   0|  0|  95|          60|          59|
+    +----------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-----------+----+-----------+-----+-----------+
+    |    Name   | LUT| Input Size| Bits| Total Bits|
+    +-----------+----+-----------+-----+-----------+
+    |ap_NS_fsm  |  20|          4|    1|          4|
+    |ap_done    |   9|          2|    1|          2|
+    +-----------+----+-----------+-----+-----------+
+    |Total      |  29|          6|    2|          6|
+    +-----------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------------------------------------------------------------+---+----+-----+-----------+
+    |                                Name                               | FF| LUT| Bits| Const Bits|
+    +-------------------------------------------------------------------+---+----+-----+-----------+
+    |add_ln49_reg_249                                                   |  9|   0|    9|          0|
+    |ap_CS_fsm                                                          |  3|   0|    3|          0|
+    |ap_done_reg                                                        |  1|   0|    1|          0|
+    |ap_rst_n_inv                                                       |  1|   0|    1|          0|
+    |ap_rst_reg_1                                                       |  1|   0|    1|          0|
+    |ap_rst_reg_2                                                       |  1|   0|    1|          0|
+    |data_in_1_read_reg_244                                             |  8|   0|    8|          0|
+    |p_ZZ19ImgSharpeningFilter7ap_uintILi8EES0_S0_E13data_in_array_0_0  |  8|   0|    8|          0|
+    |p_ZZ19ImgSharpeningFilter7ap_uintILi8EES0_S0_E13data_in_array_1_0  |  8|   0|    8|          0|
+    |p_ZZ19ImgSharpeningFilter7ap_uintILi8EES0_S0_E13data_in_array_1_1  |  8|   0|    8|          0|
+    |p_ZZ19ImgSharpeningFilter7ap_uintILi8EES0_S0_E13data_in_array_2_0  |  8|   0|    8|          0|
+    |tmp_2_reg_254                                                      |  3|   0|    3|          0|
+    |trunc_ln58_reg_259                                                 |  8|   0|    8|          0|
+    +-------------------------------------------------------------------+---+----+-----+-----------+
+    |Total                                                              | 67|   0|   67|          0|
+    +-------------------------------------------------------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++--------------------+-----+-----+---------------+---------------------+--------------+
+|      RTL Ports     | Dir | Bits|    Protocol   |    Source Object    |    C Type    |
++--------------------+-----+-----+---------------+---------------------+--------------+
+|s_axi_CTRL_AWVALID  |   in|    1|          s_axi|                 CTRL|        scalar|
+|s_axi_CTRL_AWREADY  |  out|    1|          s_axi|                 CTRL|        scalar|
+|s_axi_CTRL_AWADDR   |   in|    6|          s_axi|                 CTRL|        scalar|
+|s_axi_CTRL_WVALID   |   in|    1|          s_axi|                 CTRL|        scalar|
+|s_axi_CTRL_WREADY   |  out|    1|          s_axi|                 CTRL|        scalar|
+|s_axi_CTRL_WDATA    |   in|   32|          s_axi|                 CTRL|        scalar|
+|s_axi_CTRL_WSTRB    |   in|    4|          s_axi|                 CTRL|        scalar|
+|s_axi_CTRL_ARVALID  |   in|    1|          s_axi|                 CTRL|        scalar|
+|s_axi_CTRL_ARREADY  |  out|    1|          s_axi|                 CTRL|        scalar|
+|s_axi_CTRL_ARADDR   |   in|    6|          s_axi|                 CTRL|        scalar|
+|s_axi_CTRL_RVALID   |  out|    1|          s_axi|                 CTRL|        scalar|
+|s_axi_CTRL_RREADY   |   in|    1|          s_axi|                 CTRL|        scalar|
+|s_axi_CTRL_RDATA    |  out|   32|          s_axi|                 CTRL|        scalar|
+|s_axi_CTRL_RRESP    |  out|    2|          s_axi|                 CTRL|        scalar|
+|s_axi_CTRL_BVALID   |  out|    1|          s_axi|                 CTRL|        scalar|
+|s_axi_CTRL_BREADY   |   in|    1|          s_axi|                 CTRL|        scalar|
+|s_axi_CTRL_BRESP    |  out|    2|          s_axi|                 CTRL|        scalar|
+|ap_clk              |   in|    1|  ap_ctrl_chain|  ImgSharpeningFilter|  return value|
+|ap_rst_n            |   in|    1|  ap_ctrl_chain|  ImgSharpeningFilter|  return value|
+|interrupt           |  out|    1|  ap_ctrl_chain|  ImgSharpeningFilter|  return value|
++--------------------+-----+-----+---------------+---------------------+--------------+
+

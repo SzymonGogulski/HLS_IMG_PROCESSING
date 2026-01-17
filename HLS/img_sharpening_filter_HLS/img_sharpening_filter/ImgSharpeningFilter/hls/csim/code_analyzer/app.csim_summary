@@ -1,0 +1,80 @@
+<ENTRY>
+{
+ "thisFile": "/home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls/csim/code_analyzer/app.csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Sat Jan 17 20:44:36 2026",
+ "timestampMillis": "1768679076547",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [],
+  "toolVersion": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Sat Jan 17 20:44:36 2026",
+ "timestampMillis": "1768679076548",
+ "buildStep": {
+  "cmdId": "f44c4f48-f3dc-11f0-b839-14f6d89c79cb",
+  "name": "vitis_c++",
+  "logFile": "",
+  "commandLine": "vitis_c++ code_analyzer",
+  "args": [
+   "code_analyzer"
+  ],
+  "iniFiles": [],
+  "cwd": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Jan 17 20:44:36 2026",
+ "timestampMillis": "1768679076549",
+ "status": {
+  "cmdId": "f44c4f48-f3dc-11f0-b839-14f6d89c79cb",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Jan 17 20:45:05 2026",
+ "timestampMillis": "1768679105159",
+ "status": {
+  "cmdId": "f44c4f48-f3dc-11f0-b839-14f6d89c79cb",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sat Jan 17 20:45:05 2026",
+ "timestampMillis": "1768679105160",
+ "report": {
+  "path": "/home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "VCXX_CODE_ANALYZER",
+  "cmdId": "f44c4f48-f3dc-11f0-b839-14f6d89c79cb"
+ }
+}
+</ENTRY>

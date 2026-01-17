@@ -1,0 +1,12 @@
+sv xil_defaultlib "glbl.v"
+sv xil_defaultlib "ImgSharpeningFilter.autotb.v"
+sv xil_defaultlib "ImgSharpeningFilter_CTRL_s_axi.v"
+sv xil_defaultlib "ImgSharpeningFilter.v"
+sv xil_defaultlib "dataflow_monitor.sv"
+sv xil_defaultlib "./file_agent/file_agent_pkg.sv"     
+sv xil_defaultlib "./axivip/axi_pkg.sv"    
+sv xil_defaultlib "./axivip/axi_if.sv"   
+sv xil_defaultlib "./ImgSharpeningFilter_subsystem/ImgSharpeningFilter_subsystem_pkg.sv"           
+sv xil_defaultlib "./svtb/misc_interface.sv"    
+sv xil_defaultlib "./svtb/sv_module_top.sv"   
+

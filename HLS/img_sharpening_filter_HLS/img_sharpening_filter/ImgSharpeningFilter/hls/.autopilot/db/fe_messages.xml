@@ -1,0 +1,75 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="directive:1:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="ImgSharpeningFilter" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=ImgSharpeningFilter" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/img_sharpening_filter.cpp:6:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="ImgSharpeningFilter" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=data_in_0 bundle=CTRL" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/img_sharpening_filter.cpp:7:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="ImgSharpeningFilter" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=data_in_1 bundle=CTRL" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/img_sharpening_filter.cpp:8:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="ImgSharpeningFilter" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=data_in_2 bundle=CTRL" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/img_sharpening_filter.cpp:9:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="ImgSharpeningFilter" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=return bundle=CTRL" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/img_sharpening_filter.cpp:18:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="ImgSharpeningFilter" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/img_sharpening_filter.cpp:20:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="ImgSharpeningFilter" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/img_sharpening_filter.cpp:35:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="ImgSharpeningFilter" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/img_sharpening_filter.cpp:37:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="ImgSharpeningFilter" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/img_sharpening_filter.cpp:46:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="ImgSharpeningFilter" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/img_sharpening_filter.cpp:48:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="ImgSharpeningFilter" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/img_sharpening_filter.cpp:4:0" msg_body="Unrolling loop 'VITIS_LOOP_45_5' (/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/img_sharpening_filter.cpp:45:19) in function 'ImgSharpeningFilter' completely with a factor of 3">
+        <args Factor="3" LoopLoc="/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/img_sharpening_filter.cpp:45:19" LoopName="VITIS_LOOP_45_5"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/img_sharpening_filter.cpp:4:0" msg_body="Unrolling loop 'VITIS_LOOP_47_6' (/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/img_sharpening_filter.cpp:47:19) in function 'ImgSharpeningFilter' completely with a factor of 3">
+        <args Factor="3" LoopLoc="/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/img_sharpening_filter.cpp:47:19" LoopName="VITIS_LOOP_47_6"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/img_sharpening_filter.cpp:4:0" msg_body="Unrolling loop 'VITIS_LOOP_34_3' (/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/img_sharpening_filter.cpp:34:19) in function 'ImgSharpeningFilter' completely with a factor of 3">
+        <args Factor="3" LoopLoc="/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/img_sharpening_filter.cpp:34:19" LoopName="VITIS_LOOP_34_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/img_sharpening_filter.cpp:4:0" msg_body="Unrolling loop 'VITIS_LOOP_36_4' (/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/img_sharpening_filter.cpp:36:19) in function 'ImgSharpeningFilter' completely with a factor of 3">
+        <args Factor="3" LoopLoc="/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/img_sharpening_filter.cpp:36:19" LoopName="VITIS_LOOP_36_4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/img_sharpening_filter.cpp:4:0" msg_body="Unrolling loop 'VITIS_LOOP_17_1' (/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/img_sharpening_filter.cpp:17:19) in function 'ImgSharpeningFilter' completely with a factor of 3">
+        <args Factor="3" LoopLoc="/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/img_sharpening_filter.cpp:17:19" LoopName="VITIS_LOOP_17_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/img_sharpening_filter.cpp:4:0" msg_body="Unrolling loop 'VITIS_LOOP_19_2' (/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/img_sharpening_filter.cpp:19:19) in function 'ImgSharpeningFilter' completely with a factor of 2">
+        <args Factor="2" LoopLoc="/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/img_sharpening_filter.cpp:19:19" LoopName="VITIS_LOOP_19_2"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-449" msg_severity="INFO" msg_loc="/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/img_sharpening_filter.cpp:11:0" msg_body="Automatically partitioning array '_ZZ19ImgSharpeningFilter7ap_uintILi8EES0_S0_E13data_in_array' dimension 1 completely based on constant index.">
+        <args Dim="1" Value="_ZZ19ImgSharpeningFilter7ap_uintILi8EES0_S0_E13data_in_array"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-449" msg_severity="INFO" msg_loc="/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/img_sharpening_filter.cpp:11:0" msg_body="Automatically partitioning array '_ZZ19ImgSharpeningFilter7ap_uintILi8EES0_S0_E13data_in_array' dimension 2 completely based on constant index.">
+        <args Dim="2" Value="_ZZ19ImgSharpeningFilter7ap_uintILi8EES0_S0_E13data_in_array"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/img_sharpening_filter.cpp:11:0" msg_body="array_partition dim=1 type=complete  variable=_ZZ19ImgSharpeningFilter7ap_uintILi8EES0_S0_E13data_in_array 1 ImgSharpeningFilter /home/szymon/Desktop/CORA_Z7/projekt/HLS/code/img_sharpening_filter.cpp:11:0 ImgSharpeningFilter(ap_uint&lt;8&gt;, ap_uint&lt;8&gt;, ap_uint&lt;8&gt;)::data_in_array">
+        <args PragmaFunction="ImgSharpeningFilter" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=_ZZ19ImgSharpeningFilter7ap_uintILi8EES0_S0_E13data_in_array" PragmaType="array_partition" VarName="ImgSharpeningFilter(ap_uint&lt;8&gt;, ap_uint&lt;8&gt;, ap_uint&lt;8&gt;)::data_in_array" varLoc="/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/img_sharpening_filter.cpp:11:0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/img_sharpening_filter.cpp:11:0" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'ImgSharpeningFilter(ap_uint&lt;8&gt;, ap_uint&lt;8&gt;, ap_uint&lt;8&gt;)::data_in_array' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="ImgSharpeningFilter(ap_uint&lt;8&gt;, ap_uint&lt;8&gt;, ap_uint&lt;8&gt;)::data_in_array" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/img_sharpening_filter.cpp:11:0" msg_body="array_partition dim=2 type=complete  variable=_ZZ19ImgSharpeningFilter7ap_uintILi8EES0_S0_E13data_in_array 1 ImgSharpeningFilter /home/szymon/Desktop/CORA_Z7/projekt/HLS/code/img_sharpening_filter.cpp:11:0 ImgSharpeningFilter(ap_uint&lt;8&gt;, ap_uint&lt;8&gt;, ap_uint&lt;8&gt;)::data_in_array">
+        <args PragmaFunction="ImgSharpeningFilter" PragmaIsAuto="1" PragmaOptions="dim=2 type=complete  variable=_ZZ19ImgSharpeningFilter7ap_uintILi8EES0_S0_E13data_in_array" PragmaType="array_partition" VarName="ImgSharpeningFilter(ap_uint&lt;8&gt;, ap_uint&lt;8&gt;, ap_uint&lt;8&gt;)::data_in_array" varLoc="/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/img_sharpening_filter.cpp:11:0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/img_sharpening_filter.cpp:11:0" msg_body="Inferring pragma 'array_partition type=complete dim=2' for array 'ImgSharpeningFilter(ap_uint&lt;8&gt;, ap_uint&lt;8&gt;, ap_uint&lt;8&gt;)::data_in_array' due to pipeline pragma">
+        <args Dim="2" Mode="complete" Name="ImgSharpeningFilter(ap_uint&lt;8&gt;, ap_uint&lt;8&gt;, ap_uint&lt;8&gt;)::data_in_array" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/img_sharpening_filter.cpp:11:0" msg_body="Applying array_partition to '_ZZ19ImgSharpeningFilter7ap_uintILi8EES0_S0_E13data_in_array': Complete partitioning on dimension 1. Complete partitioning on dimension 2.">
+        <args Dim="islist 1 2" Mode="islist Complete Complete" UOName="_ZZ19ImgSharpeningFilter7ap_uintILi8EES0_S0_E13data_in_array"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

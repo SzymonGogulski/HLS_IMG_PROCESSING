@@ -1,0 +1,4 @@
+Running: xsim.dir/ImgSharpeningFilter/xsimk -simmode gui -testplusarg UVM_VERBOSITY=UVM_NONE -testplusarg UVM_TESTNAME=ImgSharpeningFilter_test_lib -testplusarg UVM_TIMEOUT=20000000000000 -wdb ImgSharpeningFilter.wdb -simrunnum 0 -socket 44889
+Design successfully loaded
+Design Loading Memory Usage: 207656 KB (Peak: 207656 KB)
+Design Loading CPU Usage: 1190 ms

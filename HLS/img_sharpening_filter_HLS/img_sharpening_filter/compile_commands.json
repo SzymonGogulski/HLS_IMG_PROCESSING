@@ -1,0 +1,27 @@
+[
+  {
+    "directory": "/home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter",
+    "arguments": [
+      "/home/szymon/tools/Xilinx/2025.1/Vitis/vcxx/libexec/clang++",
+      "--gcc-toolchain=/home/szymon/tools/Xilinx/2025.1/Vitis/tps/lnx64/gcc-8.3.0",
+      "-fhls",
+      "-hls-syn-headers-dir=/home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/autopilot",
+      "-fhlstoplevel=ImgSharpeningFilter",
+      "-c",
+      "/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/img_sharpening_filter.cpp"
+    ],
+    "file": "/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/img_sharpening_filter.cpp"
+  },
+  {
+    "directory": "/home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter",
+    "arguments": [
+      "/home/szymon/tools/Xilinx/2025.1/Vitis/vcxx/libexec/clang++",
+      "--gcc-toolchain=/home/szymon/tools/Xilinx/2025.1/Vitis/tps/lnx64/gcc-8.3.0",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=/home/szymon/tools/Xilinx/2025.1/Vitis/include",
+      "-c",
+      "/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/tb_img_sharpening_filter.cpp"
+    ],
+    "file": "/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/tb_img_sharpening_filter.cpp"
+  }
+]

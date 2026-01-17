@@ -1,0 +1,46 @@
+{
+  "0": {
+    "basicblocks": 43,
+    "calls": "",
+    "control_depth": 1,
+    "def_use_depth": 3,
+    "file": "img_sharpening_filter.cpp",
+    "fileloc": 4,
+    "instructions": 166,
+    "loads": {
+      "G": 2,
+      "L": 4
+    },
+    "memory_accesses": 8,
+    "name": "ImgSharpeningFilter",
+    "stores": {
+      "G": 5,
+      "L": 3
+    },
+    "total_instructions": 609
+  },
+  "1": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 0,
+    "file": "img_sharpening_filter.h",
+    "fileloc": 10,
+    "instructions": 10,
+    "memory_accesses": 0,
+    "name": "__cxx_global_var_init.1",
+    "total_instructions": 163
+  },
+  "2": {
+    "basicblocks": 1,
+    "calls": "1",
+    "control_depth": 0,
+    "def_use_depth": 0,
+    "file": "img_sharpening_filter.pp.0.cpp",
+    "fileloc": 0,
+    "instructions": 2,
+    "memory_accesses": 0,
+    "name": "",
+    "total_instructions": 165
+  }
+}

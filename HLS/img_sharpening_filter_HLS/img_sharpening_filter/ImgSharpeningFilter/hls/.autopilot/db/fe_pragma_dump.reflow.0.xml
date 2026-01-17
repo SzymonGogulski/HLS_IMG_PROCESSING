@@ -1,0 +1,42 @@
+<pragmas>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<16, true>::ap_int_base<8, false>(ap_int_base<8, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<8, false>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<16, true>::ap_int_base<8, true>(ap_int_base<8, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowCsim" off="0" region="0" recursive="0"/>
+<pragma file="/home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/autopilot/etc/ap_common.h" line="534" pragmaType="inline" parentfunction="ssdm_int<16, true>::ssdm_int(short)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowCsim" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, true>::ap_int_base<16, true>(ap_int_base<16, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int<32>::ap_int<32, true>(ap_int_base<32, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="bool ap_int_base<32, true>::operator><32, true>(ap_int_base<32, true> const&) const" off="0" region="0" recursive="0"/>
+<pragma file="/home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/autopilot/etc/ap_common.h" line="534" pragmaType="inline" parentfunction="ssdm_int<32, true>::ssdm_int(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="bool ap_int_base<32, true>::operator<<32, true>(ap_int_base<32, true> const&) const" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<8>::ap_uint<32>(ap_int<32> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<8, false>::ap_int_base<32, true>(ap_int_base<32, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="/home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/autopilot/etc/ap_common.h" line="542" pragmaType="inline" parentfunction="ssdm_int<8, false>::ssdm_int(unsigned char)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowCsim" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="bool operator<<32, true>(ap_int_base<32, true> const&, int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="bool operator><32, true>(ap_int_base<32, true> const&, int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int<16>::ap_int<8>(ap_int<8> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<16, true>::RType<16, true>::mult operator*<16, true, 16, true>(ap_int_base<16, true> const&, ap_int_base<16, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int<32>::ap_int(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int<16>::ap_int<8>(ap_uint<8> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, true>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<8>::ap_uint(int)" off="0" region="0" recursive="0"/>
+<pragma file="/home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/autopilot/etc/ap_common.h" line="534" pragmaType="inline" parentfunction="ssdm_int<8, true>::ssdm_int(signed char)" off="0" region="0" recursive="0"/>
+<pragma file="/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/img_sharpening_filter.cpp" line="46" pragmaType="unroll" parentfunction="ImgSharpeningFilter" factor="-1" skip_exit_check="0"/>
+<pragma file="/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/img_sharpening_filter.cpp" line="48" pragmaType="unroll" parentfunction="ImgSharpeningFilter" factor="-1" skip_exit_check="0"/>
+<pragma file="/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/img_sharpening_filter.cpp" line="35" pragmaType="unroll" parentfunction="ImgSharpeningFilter" factor="-1" skip_exit_check="0"/>
+<pragma file="/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/img_sharpening_filter.cpp" line="37" pragmaType="unroll" parentfunction="ImgSharpeningFilter" factor="-1" skip_exit_check="0"/>
+<pragma file="/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/img_sharpening_filter.cpp" line="18" pragmaType="unroll" parentfunction="ImgSharpeningFilter" factor="-1" skip_exit_check="0"/>
+<pragma file="/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/img_sharpening_filter.cpp" line="20" pragmaType="unroll" parentfunction="ImgSharpeningFilter" factor="-1" skip_exit_check="0"/>
+<pragma file="/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/img_sharpening_filter.cpp" line="6" pragmaType="interface" parentfunction="ImgSharpeningFilter" mode="s_axilite" port="data_in_0" bundle="CTRL" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/img_sharpening_filter.cpp" line="7" pragmaType="interface" parentfunction="ImgSharpeningFilter" mode="s_axilite" port="data_in_1" bundle="CTRL" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/img_sharpening_filter.cpp" line="8" pragmaType="interface" parentfunction="ImgSharpeningFilter" mode="s_axilite" port="data_in_2" bundle="CTRL" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/img_sharpening_filter.cpp" line="9" pragmaType="interface" parentfunction="ImgSharpeningFilter" mode="s_axilite" port="" bundle="CTRL" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int<8>::ap_int(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<8, true>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, true>& ap_int_base<32, true>::operator+=<32, true>(ap_int_base<32, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
+</pragmas>

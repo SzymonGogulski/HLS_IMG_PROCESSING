@@ -1,0 +1,3 @@
+parallelismSelector::WARNG: WARNING: [SIM 211-203] Code Analyzer does not display the impact of the unroll pragma for tasks (/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/img_sharpening_filter.cpp:46:3)
+parallelismSelector::WARNG: WARNING: [SIM 211-203] Code Analyzer does not display the impact of the unroll pragma for tasks (/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/img_sharpening_filter.cpp:35:3)
+parallelismSelector::WARNG: WARNING: [SIM 211-203] Code Analyzer does not display the impact of the unroll pragma for tasks (/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/img_sharpening_filter.cpp:18:3)

@@ -1,0 +1,3 @@
+relativeroot=/home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter
+original_argv=--mode hls --package --config /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/hls_config.cfg --work_dir ImgSharpeningFilter 
+

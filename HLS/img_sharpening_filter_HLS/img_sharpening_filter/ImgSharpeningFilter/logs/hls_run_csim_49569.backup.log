@@ -1,0 +1,63 @@
+  **** HLS Build v2025.1 6135595
+INFO: [HLS 200-2005] Using work_dir /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter 
+INFO: [HLS 200-2176] Writing Vitis IDE component file /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/vitis-comp.json
+INFO: [HLS 200-10] Creating and opening component '/home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter'.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-2174] Applying component config ini file /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/hls_config.cfg
+INFO: [HLS 200-1465] Applying config ini 'syn.file=/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/img_sharpening_filter.h' from /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file '/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/img_sharpening_filter.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/img_sharpening_filter.cpp' from /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file '/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/img_sharpening_filter.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/golden_output.txt' from /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding test bench file '/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/golden_output.txt' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/golden_input.txt' from /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/hls_config.cfg(11)
+INFO: [HLS 200-10] Adding test bench file '/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/golden_input.txt' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/tb_img_sharpening_filter.cpp' from /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/hls_config.cfg(12)
+INFO: [HLS 200-10] Adding test bench file '/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/tb_img_sharpening_filter.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.top=ImgSharpeningFilter' from /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vitis' from /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_latency=64
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_rtl -register_reset_num=3
+INFO: [HLS 200-1465] Applying config ini 'part=xc7z007sclg400-1' from /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7z007s-clg400-1'
+INFO: [HLS 200-1465] Applying config ini 'clock=8ns' from /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/hls_config.cfg(13)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 8ns.
+INFO: [HLS 200-1465] Applying config ini 'clock_uncertainty=12%' from /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/hls_config.cfg(14)
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0.96ns.
+INFO: [HLS 200-1465] Applying config ini 'csim.code_analyzer=1' from /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/hls_config.cfg(15)
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/hls_config.cfg(5)
+INFO: [HLS 200-2176] Writing Vitis IDE component file /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/vitis-comp.json
+INFO: [SIM 211-200] Executing Code Analyzer instead of classic HLS C simulation
+INFO: [HLS 211-200] Compiling source code /home/szymon/Desktop/CORA_Z7/projekt/HLS/code/img_sharpening_filter.cpp as hardware code with instrumentation
+INFO: [HLS 211-200] Compiling source code /home/szymon/Desktop/CORA_Z7/projekt/HLS/code/tb_img_sharpening_filter.cpp as test bench code with instrumentation
+INFO: [HLS 211-200] Compiling source code /home/szymon/Desktop/CORA_Z7/projekt/HLS/code/img_sharpening_filter.cpp as test bench code with instrumentation
+/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/tb_img_sharpening_filter.cpp:25:41: warning: format specifies type 'unsigned int *' but the argument has type 'ap_uint<8> *' [-Wformat]
+                        sscanf(data_in_string.c_str(), "%x", &data_in_hex00);
+                                                        ~~   ^~~~~~~~~~~~~~
+/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/tb_img_sharpening_filter.cpp:31:41: warning: format specifies type 'unsigned int *' but the argument has type 'ap_uint<8> *' [-Wformat]
+                        sscanf(data_in_string.c_str(), "%x", &data_in_hex01);
+                                                        ~~   ^~~~~~~~~~~~~~
+/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/tb_img_sharpening_filter.cpp:38:41: warning: format specifies type 'unsigned int *' but the argument has type 'ap_uint<8> *' [-Wformat]
+                        sscanf(data_in_string.c_str(), "%x", &data_in_hex02);
+                                                        ~~   ^~~~~~~~~~~~~~
+/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/tb_img_sharpening_filter.cpp:44:45: warning: format specifies type 'unsigned int *' but the argument has type 'ap_uint<8> *' [-Wformat]
+                        sscanf(golden_data_string.c_str(), "%x", &data_golden);
+                                                            ~~   ^~~~~~~~~~~~
+4 warnings generated.
+INFO: [HLS 211-200] Linking hardware code
+INFO: [HLS 211-200] Transforming hardware bitcode
+INFO: [HLS 211-200] Linking executable
+INFO: [HLS 211-200] Computing HLS IR Information
+INFO: [HLS 211-200] Determining source code dependencies
+INFO: [SIM 211-200] Running executable
+Program started.
+spec:0:0: error: Target frame not found while unwinding virtual stack
+ERROR: [SIM 211-200] Simulation failed: Function 'main' returns nonzero value '1'.
+ERROR: [SIM 211-200] Code Analyzer execution failed. Consider running the classic C simulation instead by disabling the hls.csim.code_analyzer option in the config file.
+ERROR: Problem running csim: child process exited abnormally
+INFO: [HLS 200-112] Total CPU user time: 9.2 seconds. Total CPU system time: 0.94 seconds. Total elapsed time: 8.93 seconds; peak allocated memory: 246.949 MB.
