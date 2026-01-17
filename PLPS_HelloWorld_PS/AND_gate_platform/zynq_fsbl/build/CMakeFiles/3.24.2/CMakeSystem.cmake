@@ -3,7 +3,7 @@ set(CMAKE_HOST_SYSTEM_NAME "Linux")
 set(CMAKE_HOST_SYSTEM_VERSION "6.14.0-37-generic")
 set(CMAKE_HOST_SYSTEM_PROCESSOR "x86_64")
 
-include("/home/szymon/Desktop/CORA_Z7/HelloWorld/PLPS_HelloWorld_PS/AND_gate_platform/zynq_fsbl/zynq_fsbl_bsp/cortexa9_toolchain.cmake")
+include("/home/szymon/Desktop/CORA_Z7/projekt/PLPS_HelloWorld_PS/AND_gate_platform/zynq_fsbl/zynq_fsbl_bsp/cortexa9_toolchain.cmake")
 
 set(CMAKE_SYSTEM "Generic")
 set(CMAKE_SYSTEM_NAME "Generic")

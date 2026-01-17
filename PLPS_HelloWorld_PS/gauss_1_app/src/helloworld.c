@@ -4,6 +4,8 @@
 #include "sleep.h"
 #include "xgaussianfilter.h"
 #include "xparameters.h"
+#include "xuartps.h"
+#include "xgpio.h"
 
 
 static int gf_init(XGaussianfilter *gf){
@@ -54,47 +56,92 @@ static void print_u32_as_bytes(u32 res){
     xil_printf("Output bytes: %02X %02X %02X %02X\r\n", b3, b2, b1, b0);
 }
 
+static void Uart_RecvExact(XUartPs *Uart, u8 *Buf, int Len){
+    int received = 0;
+    while (received < Len) {
+        int n = XUartPs_Recv(Uart, &Buf[received], Len - received);
+        received += n; // n may be 0 if no data right now; loop blocks logically (polling)
+    }
+}
+
+static void Uart_SendExact(XUartPs *Uart, const u8 *Buf, int Len){
+    int sent = 0;
+    while (sent < Len) {
+        int n = XUartPs_Send(Uart, (u8 *)&Buf[sent], Len - sent);
+        sent += n;
+    }
+}
+
 int main()
 {
+    int Status;
+    XUartPs UartPs;
+    XUartPs_Config *Config;
+    XGpio output;
+
     init_platform();
 
-    xil_printf("\r\n--- GaussianFilter AXI stateful test ---\r\n");
+    Status = XGpio_Initialize(&output, XPAR_AXI_GPIO_1_BASEADDR);
+    XGpio_SetDataDirection(&output, 1, 0);
+
+    Config = XUartPs_LookupConfig(XPAR_UART0_BASEADDR);
+    if (Config == NULL) {
+        return XST_FAILURE;
+    }
+
+    Status = XUartPs_CfgInitialize(&UartPs, Config, Config->BaseAddress);
+    if (Status != XST_SUCCESS) {
+        return XST_FAILURE;
+    }
+
+    Status = XUartPs_SelfTest(&UartPs);
+    if (Status != XST_SUCCESS) {
+        return XST_FAILURE;
+    }
+
+    XUartPs_SetBaudRate(&UartPs, 115200);
+    XUartPs_SetOptions(&UartPs, XUARTPS_OPTION_RESET_TX | XUARTPS_OPTION_RESET_RX);
+
+    
 
     XGaussianfilter gf;
     if (gf_init(&gf) != XST_SUCCESS) {
-        xil_printf("GaussianFilter init failed. Halting.\r\n");
+        //xil_printf("GaussianFilter init failed. Halting.\r\n");
         cleanup_platform();
         return -1;
     }
 
-    // 5 test vectors (stateful core => order matters)
-    const u8 tests[5][5] = {
-        {0x9C, 0xA0, 0x9C, 0xA0, 0x9C}, // Test1
-        {0x9F, 0x9A, 0x9F, 0x9A, 0x99}, // Test2
-        {0x9E, 0x9D, 0x9E, 0x9D, 0x9B}, // Test3
-        {0x9B, 0x9E, 0x9B, 0x9E, 0x9F}, // Test4
-        {0x9E, 0x9D, 0x9E, 0x9D, 0x9F}  // Test5
-    };
+    u8 in[5];
+    u8 out[4];
 
-    for (int i = 0; i < 1; i ++)
-    {
-        for (int i = 0; i < 5; i++)
-        {
-            xil_printf("\r\nTest %d inputs: %02X %02X %02X %02X %02X\r\n",
-                       i + 1,
-                       tests[i][0], tests[i][1], tests[i][2], tests[i][3], tests[i][4]);
+    while (1) {
 
-            u32 res = gf_run_one_stateful(&gf,
-                                          tests[i][0], tests[i][1], tests[i][2], tests[i][3], tests[i][4]);
 
-            print_u32_as_bytes(res);
+        Uart_RecvExact(&UartPs, in, 5);
+        u32 res = gf_run_one_stateful(&gf, in[0], in[1], in[2], in[3], in[4]);
 
-            // small delay so UART output is readable
-            usleep(1000);
-        }
+        out[0] = (u8)((res >> 24) & 0xFF);
+        out[1] = (u8)((res >> 16) & 0xFF);
+        out[2] = (u8)((res >>  8) & 0xFF);
+        out[3] = (u8)((res >>  0) & 0xFF);
 
-        xil_printf("\r\n--- Loop complete, repeating ---\r\n");
-        sleep(1);
+        // If you instead want LSB first, use this:
+        // out[0] = (u8)((res >>  0) & 0xFF);
+        // out[1] = (u8)((res >>  8) & 0xFF);
+        // out[2] = (u8)((res >> 16) & 0xFF);
+        // out[3] = (u8)((res >> 24) & 0xFF);
+
+        Uart_SendExact(&UartPs, out, 4);
+
+    }
+    
+    for(;;){
+
+        XGpio_DiscreteWrite(&output, 1, 0);
+        usleep(100);
+
+        XGpio_DiscreteWrite(&output, 1, 1);
+        usleep(100);
     }
 
     cleanup_platform();

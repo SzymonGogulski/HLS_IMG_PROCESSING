@@ -1,4 +1,4 @@
-# Install script for directory: /home/szymon/Desktop/CORA_Z7/HelloWorld/PLPS_HelloWorld_PS/AND_gate_platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/xiltimer/src/core
+# Install script for directory: /home/szymon/Desktop/CORA_Z7/projekt/PLPS_HelloWorld_PS/AND_gate_platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/xiltimer/src/core
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/szymon/Desktop/CORA_Z7/HelloWorld/PLPS_HelloWorld_PS/AND_gate_platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/xiltimer/src/core/default_timer/cmake_install.cmake")
+  include("/home/szymon/Desktop/CORA_Z7/projekt/PLPS_HelloWorld_PS/AND_gate_platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/xiltimer/src/core/default_timer/cmake_install.cmake")
 
 endif()
 

@@ -52,7 +52,7 @@ rule CUSTOM_COMMAND
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = /home/szymon/tools/Xilinx/2025.1/tps/lnx64/cmake-3.24.2/bin/cmake --regenerate-during-build -S/home/szymon/Desktop/CORA_Z7/HelloWorld/PLPS_HelloWorld_PS/AND_gate_platform/zynq_fsbl -B/home/szymon/Desktop/CORA_Z7/HelloWorld/PLPS_HelloWorld_PS/AND_gate_platform/zynq_fsbl/build
+  command = /home/szymon/tools/Xilinx/2025.1/tps/lnx64/cmake-3.24.2/bin/cmake --regenerate-during-build -S/home/szymon/Desktop/CORA_Z7/projekt/PLPS_HelloWorld_PS/AND_gate_platform/zynq_fsbl -B/home/szymon/Desktop/CORA_Z7/projekt/PLPS_HelloWorld_PS/AND_gate_platform/zynq_fsbl/build
   description = Re-running CMake...
   generator = 1
 

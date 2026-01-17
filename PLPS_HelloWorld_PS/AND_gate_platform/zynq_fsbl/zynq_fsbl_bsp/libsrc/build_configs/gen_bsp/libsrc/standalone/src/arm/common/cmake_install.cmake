@@ -1,4 +1,4 @@
-# Install script for directory: /home/szymon/Desktop/CORA_Z7/HelloWorld/PLPS_HelloWorld_PS/AND_gate_platform/zynq_fsbl/zynq_fsbl_bsp/libsrc/standalone/src/arm/common
+# Install script for directory: /home/szymon/Desktop/CORA_Z7/projekt/PLPS_HelloWorld_PS/AND_gate_platform/zynq_fsbl/zynq_fsbl_bsp/libsrc/standalone/src/arm/common
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,6 +39,6 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/szymon/Desktop/CORA_Z7/HelloWorld/PLPS_HelloWorld_PS/AND_gate_platform/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/standalone/src/arm/common/gcc/cmake_install.cmake")
+  include("/home/szymon/Desktop/CORA_Z7/projekt/PLPS_HelloWorld_PS/AND_gate_platform/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/standalone/src/arm/common/gcc/cmake_install.cmake")
 endif()
 

@@ -54,6 +54,7 @@ int main(void)
     }
 
     XUartPs_SetBaudRate(&UartPs, 115200);
+    
 
 
     u8 RxBuffer[NUM_BYTES];

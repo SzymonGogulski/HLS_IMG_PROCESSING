@@ -1,4 +1,4 @@
-# Install script for directory: /home/szymon/Desktop/CORA_Z7/HelloWorld/PLPS_HelloWorld_PS/AND_gate_platform/zynq_fsbl/zynq_fsbl_bsp/libsrc/scugic/src
+# Install script for directory: /home/szymon/Desktop/CORA_Z7/projekt/PLPS_HelloWorld_PS/AND_gate_platform/zynq_fsbl/zynq_fsbl_bsp/libsrc/scugic/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

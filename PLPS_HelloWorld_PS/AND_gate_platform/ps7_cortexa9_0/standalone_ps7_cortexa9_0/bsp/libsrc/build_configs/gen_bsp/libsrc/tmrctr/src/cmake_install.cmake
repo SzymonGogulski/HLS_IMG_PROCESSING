@@ -1,4 +1,4 @@
-# Install script for directory: /home/szymon/Desktop/CORA_Z7/HelloWorld/PLPS_HelloWorld_PS/AND_gate_platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/tmrctr/src
+# Install script for directory: /home/szymon/Desktop/CORA_Z7/projekt/PLPS_HelloWorld_PS/AND_gate_platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/tmrctr/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
