@@ -47,8 +47,7 @@ static int uart_send_str(XUartPs *UartPs, const char *s)
     return sent;
 }
 
-static int uart_recv_exact(XUartPs *UartPs, u8 *buf, int nbytes)
-{
+static int uart_recv_exact(XUartPs *UartPs, u8 *buf, int nbytes){
     int got = 0;
     while (got < nbytes) {
         got += XUartPs_Recv(UartPs, buf + got, (u32)(nbytes - got));
@@ -56,8 +55,7 @@ static int uart_recv_exact(XUartPs *UartPs, u8 *buf, int nbytes)
     return got;
 }
 
-static int uart_recv_dims(XUartPs *UartPs, int *out_h, int *out_w)
-{
+static int uart_recv_dims(XUartPs *UartPs, int *out_h, int *out_w){
     char msg[128];
     int idx = 0;
 
@@ -126,6 +124,11 @@ static u8 sf_run(XImgsharpeningfilter *sf, u8 d0, u8 d1, u8 d2){
     return res;
 }
 
+void set_leds(XGpio *red, XGpio *green, int red_val, int green_val){
+    XGpio_DiscreteWrite(red, 1, red_val);
+    XGpio_DiscreteWrite(green, 1, green_val);
+}
+
 int main()
 {   
     init_platform();
@@ -138,8 +141,7 @@ int main()
     XGpio_SetDataDirection(&red, 1, 0);
     XGpio_SetDataDirection(&green, 1, 0);
 
-    XGpio_DiscreteWrite(&red, 1, 0);
-    XGpio_DiscreteWrite(&green, 1, 0);
+    set_leds(&red, &green, 0, 0);
 
     // UART INIT
     int status;
@@ -148,59 +150,82 @@ int main()
     
     Config = XUartPs_LookupConfig(XPAR_UART0_BASEADDR);
     if (Config == NULL){
+        set_leds(&red, &green, 1, 0);
         return XST_FAILURE;
     }
 
     status = XUartPs_CfgInitialize(&UartPs, Config, Config->BaseAddress);
     if (status != XST_SUCCESS){
+        set_leds(&red, &green, 1, 0);
         return XST_FAILURE;
     }
 
     status = XUartPs_SelfTest(&UartPs);
     if (status != XST_SUCCESS){
+        set_leds(&red, &green, 1, 0);
         return XST_FAILURE;
     }
 
     XUartPs_SetBaudRate(&UartPs, 921600);
-    XUartPs_SetOptions(&UartPs, XUARTPS_OPTION_RESET_TX | XUARTPS_OPTION_RESET_RX);
-
+    
     // ImgSherpeningFilter INIT
     XImgsharpeningfilter sf;
     status = sf_init(&sf);
     if (status != XST_SUCCESS){
+        set_leds(&red, &green, 1, 0);
         return XST_FAILURE;
     }
 
-    // Read UART IMG width and height
-    int h = 0, w = 0;
+    while(TRUE){
+        XUartPs_SetOptions(&UartPs, XUARTPS_OPTION_RESET_TX | XUARTPS_OPTION_RESET_RX);
+        // Read UART IMG width and height
+        int h = 0, w = 0;
 
-    if (uart_recv_dims(&UartPs, &h, &w) != XST_SUCCESS) {
-        return XST_FAILURE;
-    }   
+        if (uart_recv_dims(&UartPs, &h, &w) != XST_SUCCESS) {
+            set_leds(&red, &green, 1, 0);
+            return XST_FAILURE;
+        }   
 
-    //Allocate memory
-    size_t sz = (size_t)h * (size_t)w;
-    if (sz == 0) return XST_FAILURE;
+        //Allocate memory
+        size_t sz = (size_t)h * (size_t)w;
+        if (sz == 0){
+            set_leds(&red, &green, 1, 0);
+            return XST_FAILURE;
+        } 
 
-    u8 *img = (u8 *)malloc(sz);
-    if (!img) {         
-        XGpio_DiscreteWrite(&red, 1, 1);
-        XGpio_DiscreteWrite(&green, 1, 0);
-    } else {
-        XGpio_DiscreteWrite(&red, 1, 0);
-        XGpio_DiscreteWrite(&green, 1, 1);
+        u8 *img = (u8 *)malloc(sz);
+        if (!img) {         
+            set_leds(&red, &green, 1, 0);
+            return XST_FAILURE;
+        }
+
+        // Send read message
+        uart_send_str(&UartPs, "READY");
+
+        // Receive the image bytes
+        uart_recv_exact(&UartPs, img, (int)sz);
+
+        for (int i=0; i<h-2; i++){
+            for (int j=0; j<w; j++){
+
+                u8 res = sf_run(&sf, img[(i+0)*w + j], img[(i+1)*w + j], img[(i+2)*w + j]);
+                while (XUartPs_Send(&UartPs, &res, 1) != 1) {}
+            }
+        }
+
         free(img);
+        
+        for (int i=0; i<3; i++){
+            set_leds(&red, &green, 0, 1);
+            sleep(1);
+            set_leds(&red, &green, 0, 0);
+            sleep(1);
+        }
     }
 
+    XGpio_DiscreteWrite(&red, 1, 1);
+    XGpio_DiscreteWrite(&green, 1, 0);
     sleep(10);
-    // Send read message
-    uart_send_str(&UartPs, "READY");
-
-
-
-
-
-
     cleanup_platform();
     return 0;
 }
