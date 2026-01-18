@@ -483,13 +483,9 @@
     "/usr/include/fenv.h",
     "/usr/include/x86_64-linux-gnu/bits/fenv.h",
     "/home/szymon/tools/Xilinx/2025.1/lnx64/tools/vcxx/data/include/etc/ap_fixed_ref.h",
-    "/home/szymon/tools/Xilinx/2025.1/lnx64/tools/vcxx/data/include/etc/ap_fixed_special.h",
-    "/home/szymon/tools/Xilinx/2025.1/Vitis/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/fstream",
-    "/home/szymon/tools/Xilinx/2025.1/Vitis/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/x86_64-pc-linux-gnu/bits/basic_file.h",
-    "/home/szymon/tools/Xilinx/2025.1/Vitis/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/x86_64-pc-linux-gnu/bits/c++io.h",
-    "/home/szymon/tools/Xilinx/2025.1/Vitis/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/fstream.tcc"
+    "/home/szymon/tools/Xilinx/2025.1/lnx64/tools/vcxx/data/include/etc/ap_fixed_special.h"
   ],
-  "source": "/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/tb_img_sharpening_filter.cpp"
+  "source": "/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/img_sharpening_filter.cpp"
 },
 {
   "headers": [
@@ -742,8 +738,12 @@
     "/usr/include/fenv.h",
     "/usr/include/x86_64-linux-gnu/bits/fenv.h",
     "/home/szymon/tools/Xilinx/2025.1/lnx64/tools/vcxx/data/include/etc/ap_fixed_ref.h",
-    "/home/szymon/tools/Xilinx/2025.1/lnx64/tools/vcxx/data/include/etc/ap_fixed_special.h"
+    "/home/szymon/tools/Xilinx/2025.1/lnx64/tools/vcxx/data/include/etc/ap_fixed_special.h",
+    "/home/szymon/tools/Xilinx/2025.1/Vitis/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/fstream",
+    "/home/szymon/tools/Xilinx/2025.1/Vitis/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/x86_64-pc-linux-gnu/bits/basic_file.h",
+    "/home/szymon/tools/Xilinx/2025.1/Vitis/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/x86_64-pc-linux-gnu/bits/c++io.h",
+    "/home/szymon/tools/Xilinx/2025.1/Vitis/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/bits/fstream.tcc"
   ],
-  "source": "/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/img_sharpening_filter.cpp"
+  "source": "/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/tb_img_sharpening_filter.cpp"
 }
 ]

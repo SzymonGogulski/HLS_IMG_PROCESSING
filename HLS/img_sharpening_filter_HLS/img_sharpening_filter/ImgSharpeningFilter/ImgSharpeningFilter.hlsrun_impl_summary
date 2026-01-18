@@ -9,10 +9,10 @@
 <ENTRY>
 {
  "type": "ET_CmdStep",
- "dateTimestamp": "Sat Jan 17 21:37:35 2026",
- "timestampMillis": "1768682255276",
+ "dateTimestamp": "Sun Jan 18 18:52:07 2026",
+ "timestampMillis": "1768758727599",
  "buildStep": {
-  "cmdId": "ec30dc07-0aa7-4ace-be11-c3e53bd280e1",
+  "cmdId": "0519306e-6c85-433c-a8de-cf043500393f",
   "name": "vitis-run",
   "logFile": "/home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/logs/ImgSharpeningFilter.steps.log",
   "commandLine": "/home/szymon/tools/Xilinx/2025.1/Vitis/bin/unwrapped/lnx64.o/vitis-run  --mode hls --impl --config /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/hls_config.cfg --work_dir ImgSharpeningFilter ",
@@ -33,10 +33,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Sat Jan 17 21:37:35 2026",
- "timestampMillis": "1768682255276",
+ "dateTimestamp": "Sun Jan 18 18:52:07 2026",
+ "timestampMillis": "1768758727600",
  "status": {
-  "cmdId": "ec30dc07-0aa7-4ace-be11-c3e53bd280e1",
+  "cmdId": "0519306e-6c85-433c-a8de-cf043500393f",
   "state": "CS_RUNNING"
  }
 }
@@ -44,8 +44,8 @@
 <ENTRY>
 {
  "type": "ET_FlowMetaData",
- "dateTimestamp": "Sat Jan 17 21:37:40 2026",
- "timestampMillis": "1768682260012",
+ "dateTimestamp": "Sun Jan 18 18:52:12 2026",
+ "timestampMillis": "1768758732717",
  "buildSummary": {
   "hardwarePlatform": "",
   "hardwareDsa": "",
@@ -81,10 +81,10 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "Sat Jan 17 21:37:40 2026",
- "timestampMillis": "1768682260013",
+ "dateTimestamp": "Sun Jan 18 18:52:12 2026",
+ "timestampMillis": "1768758732719",
  "buildStep": {
-  "cmdId": "2a8761b0-8854-4d31-a618-513e97c762d2",
+  "cmdId": "8bb1e4f0-eabf-4f38-8159-171214696391",
   "name": "",
   "logFile": "/home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls/hls.log",
   "commandLine": "",
@@ -97,10 +97,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Sat Jan 17 21:37:40 2026",
- "timestampMillis": "1768682260013",
+ "dateTimestamp": "Sun Jan 18 18:52:12 2026",
+ "timestampMillis": "1768758732719",
  "status": {
-  "cmdId": "2a8761b0-8854-4d31-a618-513e97c762d2",
+  "cmdId": "8bb1e4f0-eabf-4f38-8159-171214696391",
   "state": "CS_RUNNING"
  }
 }
@@ -108,8 +108,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Sat Jan 17 21:37:40 2026",
- "timestampMillis": "1768682260014",
+ "dateTimestamp": "Sun Jan 18 18:52:12 2026",
+ "timestampMillis": "1768758732721",
  "report": {
   "path": "/home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls/impl/verilog",
   "name": "",
@@ -122,8 +122,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Sat Jan 17 21:37:40 2026",
- "timestampMillis": "1768682260015",
+ "dateTimestamp": "Sun Jan 18 18:52:12 2026",
+ "timestampMillis": "1768758732721",
  "report": {
   "path": "/home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls/impl/report/verilog/export_syn.rpt",
   "name": "",
@@ -136,8 +136,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Sat Jan 17 21:37:40 2026",
- "timestampMillis": "1768682260015",
+ "dateTimestamp": "Sun Jan 18 18:52:12 2026",
+ "timestampMillis": "1768758732721",
  "report": {
   "path": "/home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls/impl/report/verilog/export_syn.xml",
   "name": "",
@@ -150,8 +150,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Sat Jan 17 21:37:40 2026",
- "timestampMillis": "1768682260015",
+ "dateTimestamp": "Sun Jan 18 18:52:12 2026",
+ "timestampMillis": "1768758732721",
  "report": {
   "path": "/home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls/impl/verilog",
   "name": "",
@@ -164,8 +164,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Sat Jan 17 21:37:40 2026",
- "timestampMillis": "1768682260015",
+ "dateTimestamp": "Sun Jan 18 18:52:12 2026",
+ "timestampMillis": "1768758732722",
  "report": {
   "path": "/home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls/impl/report/verilog/export_impl.rpt",
   "name": "",
@@ -178,8 +178,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Sat Jan 17 21:37:40 2026",
- "timestampMillis": "1768682260015",
+ "dateTimestamp": "Sun Jan 18 18:52:12 2026",
+ "timestampMillis": "1768758732722",
  "report": {
   "path": "/home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls/impl/report/verilog/export_impl.xml",
   "name": "",
@@ -192,8 +192,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Sat Jan 17 21:40:51 2026",
- "timestampMillis": "1768682451601",
+ "dateTimestamp": "Sun Jan 18 18:55:15 2026",
+ "timestampMillis": "1768758915492",
  "report": {
   "path": "/home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls",
   "name": "",
@@ -206,8 +206,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Sat Jan 17 21:40:51 2026",
- "timestampMillis": "1768682451602",
+ "dateTimestamp": "Sun Jan 18 18:55:15 2026",
+ "timestampMillis": "1768758915493",
  "report": {
   "path": "/home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls",
   "name": "",
@@ -220,10 +220,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Sat Jan 17 21:40:51 2026",
- "timestampMillis": "1768682451602",
+ "dateTimestamp": "Sun Jan 18 18:55:15 2026",
+ "timestampMillis": "1768758915493",
  "status": {
-  "cmdId": "2a8761b0-8854-4d31-a618-513e97c762d2",
+  "cmdId": "8bb1e4f0-eabf-4f38-8159-171214696391",
   "state": "CS_PASSED"
  }
 }
@@ -231,10 +231,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Sat Jan 17 21:40:51 2026",
- "timestampMillis": "1768682451702",
+ "dateTimestamp": "Sun Jan 18 18:55:15 2026",
+ "timestampMillis": "1768758915632",
  "status": {
-  "cmdId": "ec30dc07-0aa7-4ace-be11-c3e53bd280e1",
+  "cmdId": "0519306e-6c85-433c-a8de-cf043500393f",
   "state": "CS_PASSED"
  }
 }
@@ -242,8 +242,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Sat Jan 17 21:40:51 2026",
- "timestampMillis": "1768682451703",
+ "dateTimestamp": "Sun Jan 18 18:55:15 2026",
+ "timestampMillis": "1768758915633",
  "report": {
   "path": "",
   "name": "",
@@ -256,8 +256,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Sat Jan 17 21:40:51 2026",
- "timestampMillis": "1768682451703",
+ "dateTimestamp": "Sun Jan 18 18:55:15 2026",
+ "timestampMillis": "1768758915633",
  "report": {
   "path": "",
   "name": "",

@@ -1,0 +1,167 @@
+<profile>
+  <RunData>
+    <RUN_TYPE>impl</RUN_TYPE>
+    <VIVADO_VERSION>v.2025.1</VIVADO_VERSION>
+    <ROOT_MODULE_CELL>bd_0_i/hls_inst</ROOT_MODULE_CELL>
+  </RunData>
+  <TimingReport>
+    <TargetClockPeriod>8.000</TargetClockPeriod>
+    <AchievedClockPeriod>7.439</AchievedClockPeriod>
+    <CLOCK_NAME>ap_clk</CLOCK_NAME>
+    <CP_FINAL>7.439</CP_FINAL>
+    <CP_ROUTE>7.439</CP_ROUTE>
+    <CP_SYNTH>7.127</CP_SYNTH>
+    <CP_TARGET>8.000</CP_TARGET>
+    <SLACK_FINAL>0.561</SLACK_FINAL>
+    <SLACK_ROUTE>0.561</SLACK_ROUTE>
+    <SLACK_SYNTH>0.873</SLACK_SYNTH>
+    <TIMING_MET>TRUE</TIMING_MET>
+    <TNS_FINAL>0.000</TNS_FINAL>
+    <TNS_ROUTE>0.000</TNS_ROUTE>
+    <TNS_SYNTH>0.000</TNS_SYNTH>
+    <WNS_FINAL>0.561</WNS_FINAL>
+    <WNS_ROUTE>0.561</WNS_ROUTE>
+    <WNS_SYNTH>0.873</WNS_SYNTH>
+  </TimingReport>
+  <AreaReport>
+    <Resources>
+      <BRAM>0</BRAM>
+      <CLB>0</CLB>
+      <DSP>0</DSP>
+      <FF>131</FF>
+      <LATCH>0</LATCH>
+      <LUT>104</LUT>
+      <SLICE>38</SLICE>
+      <SRL>0</SRL>
+      <URAM>0</URAM>
+    </Resources>
+    <AvailableResources>
+      <BRAM>100</BRAM>
+      <CLB>0</CLB>
+      <DSP>66</DSP>
+      <FF>28800</FF>
+      <LUT>14400</LUT>
+      <SLICE>4400</SLICE>
+      <URAM>0</URAM>
+    </AvailableResources>
+  </AreaReport>
+  <RtlModules>
+    <RtlModule CELL="inst" DEPTH="0" IS_TOP="1" TYPE="function" MODULENAME="ImgSharpeningFilter" DISPNAME="inst" RTLNAME="ImgSharpeningFilter">
+      <SubModules count="1">CTRL_s_axi_U</SubModules>
+      <Resources FF="131" LUT="104"/>
+      <LocalResources FF="67" LUT="30"/>
+    </RtlModule>
+    <RtlModule CELL="inst/CTRL_s_axi_U" DEPTH="1" TYPE="resource" MODULENAME="CTRL_s_axi" DISPNAME="CTRL_s_axi_U" RTLNAME="ImgSharpeningFilter_CTRL_s_axi">
+      <Resources FF="64" LUT="74"/>
+      <BindNode BINDTYPE="adapter" BRAM="0" BUNDLEDNAME="CTRL" DISPNAME="bind_adapter " DSP="0" ID="" IMPL="" LATENCY="" LOOP="" OPTYPE="" PRAGMA="" RTLNAME="CTRL_s_axi_U" SOURCE="" STORAGESIZE="" STORAGESUBTYPE="s_axilite" STORAGEUSAGE="interface" URAM="0" VARIABLE=""/>
+    </RtlModule>
+  </RtlModules>
+  <TimingPaths>
+    <TPATH DATAPATH_DELAY="6.926" DATAPATH_LOGIC_DELAY="2.840" DATAPATH_NET_DELAY="4.086" ENDPOINT_PIN="tmp_2_reg_254_reg[0]/R" LOGIC_LEVELS="9" MAX_FANOUT="11" SLACK="0.561" STARTPOINT_PIN="add_ln49_reg_249_reg[0]/C">
+      <CELL NAME="add_ln49_reg_249_reg[0]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="200"/>
+      <CELL NAME="trunc_ln58_reg_259[7]_i_18" PRIMITIVE_TYPE="LUT.others.LUT2" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="284"/>
+      <CELL NAME="trunc_ln58_reg_259_reg[7]_i_13" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="280"/>
+      <CELL NAME="tmp_2_reg_254_reg[2]_i_10" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="280"/>
+      <CELL NAME="trunc_ln58_reg_259[7]_i_11" PRIMITIVE_TYPE="LUT.others.LUT3" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="9"/>
+      <CELL NAME="trunc_ln58_reg_259[7]_i_3" PRIMITIVE_TYPE="LUT.others.LUT5" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="280"/>
+      <CELL NAME="trunc_ln58_reg_259[7]_i_7" PRIMITIVE_TYPE="LUT.others.LUT6" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="280"/>
+      <CELL NAME="trunc_ln58_reg_259_reg[7]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="280"/>
+      <CELL NAME="tmp_2_reg_254_reg[2]_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="280"/>
+      <CELL NAME="tmp_2_reg_254[2]_i_1" PRIMITIVE_TYPE="LUT.others.LUT2" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="9"/>
+      <CELL NAME="tmp_2_reg_254_reg[0]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="216"/>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="6.926" DATAPATH_LOGIC_DELAY="2.840" DATAPATH_NET_DELAY="4.086" ENDPOINT_PIN="tmp_2_reg_254_reg[1]/R" LOGIC_LEVELS="9" MAX_FANOUT="11" SLACK="0.561" STARTPOINT_PIN="add_ln49_reg_249_reg[0]/C">
+      <CELL NAME="add_ln49_reg_249_reg[0]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="200"/>
+      <CELL NAME="trunc_ln58_reg_259[7]_i_18" PRIMITIVE_TYPE="LUT.others.LUT2" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="284"/>
+      <CELL NAME="trunc_ln58_reg_259_reg[7]_i_13" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="280"/>
+      <CELL NAME="tmp_2_reg_254_reg[2]_i_10" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="280"/>
+      <CELL NAME="trunc_ln58_reg_259[7]_i_11" PRIMITIVE_TYPE="LUT.others.LUT3" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="9"/>
+      <CELL NAME="trunc_ln58_reg_259[7]_i_3" PRIMITIVE_TYPE="LUT.others.LUT5" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="280"/>
+      <CELL NAME="trunc_ln58_reg_259[7]_i_7" PRIMITIVE_TYPE="LUT.others.LUT6" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="280"/>
+      <CELL NAME="trunc_ln58_reg_259_reg[7]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="280"/>
+      <CELL NAME="tmp_2_reg_254_reg[2]_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="280"/>
+      <CELL NAME="tmp_2_reg_254[2]_i_1" PRIMITIVE_TYPE="LUT.others.LUT2" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="9"/>
+      <CELL NAME="tmp_2_reg_254_reg[1]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="216"/>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="6.926" DATAPATH_LOGIC_DELAY="2.840" DATAPATH_NET_DELAY="4.086" ENDPOINT_PIN="tmp_2_reg_254_reg[2]/R" LOGIC_LEVELS="9" MAX_FANOUT="11" SLACK="0.561" STARTPOINT_PIN="add_ln49_reg_249_reg[0]/C">
+      <CELL NAME="add_ln49_reg_249_reg[0]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="200"/>
+      <CELL NAME="trunc_ln58_reg_259[7]_i_18" PRIMITIVE_TYPE="LUT.others.LUT2" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="284"/>
+      <CELL NAME="trunc_ln58_reg_259_reg[7]_i_13" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="280"/>
+      <CELL NAME="tmp_2_reg_254_reg[2]_i_10" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="280"/>
+      <CELL NAME="trunc_ln58_reg_259[7]_i_11" PRIMITIVE_TYPE="LUT.others.LUT3" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="9"/>
+      <CELL NAME="trunc_ln58_reg_259[7]_i_3" PRIMITIVE_TYPE="LUT.others.LUT5" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="280"/>
+      <CELL NAME="trunc_ln58_reg_259[7]_i_7" PRIMITIVE_TYPE="LUT.others.LUT6" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="280"/>
+      <CELL NAME="trunc_ln58_reg_259_reg[7]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="280"/>
+      <CELL NAME="tmp_2_reg_254_reg[2]_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="280"/>
+      <CELL NAME="tmp_2_reg_254[2]_i_1" PRIMITIVE_TYPE="LUT.others.LUT2" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="9"/>
+      <CELL NAME="tmp_2_reg_254_reg[2]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="216"/>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="6.790" DATAPATH_LOGIC_DELAY="2.840" DATAPATH_NET_DELAY="3.950" ENDPOINT_PIN="trunc_ln58_reg_259_reg[0]/R" LOGIC_LEVELS="9" MAX_FANOUT="11" SLACK="0.697" STARTPOINT_PIN="add_ln49_reg_249_reg[0]/C">
+      <CELL NAME="add_ln49_reg_249_reg[0]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="200"/>
+      <CELL NAME="trunc_ln58_reg_259[7]_i_18" PRIMITIVE_TYPE="LUT.others.LUT2" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="284"/>
+      <CELL NAME="trunc_ln58_reg_259_reg[7]_i_13" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="280"/>
+      <CELL NAME="tmp_2_reg_254_reg[2]_i_10" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="280"/>
+      <CELL NAME="trunc_ln58_reg_259[7]_i_11" PRIMITIVE_TYPE="LUT.others.LUT3" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="9"/>
+      <CELL NAME="trunc_ln58_reg_259[7]_i_3" PRIMITIVE_TYPE="LUT.others.LUT5" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="280"/>
+      <CELL NAME="trunc_ln58_reg_259[7]_i_7" PRIMITIVE_TYPE="LUT.others.LUT6" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="280"/>
+      <CELL NAME="trunc_ln58_reg_259_reg[7]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="280"/>
+      <CELL NAME="tmp_2_reg_254_reg[2]_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="280"/>
+      <CELL NAME="tmp_2_reg_254[2]_i_1" PRIMITIVE_TYPE="LUT.others.LUT2" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="9"/>
+      <CELL NAME="trunc_ln58_reg_259_reg[0]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="217"/>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="6.790" DATAPATH_LOGIC_DELAY="2.840" DATAPATH_NET_DELAY="3.950" ENDPOINT_PIN="trunc_ln58_reg_259_reg[1]/R" LOGIC_LEVELS="9" MAX_FANOUT="11" SLACK="0.697" STARTPOINT_PIN="add_ln49_reg_249_reg[0]/C">
+      <CELL NAME="add_ln49_reg_249_reg[0]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="200"/>
+      <CELL NAME="trunc_ln58_reg_259[7]_i_18" PRIMITIVE_TYPE="LUT.others.LUT2" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="284"/>
+      <CELL NAME="trunc_ln58_reg_259_reg[7]_i_13" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="280"/>
+      <CELL NAME="tmp_2_reg_254_reg[2]_i_10" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="280"/>
+      <CELL NAME="trunc_ln58_reg_259[7]_i_11" PRIMITIVE_TYPE="LUT.others.LUT3" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="9"/>
+      <CELL NAME="trunc_ln58_reg_259[7]_i_3" PRIMITIVE_TYPE="LUT.others.LUT5" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="280"/>
+      <CELL NAME="trunc_ln58_reg_259[7]_i_7" PRIMITIVE_TYPE="LUT.others.LUT6" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="280"/>
+      <CELL NAME="trunc_ln58_reg_259_reg[7]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="280"/>
+      <CELL NAME="tmp_2_reg_254_reg[2]_i_2" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="280"/>
+      <CELL NAME="tmp_2_reg_254[2]_i_1" PRIMITIVE_TYPE="LUT.others.LUT2" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="9"/>
+      <CELL NAME="trunc_ln58_reg_259_reg[1]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="ImgSharpeningFilter.v" LINE_NUMBER="217"/>
+    </TPATH>
+  </TimingPaths>
+  <VivadoReportFiles>
+    <ReportFile TYPE="design_analysis" PATH="verilog/report/ImgSharpeningFilter_design_analysis_routed.rpt"/>
+    <ReportFile TYPE="failfast" PATH="verilog/report/ImgSharpeningFilter_failfast_routed.rpt"/>
+    <ReportFile TYPE="power" PATH="verilog/report/ImgSharpeningFilter_power_routed.rpt"/>
+    <ReportFile TYPE="status" PATH="verilog/report/ImgSharpeningFilter_status_routed.rpt"/>
+    <ReportFile TYPE="timing" PATH="verilog/report/ImgSharpeningFilter_timing_routed.rpt"/>
+    <ReportFile TYPE="timing_paths" PATH="verilog/report/ImgSharpeningFilter_timing_paths_routed.rpt"/>
+    <ReportFile TYPE="utilization" PATH="verilog/report/ImgSharpeningFilter_utilization_routed.rpt"/>
+    <ReportFile TYPE="utilization_hierarchical" PATH="verilog/report/ImgSharpeningFilter_utilization_hierarchical_routed.rpt"/>
+  </VivadoReportFiles>
+  <GeneralInfo NAME="General Information">
+    <item NAME="Date" VALUE="Sun Jan 18 18:55:15 CET 2026"/>
+    <item NAME="Version" VALUE="2025.1 (Build 6135595 on May 21 2025)"/>
+    <item NAME="Project" VALUE="ImgSharpeningFilter"/>
+    <item NAME="Solution" VALUE="hls (Vitis Kernel Flow Target)"/>
+    <item NAME="Product family" VALUE="zynq"/>
+    <item NAME="Target device" VALUE="xc7z007s-clg400-1"/>
+  </GeneralInfo>
+  <RunOptions NAME="Run Constraints &amp; Options">
+    <General NAME="Design Constraints &amp; Options">
+      <item NAME="Place &amp; Route target clock" VALUE="8 ns"/>
+      <item NAME="C-Synthesis target clock" VALUE="8 ns"/>
+      <item NAME="C-Synthesis uncertainty" VALUE="12%"/>
+      <item NAME="config_export -ip_xdc_file" VALUE=""/>
+      <item NAME="config_export -ip_xdc_ooc_file" VALUE=""/>
+    </General>
+    <Syn NAME="RTL Synthesis Options">
+      <item NAME="config_export -vivado_synth_strategy" VALUE="default"/>
+      <item NAME="config_export -vivado_synth_design_args" VALUE="-directive sdx_optimization_effort_high"/>
+    </Syn>
+    <Impl NAME="Place &amp; Route Options">
+      <item NAME="config_export -vivado_impl_strategy" VALUE="default"/>
+      <item NAME="config_export -vivado_phys_opt" VALUE="auto"/>
+      <item NAME="config_export -vivado_pblock" VALUE=""/>
+    </Impl>
+    <Reporting NAME="Reporting Options">
+      <item NAME="config_export -vivado_report_level" VALUE="2"/>
+      <item NAME="config_export -vivado_max_timing_paths" VALUE="10"/>
+    </Reporting>
+  </RunOptions>
+</profile>
+

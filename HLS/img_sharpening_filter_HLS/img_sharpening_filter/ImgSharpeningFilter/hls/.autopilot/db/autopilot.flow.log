@@ -1059,3 +1059,416 @@ Execute   close_project
 Execute     close_solution 
 Execute       cleanup_all 
 Execute       cleanup_all 
+Execute       source -notrace -encoding utf-8 /home/szymon/tools/Xilinx/2025.1/Vitis/tps/tcl/tcl8.6/clock.tcl 
+Execute         source -encoding utf-8 /home/szymon/tools/Xilinx/2025.1/tps/tcl/tcl8/8.5/msgcat-1.6.1.tm 
+INFO-FLOW: Workspace /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls opened at Sun Jan 18 18:52:11 CET 2026
+Execute       source /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls/.autopilot/db/global.setting.tcl 
+Execute       set_part xc7z007s-clg400-1 
+Execute         create_platform xc7z007s-clg400-1 -board  
+DBG:HLSDevice: Trying to load device library: /home/szymon/tools/Xilinx/2025.1/Vitis/lib/lnx64.o/libxv_hlsvwrap.so
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /home/szymon/tools/Xilinx/2025.1/Vivado/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xc7z007s-clg400-1'
+Command         create_platform done; 0.79 sec.
+Execute         source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/xilinx/common/xilinx.gen 
+Execute           source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/plb46.gen 
+Execute           source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/axi4.gen 
+Execute           source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/xfir.gen 
+Execute           source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/xfft.gen 
+Execute           source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/util.gen 
+Execute           source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/xilinx/DSP48/dsp48.gen 
+Execute         ap_part_info -name xc7z007s-clg400-1 -data info 
+Execute         config_compile -quiet -complex-mul-dsp=0 
+Command       set_part done; 0.93 sec.
+Execute       send_msg_by_id INFO @200-1505@%s%s default  vivado 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Execute       send_msg_by_id INFO @200-2174@%s%s component /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/hls_config.cfg 
+INFO: [HLS 200-2174] Applying component config ini file /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/hls_config.cfg
+Execute       apply_ini /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/hls_config.cfg 
+Execute         send_msg_by_id INFO @200-1465@%s 'syn.file=/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/img_sharpening_filter.h' from /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/hls_config.cfg(8) 
+INFO: [HLS 200-1465] Applying config ini 'syn.file=/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/img_sharpening_filter.h' from /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/hls_config.cfg(8)
+Execute         add_files /home/szymon/Desktop/CORA_Z7/projekt/HLS/code/img_sharpening_filter.h 
+INFO: [HLS 200-10] Adding design file '/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/img_sharpening_filter.h' to the project
+Execute         send_msg_by_id INFO @200-1465@%s 'syn.file=/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/img_sharpening_filter.cpp' from /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/hls_config.cfg(9) 
+INFO: [HLS 200-1465] Applying config ini 'syn.file=/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/img_sharpening_filter.cpp' from /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/hls_config.cfg(9)
+Execute         add_files /home/szymon/Desktop/CORA_Z7/projekt/HLS/code/img_sharpening_filter.cpp 
+INFO: [HLS 200-10] Adding design file '/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/img_sharpening_filter.cpp' to the project
+Execute         send_msg_by_id INFO @200-1465@%s 'tb.file=/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/golden_output.txt' from /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/hls_config.cfg(10) 
+INFO: [HLS 200-1465] Applying config ini 'tb.file=/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/golden_output.txt' from /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/hls_config.cfg(10)
+Execute         add_files -tb /home/szymon/Desktop/CORA_Z7/projekt/HLS/code/golden_output.txt 
+INFO: [HLS 200-10] Adding test bench file '/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/golden_output.txt' to the project
+Execute         send_msg_by_id INFO @200-1465@%s 'tb.file=/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/golden_input.txt' from /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/hls_config.cfg(11) 
+INFO: [HLS 200-1465] Applying config ini 'tb.file=/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/golden_input.txt' from /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/hls_config.cfg(11)
+Execute         add_files -tb /home/szymon/Desktop/CORA_Z7/projekt/HLS/code/golden_input.txt 
+INFO: [HLS 200-10] Adding test bench file '/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/golden_input.txt' to the project
+Execute         send_msg_by_id INFO @200-1465@%s 'tb.file=/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/tb_img_sharpening_filter.cpp' from /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/hls_config.cfg(12) 
+INFO: [HLS 200-1465] Applying config ini 'tb.file=/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/tb_img_sharpening_filter.cpp' from /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/hls_config.cfg(12)
+Execute         add_files -tb /home/szymon/Desktop/CORA_Z7/projekt/HLS/code/tb_img_sharpening_filter.cpp 
+INFO: [HLS 200-10] Adding test bench file '/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/tb_img_sharpening_filter.cpp' to the project
+Execute         send_msg_by_id INFO @200-1465@%s 'syn.top=ImgSharpeningFilter' from /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/hls_config.cfg(7) 
+INFO: [HLS 200-1465] Applying config ini 'syn.top=ImgSharpeningFilter' from /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/hls_config.cfg(7)
+Execute         set_top ImgSharpeningFilter 
+Execute         send_msg_by_id INFO @200-1465@%s 'flow_target=vitis' from /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/hls_config.cfg(4) 
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vitis' from /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/hls_config.cfg(4)
+Execute         send_msg_by_id INFO @200-1505@%s%s  vitis 
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+Execute         send_msg_by_id INFO @200-435@%s%s 'open_solution -flow_target vitis' config_interface -m_axi_latency=64 
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_latency=64
+Execute         config_interface -m_axi_latency=64 
+Execute         send_msg_by_id INFO @200-435@%s%s 'open_solution -flow_target vitis' config_interface -m_axi_alignment_byte_size=64 
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_alignment_byte_size=64
+Execute         config_interface -m_axi_alignment_byte_size=64 
+Execute         send_msg_by_id INFO @200-435@%s%s 'open_solution -flow_target vitis' config_interface -m_axi_max_widen_bitwidth=512 
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_max_widen_bitwidth=512
+Execute         config_interface -m_axi_max_widen_bitwidth=512 
+INFO-FLOW: Setting macro_cmd open_solution -flow_target vitis configuration: config_interface -default_interface=kernel
+Execute         config_interface -default_interface=kernel 
+Execute         send_msg_by_id INFO @200-435@%s%s 'open_solution -flow_target vitis' config_rtl -register_reset_num=3 
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_rtl -register_reset_num=3
+Execute         config_rtl -register_reset_num=3 
+Execute         send_msg_by_id INFO @200-1465@%s 'part=xc7z007sclg400-1' from /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/hls_config.cfg(1) 
+INFO: [HLS 200-1465] Applying config ini 'part=xc7z007sclg400-1' from /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/hls_config.cfg(1)
+Execute         set_part xc7z007sclg400-1 
+Execute           create_platform xc7z007sclg400-1 -board  
+Command           create_platform done; 0.11 sec.
+Execute           source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/xilinx/common/xilinx.gen 
+Execute             source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/plb46.gen 
+Execute             source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/axi4.gen 
+Execute             source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute               source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/saxilite.gen 
+Execute             source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute             source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute             source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/dds_compiler.gen 
+Execute             source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/xfir.gen 
+Execute             source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/xfft.gen 
+Execute             source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/util.gen 
+Execute             source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/xilinx/DSP48/dsp48.gen 
+Execute           ap_part_info -name xc7z007s-clg400-1 -data info 
+Execute           config_compile -quiet -complex-mul-dsp=0 
+Command         set_part done; 0.24 sec.
+Execute         send_msg_by_id INFO @200-1465@%s 'clock=8ns' from /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/hls_config.cfg(13) 
+INFO: [HLS 200-1465] Applying config ini 'clock=8ns' from /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/hls_config.cfg(13)
+Execute         create_clock -period 8ns 
+Execute           ap_set_clock -name default -period 8 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 8ns.
+Execute         send_msg_by_id INFO @200-1465@%s 'clock_uncertainty=12%' from /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/hls_config.cfg(14) 
+INFO: [HLS 200-1465] Applying config ini 'clock_uncertainty=12%' from /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/hls_config.cfg(14)
+Execute         set_clock_uncertainty 12% 
+Execute           ap_set_clock -name default -uncertainty 0.96 -unit % 
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0.96ns.
+Execute         send_msg_by_id INFO @200-1465@%s 'csim.clean=1' from /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/hls_config.cfg(16) 
+INFO: [HLS 200-1465] Applying config ini 'csim.clean=1' from /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/hls_config.cfg(16)
+Execute         config_csim -clean=1 
+Execute         send_msg_by_id INFO @200-1465@%s 'csim.code_analyzer=1' from /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/hls_config.cfg(15) 
+INFO: [HLS 200-1465] Applying config ini 'csim.code_analyzer=1' from /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/hls_config.cfg(15)
+Execute         config_csim -code_analyzer=1 
+Execute         send_msg_by_id INFO @200-1465@%s 'package.ip.display_name=ImgSharpeningFilter' from /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/hls_config.cfg(17) 
+INFO: [HLS 200-1465] Applying config ini 'package.ip.display_name=ImgSharpeningFilter' from /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/hls_config.cfg(17)
+Execute         config_export -display_name=ImgSharpeningFilter 
+Execute         send_msg_by_id INFO @200-1465@%s 'package.output.format=ip_catalog' from /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/hls_config.cfg(5) 
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/hls_config.cfg(5)
+Execute         config_export -format=ip_catalog 
+Command       apply_ini done; 0.32 sec.
+Execute       write_component -config /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/hls_config.cfg 
+Execute         send_msg_by_id INFO @200-2176@%s /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/vitis-comp.json 
+INFO: [HLS 200-2176] Writing Vitis IDE component file /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/vitis-comp.json
+Command     open_solution done; 1.3 sec.
+Command   open_component done; 1.31 sec.
+Execute   apply_ini /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls/config.cmdline -iscmdline 
+Execute   ::AP::init_summary_file vivado-impl 
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute   export_design -flow impl 
+Execute     config_export -flow=impl 
+INFO-FLOW: DBG:PUTS: export_design_wrap: -flow impl -format ip_catalog -rtl verilog -display_name ImgSharpeningFilter
+Execute     source /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS:   auto_impl: pack: -export -rtl verilog
+INFO-FLOW: DBG:PROC: ::AESL_AUTOIMPL::auto_impl args='-export -rtl verilog'
+Execute     source /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls/.autopilot/db/global.setting.tcl 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+INFO-FLOW: DBG:PUTS: automg_wrap -export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag
+INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::auto_generate args='-export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag'
+INFO-FLOW: DBG:PUTS:     auto_generate -export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag
+Execute     source /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS: read_platform_lib /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls/.autopilot/db/global.setting.tcl
+Execute     source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/generic/autopilot/common.gen 
+Execute       source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/generic/autopilot/op.gen 
+Execute     source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/generic/autopilot/interface.gen 
+Execute     source /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls/.autopilot/db/global.setting.tcl 
+Execute     source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/xilinx/common/xilinx.gen 
+Execute       source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/plb46.gen 
+Execute       source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/axi4.gen 
+Execute       source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/saxilite.gen 
+Execute       source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/xfir.gen 
+Execute       source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/xfft.gen 
+Execute       source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/util.gen 
+Execute       source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/xilinx/DSP48/dsp48.gen 
+INFO-FLOW: DBG:PUTS:   using AESL_AUTOCG::g_clock_period=8.000 (was NA)
+INFO-FLOW: DBG:PUTS:       initCTypeInfo top_module=ImgSharpeningFilter xml_exists=1
+Execute     source /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls/.autopilot/db/ImgSharpeningFilter.rtl_wrap.cfg.tcl 
+Execute     source /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls/.autopilot/db/ImgSharpeningFilter.rtl_wrap.cfg.tcl 
+Execute     source /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls/.autopilot/db/ImgSharpeningFilter.rtl_wrap.cfg.tcl 
+Execute     source /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls/.autopilot/db/ImgSharpeningFilter.tbgen.tcl 
+Execute     source /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls/.autopilot/db/ImgSharpeningFilter.tbgen.tcl 
+Execute     source /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls/.autopilot/db/ImgSharpeningFilter.tbgen.tcl 
+Execute     source /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls/.autopilot/db/global.setting.tcl 
+Execute     source /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls/.autopilot/db/ImgSharpeningFilter.tbgen.tcl 
+Execute     source /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls/.autopilot/db/cosimDB.tcl 
+INFO-FLOW: DBG:PUTS:       cosim_export_main adding deadlock detection to ImgSharpeningFilter
+INFO-FLOW: DBG:PUTS:       generate_datafile_ip_script ip_types={vitis sysgen} #gSsdmPorts=0
+INFO-FLOW: DBG:PUTS: Skipping loadAnalyze_DB, #g_database=4
+INFO-FLOW: DBG:PUTS:       generate_json generate_bd_files=0 generate_xo_files=false #modelList=2 #gSsdmPorts=0
+INFO-FLOW: DBG:PROC: ::AP::DESIGN_DATA::generate_json generate_bd_files='0' generate_xo_files='false' modelList='ImgSharpeningFilter_CTRL_s_axi
+ImgSharpeningFilter
+' rtl_lang='vlog' bootstrap_tcl='false' outdir='' outfilename=''
+Execute     source /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls/.autopilot/db/global.setting.tcl 
+Execute     source /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls/.autopilot/db/global.setting.tcl 
+Execute     source /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls/.autopilot/db/top-io-be.tcl 
+Execute     source /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls/.autopilot/db/ImgSharpeningFilter.tbgen.tcl 
+Execute     source /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls/.autopilot/db/ImgSharpeningFilter.compgen.dataonly.tcl 
+Execute     source /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls/.autopilot/db/ImgSharpeningFilter.compgen.dataonly.tcl 
+Execute     source /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls/.autopilot/db/ImgSharpeningFilter.rtl_wrap.cfg.tcl 
+Execute     source /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls/.autopilot/db/ImgSharpeningFilter.compgen.dataonly.tcl 
+Execute     source /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls/.autopilot/db/ImgSharpeningFilter.tbgen.tcl 
+Execute     source /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls/.autopilot/db/global.setting.tcl 
+Execute     ap_part_info -name xc7z007s-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z007s-clg400-1 -data info -quiet 
+Execute     source /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls/.autopilot/db/ImgSharpeningFilter.constraint.tcl 
+Execute     sc_get_clocks ImgSharpeningFilter 
+Execute     source /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS:       generate_syn_sh
+Execute     ap_part_info -name xc7z007s-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z007s-clg400-1 -data info -quiet 
+Execute     source /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS:       generate_imp_constraints
+Execute     ap_part_info -name xc7z007s-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z007s-clg400-1 -data info -quiet 
+Execute     source /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls/.autopilot/db/ImgSharpeningFilter.constraint.tcl 
+Execute     source /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls/.autopilot/db/ImgSharpeningFilter.tbgen.tcl 
+INFO-FLOW: DBG:PUTS:       delete-temp-dirs pwd=/home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls
+Execute     ap_part_info -name xc7z007s-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z007s-clg400-1 -data info -quiet 
+INFO-FLOW: DBG:PUTS: read_platform_lib /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls/.autopilot/db/global.setting.tcl
+Execute     source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/generic/autopilot/common.gen 
+Execute       source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/generic/autopilot/op.gen 
+Execute     source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/generic/autopilot/interface.gen 
+Execute     source /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls/.autopilot/db/global.setting.tcl 
+Execute     source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/xilinx/common/xilinx.gen 
+Execute       source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/plb46.gen 
+Execute       source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/axi4.gen 
+Execute       source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/saxilite.gen 
+Execute       source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/xfir.gen 
+Execute       source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/xfft.gen 
+Execute       source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/util.gen 
+Execute       source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/xilinx/DSP48/dsp48.gen 
+INFO-FLOW: DBG:PUTS:     IP package: exec /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls/impl/ip/pack.sh
+INFO-FLOW: DBG:PUTS:     IP package: success /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls/impl/ip/pack.sh
+INFO-FLOW: DBG:PUTS:   auto_impl: eval: -flow impl -rtl verilog
+INFO-FLOW: DBG:PROC: ::AESL_AUTOIMPL::auto_impl args='-flow impl -rtl verilog'
+Execute     source /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls/.autopilot/db/global.setting.tcl 
+INFO: [IMPL 213-8] Starting RTL evaluation using Vivado ...
+INFO-FLOW: DBG:PUTS: automg_wrap -rtl vlog -tool Vivado -impltomg_flag
+INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::auto_generate args='-rtl vlog -tool Vivado -impltomg_flag'
+INFO-FLOW: DBG:PUTS:     auto_generate -rtl vlog -tool Vivado -impltomg_flag
+Execute     source /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS: read_platform_lib /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls/.autopilot/db/global.setting.tcl
+Execute     source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/generic/autopilot/common.gen 
+Execute       source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/generic/autopilot/op.gen 
+Execute     source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/generic/autopilot/interface.gen 
+Execute     source /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls/.autopilot/db/global.setting.tcl 
+Execute     source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/xilinx/common/xilinx.gen 
+Execute       source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/plb46.gen 
+Execute       source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/axi4.gen 
+Execute       source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/saxilite.gen 
+Execute       source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/xfir.gen 
+Execute       source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/xfft.gen 
+Execute       source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/util.gen 
+Execute       source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/xilinx/DSP48/dsp48.gen 
+INFO-FLOW: DBG:PUTS:       generate_syn_sh
+Execute     ap_part_info -name xc7z007s-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z007s-clg400-1 -data info -quiet 
+Execute     source /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS:       generate_imp_constraints
+Execute     ap_part_info -name xc7z007s-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z007s-clg400-1 -data info -quiet 
+Execute     source /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls/.autopilot/db/ImgSharpeningFilter.constraint.tcl 
+Execute     source /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls/.autopilot/db/ImgSharpeningFilter.tbgen.tcl 
+INFO-FLOW: DBG:PUTS:       delete-temp-dirs pwd=/home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls
+Execute     ap_part_info -name xc7z007s-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z007s-clg400-1 -data info -quiet 
+INFO-FLOW: DBG:PUTS: read_platform_lib /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls/.autopilot/db/global.setting.tcl
+Execute     source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/generic/autopilot/common.gen 
+Execute       source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/generic/autopilot/op.gen 
+Execute     source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/generic/autopilot/interface.gen 
+Execute     source /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls/.autopilot/db/global.setting.tcl 
+Execute     source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/xilinx/common/xilinx.gen 
+Execute       source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/plb46.gen 
+Execute       source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/axi4.gen 
+Execute       source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/saxilite.gen 
+Execute       source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/xfir.gen 
+Execute       source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/xfft.gen 
+Execute       source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/util.gen 
+Execute       source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/xilinx/DSP48/dsp48.gen 
+Execute     source /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls/.autopilot/db/autopilot.rtl.models.tcl 
+Execute     source /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls/.autopilot/db/global.setting.tcl 
+Execute     ap_part_info -name xc7z007s-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z007s-clg400-1 -data info -quiet 
+INFO-FLOW: DBG:PUTS: debug_in_auto_impl: vlog exec /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls/impl/verilog/impl.sh
+INFO-FLOW: DBG:PROC: ::HLSREPORTS::auto_impl_report topinfo_dict='RtlTopPrefix {} RtlSubPrefix ImgSharpeningFilter_ TopModuleNoPrefix ImgSharpeningFilter TopModuleWithPrefix ImgSharpeningFilter' export_design_flow='impl' impl_dir='/home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls/impl' lang='verilog' out_dir=''
+INFO-FLOW: DBG:PUTS:     auto_impl_report: impl processing xml
+Execute     ap_part_info -quiet -data family -name xc7z007s-clg400-1 
+INFO-FLOW: DBG:PUTS:     writing export xml file: /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls/impl/report/verilog/export_impl.xml
+INFO-FLOW: DBG:PROC: ::HLSREPORTS::auto_impl_report_txt xml_root='domNode0x7d2a989b79c8' export_design_flow='impl' export_rpt='/home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls/impl/report/verilog/export_impl.rpt' rpt_txt_var=''
+INFO-FLOW: DBG:PUTS:     wrote export rpt file: export_impl.rpt
+INFO-FLOW: DBG:PUTS:     auto_impl_report: syn processing xml
+Execute     ap_part_info -quiet -data family -name xc7z007s-clg400-1 
+INFO-FLOW: DBG:PUTS:     writing export xml file: /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls/impl/report/verilog/export_syn.xml
+INFO-FLOW: DBG:PROC: ::HLSREPORTS::auto_impl_report_txt xml_root='domNode0x7d2a989a8898' export_design_flow='syn' export_rpt='/home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls/impl/report/verilog/export_syn.rpt' rpt_txt_var=''
+INFO-FLOW: DBG:PUTS:     wrote export rpt file: export_syn.rpt
+Execute     send_msg_by_id INFO @200-802@%s ImgSharpeningFilter/ImgSharpeningFilter.zip 
+INFO: [HLS 200-802] Generated output file ImgSharpeningFilter/ImgSharpeningFilter.zip
+Command   export_design done; 182.77 sec.
+Execute   close_project 
+Execute     close_solution 
+Execute       cleanup_all 
+Execute       cleanup_all 
+Execute       source -notrace -encoding utf-8 /home/szymon/tools/Xilinx/2025.1/Vitis/tps/tcl/tcl8.6/clock.tcl 
+Execute         source -encoding utf-8 /home/szymon/tools/Xilinx/2025.1/tps/tcl/tcl8/8.5/msgcat-1.6.1.tm 
+INFO-FLOW: Workspace /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls opened at Sun Jan 18 18:58:44 CET 2026
+Execute       send_msg_by_id INFO @200-1505@%s%s default  vivado 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Execute       send_msg_by_id INFO @200-2174@%s%s component /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/hls_config.cfg 
+INFO: [HLS 200-2174] Applying component config ini file /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/hls_config.cfg
+Execute       apply_ini /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/hls_config.cfg 
+Execute         send_msg_by_id INFO @200-1465@%s 'syn.file=/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/img_sharpening_filter.h' from /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/hls_config.cfg(8) 
+INFO: [HLS 200-1465] Applying config ini 'syn.file=/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/img_sharpening_filter.h' from /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/hls_config.cfg(8)
+Execute         add_files /home/szymon/Desktop/CORA_Z7/projekt/HLS/code/img_sharpening_filter.h 
+INFO: [HLS 200-10] Adding design file '/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/img_sharpening_filter.h' to the project
+Execute         send_msg_by_id INFO @200-1465@%s 'syn.file=/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/img_sharpening_filter.cpp' from /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/hls_config.cfg(9) 
+INFO: [HLS 200-1465] Applying config ini 'syn.file=/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/img_sharpening_filter.cpp' from /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/hls_config.cfg(9)
+Execute         add_files /home/szymon/Desktop/CORA_Z7/projekt/HLS/code/img_sharpening_filter.cpp 
+INFO: [HLS 200-10] Adding design file '/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/img_sharpening_filter.cpp' to the project
+Execute         send_msg_by_id INFO @200-1465@%s 'tb.file=/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/golden_output.txt' from /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/hls_config.cfg(10) 
+INFO: [HLS 200-1465] Applying config ini 'tb.file=/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/golden_output.txt' from /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/hls_config.cfg(10)
+Execute         add_files -tb /home/szymon/Desktop/CORA_Z7/projekt/HLS/code/golden_output.txt 
+INFO: [HLS 200-10] Adding test bench file '/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/golden_output.txt' to the project
+Execute         send_msg_by_id INFO @200-1465@%s 'tb.file=/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/golden_input.txt' from /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/hls_config.cfg(11) 
+INFO: [HLS 200-1465] Applying config ini 'tb.file=/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/golden_input.txt' from /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/hls_config.cfg(11)
+Execute         add_files -tb /home/szymon/Desktop/CORA_Z7/projekt/HLS/code/golden_input.txt 
+INFO: [HLS 200-10] Adding test bench file '/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/golden_input.txt' to the project
+Execute         send_msg_by_id INFO @200-1465@%s 'tb.file=/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/tb_img_sharpening_filter.cpp' from /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/hls_config.cfg(12) 
+INFO: [HLS 200-1465] Applying config ini 'tb.file=/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/tb_img_sharpening_filter.cpp' from /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/hls_config.cfg(12)
+Execute         add_files -tb /home/szymon/Desktop/CORA_Z7/projekt/HLS/code/tb_img_sharpening_filter.cpp 
+INFO: [HLS 200-10] Adding test bench file '/home/szymon/Desktop/CORA_Z7/projekt/HLS/code/tb_img_sharpening_filter.cpp' to the project
+Execute         send_msg_by_id INFO @200-1465@%s 'syn.top=ImgSharpeningFilter' from /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/hls_config.cfg(7) 
+INFO: [HLS 200-1465] Applying config ini 'syn.top=ImgSharpeningFilter' from /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/hls_config.cfg(7)
+Execute         set_top ImgSharpeningFilter 
+Execute         send_msg_by_id INFO @200-1465@%s 'flow_target=vitis' from /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/hls_config.cfg(4) 
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vitis' from /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/hls_config.cfg(4)
+Execute         send_msg_by_id INFO @200-1505@%s%s  vitis 
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+Execute         send_msg_by_id INFO @200-435@%s%s 'open_solution -flow_target vitis' config_interface -m_axi_latency=64 
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_latency=64
+Execute         config_interface -m_axi_latency=64 
+Execute         send_msg_by_id INFO @200-435@%s%s 'open_solution -flow_target vitis' config_interface -m_axi_alignment_byte_size=64 
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_alignment_byte_size=64
+Execute         config_interface -m_axi_alignment_byte_size=64 
+Execute         send_msg_by_id INFO @200-435@%s%s 'open_solution -flow_target vitis' config_interface -m_axi_max_widen_bitwidth=512 
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_max_widen_bitwidth=512
+Execute         config_interface -m_axi_max_widen_bitwidth=512 
+INFO-FLOW: Setting macro_cmd open_solution -flow_target vitis configuration: config_interface -default_interface=kernel
+Execute         config_interface -default_interface=kernel 
+Execute         send_msg_by_id INFO @200-435@%s%s 'open_solution -flow_target vitis' config_rtl -register_reset_num=3 
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_rtl -register_reset_num=3
+Execute         config_rtl -register_reset_num=3 
+Execute         send_msg_by_id INFO @200-1465@%s 'part=xc7z007sclg400-1' from /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/hls_config.cfg(1) 
+INFO: [HLS 200-1465] Applying config ini 'part=xc7z007sclg400-1' from /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/hls_config.cfg(1)
+Execute         set_part xc7z007sclg400-1 
+Execute           create_platform xc7z007sclg400-1 -board  
+DBG:HLSDevice: Trying to load device library: /home/szymon/tools/Xilinx/2025.1/Vitis/lib/lnx64.o/libxv_hlsvwrap.so
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /home/szymon/tools/Xilinx/2025.1/Vivado/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xc7z007s-clg400-1'
+Command           create_platform done; 0.76 sec.
+Execute           source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/xilinx/common/xilinx.gen 
+Execute             source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/plb46.gen 
+Execute             source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/axi4.gen 
+Execute             source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute               source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/saxilite.gen 
+Execute             source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute             source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute             source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/dds_compiler.gen 
+Execute             source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/xfir.gen 
+Execute             source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/xfft.gen 
+Execute             source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/util.gen 
+Execute             source /home/szymon/tools/Xilinx/2025.1/Vitis/common/technology/xilinx/DSP48/dsp48.gen 
+Execute           ap_part_info -name xc7z007s-clg400-1 -data info 
+Execute           config_compile -quiet -complex-mul-dsp=0 
+Command         set_part done; 0.89 sec.
+Execute         send_msg_by_id INFO @200-1465@%s 'clock=8ns' from /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/hls_config.cfg(13) 
+INFO: [HLS 200-1465] Applying config ini 'clock=8ns' from /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/hls_config.cfg(13)
+Execute         create_clock -period 8ns 
+Execute           ap_set_clock -name default -period 8 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 8ns.
+Execute         send_msg_by_id INFO @200-1465@%s 'clock_uncertainty=12%' from /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/hls_config.cfg(14) 
+INFO: [HLS 200-1465] Applying config ini 'clock_uncertainty=12%' from /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/hls_config.cfg(14)
+Execute         set_clock_uncertainty 12% 
+Execute           ap_set_clock -name default -uncertainty 0.96 -unit % 
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0.96ns.
+Execute         send_msg_by_id INFO @200-1465@%s 'csim.clean=1' from /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/hls_config.cfg(16) 
+INFO: [HLS 200-1465] Applying config ini 'csim.clean=1' from /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/hls_config.cfg(16)
+Execute         config_csim -clean=1 
+Execute         send_msg_by_id INFO @200-1465@%s 'csim.code_analyzer=1' from /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/hls_config.cfg(15) 
+INFO: [HLS 200-1465] Applying config ini 'csim.code_analyzer=1' from /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/hls_config.cfg(15)
+Execute         config_csim -code_analyzer=1 
+Execute         send_msg_by_id INFO @200-1465@%s 'package.ip.display_name=ImgSharpeningFilter' from /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/hls_config.cfg(17) 
+INFO: [HLS 200-1465] Applying config ini 'package.ip.display_name=ImgSharpeningFilter' from /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/hls_config.cfg(17)
+Execute         config_export -display_name=ImgSharpeningFilter 
+Execute         send_msg_by_id INFO @200-1465@%s 'package.output.format=ip_catalog' from /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/hls_config.cfg(5) 
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/hls_config.cfg(5)
+Execute         config_export -format=ip_catalog 
+Command       apply_ini done; 0.97 sec.
+Execute       write_component -config /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/hls_config.cfg 
+Execute         send_msg_by_id INFO @200-2176@%s /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/vitis-comp.json 
+INFO: [HLS 200-2176] Writing Vitis IDE component file /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/vitis-comp.json
+Command     open_solution done; 1.01 sec.
+Command   open_component done; 1.01 sec.
+Execute   apply_ini /home/szymon/Desktop/CORA_Z7/projekt/HLS/img_sharpening_filter_HLS/img_sharpening_filter/ImgSharpeningFilter/hls/config.cmdline -iscmdline 
+Execute   ::AP::init_summary_file csim 
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute   csim_design 
+INFO-FLOW: Running SLX 'csim' proc: ::SLX::run_csim
+INFO-FLOW: SLX proc replaces csim
+Command   csim_design done; 32.91 sec.
+Execute   close_project 
+Execute     close_solution 
+Execute       cleanup_all 
+Execute       cleanup_all 

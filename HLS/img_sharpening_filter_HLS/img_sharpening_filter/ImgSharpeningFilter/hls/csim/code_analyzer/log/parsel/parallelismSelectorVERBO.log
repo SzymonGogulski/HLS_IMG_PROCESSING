@@ -502,11 +502,11 @@ parallelismSelector::VERBO:         LoopId: 6, TC: 3, IL: {1: 1}, IIMem: {1: 2},
 parallelismSelector::VERBO:         Overall latency for nested loop (LoopId 6): 6
 parallelismSelector::VERBO:     MARegionScheduler::finalize():
 parallelismSelector::VERBO:        - Function: Outline_T3_F279_R2_Loop
+parallelismSelector::VERBO:          - EndCycles: newFuncRoot -> {1: 1}
 parallelismSelector::VERBO:          - EndCycles: for.end22 -> {1: 7}
 parallelismSelector::VERBO:          - EndCycles: for.end -> {1: 7}
-parallelismSelector::VERBO:          - EndCycles: newFuncRoot -> {1: 1}
 parallelismSelector::VERBO:        - MaxEndCycle: {1: 7}
-parallelismSelector::VERBO:        - Critical path: for.end22, for.body, for.end, newFuncRoot
+parallelismSelector::VERBO:        - Critical path: newFuncRoot, for.end22, for.body, for.end
 parallelismSelector::VERBO: 
 parallelismSelector::VERBO: [LatencyEstimationVisitor] CallSite: CS(30 F=281) 
 parallelismSelector::VERBO: [LatencyEstimationVisitor] Equivalence table
@@ -538,11 +538,11 @@ parallelismSelector::VERBO:         LoopId: 5, TC: 3, IL: {3: 2}, IIMem: {3: 0},
 parallelismSelector::VERBO:         Overall latency for nested loop (LoopId 5): 9
 parallelismSelector::VERBO:     MARegionScheduler::finalize():
 parallelismSelector::VERBO:        - LoopId: 4
-parallelismSelector::VERBO:          - EndCycles: for.body30 -> {1: 9}
 parallelismSelector::VERBO:          - EndCycles: for.body26 -> {1: 1}
 parallelismSelector::VERBO:          - EndCycles: for.end47 -> {1: 9}
+parallelismSelector::VERBO:          - EndCycles: for.body30 -> {1: 9}
 parallelismSelector::VERBO:        - MaxEndCycle: {1: 9}
-parallelismSelector::VERBO:        - Critical path: for.body30, for.body26, for.end47
+parallelismSelector::VERBO:        - Critical path: for.body26, for.end47, for.body30
 parallelismSelector::VERBO:     hasRAW: 1
 parallelismSelector::VERBO:     Recurrence: Circuit=4:4 -> 4:6 -> 4:7 -> 4:8 -> 4:9 -> 4:11 -> 4:4
 parallelismSelector::VERBO:       distance=4
@@ -595,11 +595,11 @@ parallelismSelector::VERBO:         LoopId: 2, TC: 3, IL: {1: 3}, IIMem: {1: 1.5
 parallelismSelector::VERBO:         Overall latency for nested loop (LoopId 2): 12
 parallelismSelector::VERBO:     MARegionScheduler::finalize():
 parallelismSelector::VERBO:        - Function: Outline_T6_F279_R49_Loop
+parallelismSelector::VERBO:          - EndCycles: newFuncRoot -> {1: 1}
 parallelismSelector::VERBO:          - EndCycles: for.end68 -> {1: 13}
 parallelismSelector::VERBO:          - EndCycles: for.end65 -> {1: 13}
-parallelismSelector::VERBO:          - EndCycles: newFuncRoot -> {1: 1}
 parallelismSelector::VERBO:        - MaxEndCycle: {1: 13}
-parallelismSelector::VERBO:        - Critical path: for.end68, for.body54, for.end65, newFuncRoot
+parallelismSelector::VERBO:        - Critical path: newFuncRoot, for.end68, for.body54, for.end65
 parallelismSelector::VERBO: 
 parallelismSelector::VERBO: [LatencyEstimationVisitor] CallSite: CS(33 F=284) (180->181)
 parallelismSelector::VERBO: [LatencyEstimationVisitor] Equivalence table
@@ -608,11 +608,11 @@ parallelismSelector::VERBO: [LatencyEstimationVisitor] Equivalence table
 parallelismSelector::VERBO: Analyzing Function "Outline_T7_F279_R72_Switch" (FunctionId 284):
 parallelismSelector::VERBO:     MARegionScheduler::finalize():
 parallelismSelector::VERBO:        - Function: Outline_T7_F279_R72_Switch
+parallelismSelector::VERBO:          - EndCycles: newFuncRoot -> {1: 1}
 parallelismSelector::VERBO:          - EndCycles: if.end -> {1: 2}
 parallelismSelector::VERBO:          - EndCycles: if.then -> {1: 2}
-parallelismSelector::VERBO:          - EndCycles: newFuncRoot -> {1: 1}
 parallelismSelector::VERBO:        - MaxEndCycle: {1: 2}
-parallelismSelector::VERBO:        - Critical path: if.end, if.then, newFuncRoot
+parallelismSelector::VERBO:        - Critical path: newFuncRoot, if.end, if.then
 parallelismSelector::VERBO: 
 parallelismSelector::VERBO: [LatencyEstimationVisitor] CallSite: CS(34 F=285) (183->184)
 parallelismSelector::VERBO: [LatencyEstimationVisitor] Equivalence table
@@ -643,15 +643,15 @@ parallelismSelector::VERBO:     MARegionScheduler::finalize():
 parallelismSelector::VERBO:        - Function: _Z19ImgSharpeningFilter7ap_uintILi8EES0_S0_
 parallelismSelector::VERBO:          - EndCycles: codeRepl -> {1: 9}
 parallelismSelector::VERBO:          - EndCycles: codeRepl1 -> {1: 10}
-parallelismSelector::VERBO:          - EndCycles: codeRepl2 -> {1: 42}
-parallelismSelector::VERBO:          - EndCycles: entry -> {1: 1}
-parallelismSelector::VERBO:          - EndCycles: codeRepl3 -> {1: 56}
-parallelismSelector::VERBO:          - EndCycles: codeRepl6 -> {1: 63}
-parallelismSelector::VERBO:          - EndCycles: codeRepl4 -> {1: 59}
 parallelismSelector::VERBO:          - EndCycles: codeRepl5 -> {1: 62}
+parallelismSelector::VERBO:          - EndCycles: codeRepl6 -> {1: 63}
 parallelismSelector::VERBO:          - EndCycles: if.end74_iso21 -> {1: 63}
+parallelismSelector::VERBO:          - EndCycles: entry -> {1: 1}
+parallelismSelector::VERBO:          - EndCycles: codeRepl4 -> {1: 59}
+parallelismSelector::VERBO:          - EndCycles: codeRepl2 -> {1: 42}
+parallelismSelector::VERBO:          - EndCycles: codeRepl3 -> {1: 56}
 parallelismSelector::VERBO:        - MaxEndCycle: {1: 63}
-parallelismSelector::VERBO:        - Critical path: codeRepl, codeRepl1, codeRepl2, entry, codeRepl3, codeRepl6, codeRepl4, codeRepl5, if.end74_iso21
+parallelismSelector::VERBO:        - Critical path: codeRepl, codeRepl1, codeRepl5, codeRepl6, if.end74_iso21, entry, codeRepl4, codeRepl2, codeRepl3
 parallelismSelector::VERBO: 
 parallelismSelector::VERBO: Filling in timing metrics per region...
 parallelismSelector::VERBO:     Collecting timing estimates for loop region with Id (7):
@@ -892,11 +892,11 @@ parallelismSelector::VERBO:         LoopId: 6, TC: 3, IL: {1: 1}, IIMem: {1: 2},
 parallelismSelector::VERBO:         Overall latency for nested loop (LoopId 6): 6
 parallelismSelector::VERBO:     MARegionScheduler::finalize():
 parallelismSelector::VERBO:        - Function: Outline_T3_F279_R2_Loop
+parallelismSelector::VERBO:          - EndCycles: newFuncRoot -> {1: 1}
 parallelismSelector::VERBO:          - EndCycles: for.end22 -> {1: 7}
 parallelismSelector::VERBO:          - EndCycles: for.end -> {1: 7}
-parallelismSelector::VERBO:          - EndCycles: newFuncRoot -> {1: 1}
 parallelismSelector::VERBO:        - MaxEndCycle: {1: 7}
-parallelismSelector::VERBO:        - Critical path: for.end22, for.body, for.end, newFuncRoot
+parallelismSelector::VERBO:        - Critical path: newFuncRoot, for.end22, for.body, for.end
 parallelismSelector::VERBO: 
 parallelismSelector::VERBO: [LatencyEstimationVisitor] CallSite: CS(30 F=281) 
 parallelismSelector::VERBO: [LatencyEstimationVisitor] Equivalence table
@@ -928,11 +928,11 @@ parallelismSelector::VERBO:         LoopId: 5, TC: 3, IL: {3: 2}, IIMem: {3: 0},
 parallelismSelector::VERBO:         Overall latency for nested loop (LoopId 5): 9
 parallelismSelector::VERBO:     MARegionScheduler::finalize():
 parallelismSelector::VERBO:        - LoopId: 4
-parallelismSelector::VERBO:          - EndCycles: for.body30 -> {1: 9}
 parallelismSelector::VERBO:          - EndCycles: for.body26 -> {1: 1}
 parallelismSelector::VERBO:          - EndCycles: for.end47 -> {1: 9}
+parallelismSelector::VERBO:          - EndCycles: for.body30 -> {1: 9}
 parallelismSelector::VERBO:        - MaxEndCycle: {1: 9}
-parallelismSelector::VERBO:        - Critical path: for.body30, for.body26, for.end47
+parallelismSelector::VERBO:        - Critical path: for.body26, for.end47, for.body30
 parallelismSelector::VERBO:     hasRAW: 1
 parallelismSelector::VERBO:     Recurrence: Circuit=4:4 -> 4:6 -> 4:7 -> 4:8 -> 4:9 -> 4:11 -> 4:4
 parallelismSelector::VERBO:       distance=4
@@ -985,11 +985,11 @@ parallelismSelector::VERBO:         LoopId: 2, TC: 3, IL: {1: 3}, IIMem: {1: 1.5
 parallelismSelector::VERBO:         Overall latency for nested loop (LoopId 2): 12
 parallelismSelector::VERBO:     MARegionScheduler::finalize():
 parallelismSelector::VERBO:        - Function: Outline_T6_F279_R49_Loop
+parallelismSelector::VERBO:          - EndCycles: newFuncRoot -> {1: 1}
 parallelismSelector::VERBO:          - EndCycles: for.end68 -> {1: 13}
 parallelismSelector::VERBO:          - EndCycles: for.end65 -> {1: 13}
-parallelismSelector::VERBO:          - EndCycles: newFuncRoot -> {1: 1}
 parallelismSelector::VERBO:        - MaxEndCycle: {1: 13}
-parallelismSelector::VERBO:        - Critical path: for.end68, for.body54, for.end65, newFuncRoot
+parallelismSelector::VERBO:        - Critical path: newFuncRoot, for.end68, for.body54, for.end65
 parallelismSelector::VERBO: 
 parallelismSelector::VERBO: [LatencyEstimationVisitor] CallSite: CS(33 F=284) (180->181)
 parallelismSelector::VERBO: [LatencyEstimationVisitor] Equivalence table
@@ -998,11 +998,11 @@ parallelismSelector::VERBO: [LatencyEstimationVisitor] Equivalence table
 parallelismSelector::VERBO: Analyzing Function "Outline_T7_F279_R72_Switch" (FunctionId 284):
 parallelismSelector::VERBO:     MARegionScheduler::finalize():
 parallelismSelector::VERBO:        - Function: Outline_T7_F279_R72_Switch
+parallelismSelector::VERBO:          - EndCycles: newFuncRoot -> {1: 1}
 parallelismSelector::VERBO:          - EndCycles: if.end -> {1: 2}
 parallelismSelector::VERBO:          - EndCycles: if.then -> {1: 2}
-parallelismSelector::VERBO:          - EndCycles: newFuncRoot -> {1: 1}
 parallelismSelector::VERBO:        - MaxEndCycle: {1: 2}
-parallelismSelector::VERBO:        - Critical path: if.end, if.then, newFuncRoot
+parallelismSelector::VERBO:        - Critical path: newFuncRoot, if.end, if.then
 parallelismSelector::VERBO: 
 parallelismSelector::VERBO: [LatencyEstimationVisitor] CallSite: CS(34 F=285) (183->184)
 parallelismSelector::VERBO: [LatencyEstimationVisitor] Equivalence table
@@ -1033,15 +1033,15 @@ parallelismSelector::VERBO:     MARegionScheduler::finalize():
 parallelismSelector::VERBO:        - Function: _Z19ImgSharpeningFilter7ap_uintILi8EES0_S0_
 parallelismSelector::VERBO:          - EndCycles: codeRepl -> {1: 9}
 parallelismSelector::VERBO:          - EndCycles: codeRepl1 -> {1: 10}
-parallelismSelector::VERBO:          - EndCycles: codeRepl2 -> {1: 42}
-parallelismSelector::VERBO:          - EndCycles: entry -> {1: 1}
-parallelismSelector::VERBO:          - EndCycles: codeRepl3 -> {1: 56}
-parallelismSelector::VERBO:          - EndCycles: codeRepl6 -> {1: 63}
-parallelismSelector::VERBO:          - EndCycles: codeRepl4 -> {1: 59}
 parallelismSelector::VERBO:          - EndCycles: codeRepl5 -> {1: 62}
+parallelismSelector::VERBO:          - EndCycles: codeRepl6 -> {1: 63}
 parallelismSelector::VERBO:          - EndCycles: if.end74_iso21 -> {1: 63}
+parallelismSelector::VERBO:          - EndCycles: entry -> {1: 1}
+parallelismSelector::VERBO:          - EndCycles: codeRepl4 -> {1: 59}
+parallelismSelector::VERBO:          - EndCycles: codeRepl2 -> {1: 42}
+parallelismSelector::VERBO:          - EndCycles: codeRepl3 -> {1: 56}
 parallelismSelector::VERBO:        - MaxEndCycle: {1: 63}
-parallelismSelector::VERBO:        - Critical path: codeRepl, codeRepl1, codeRepl2, entry, codeRepl3, codeRepl6, codeRepl4, codeRepl5, if.end74_iso21
+parallelismSelector::VERBO:        - Critical path: codeRepl, codeRepl1, codeRepl5, codeRepl6, if.end74_iso21, entry, codeRepl4, codeRepl2, codeRepl3
 parallelismSelector::VERBO: 
 parallelismSelector::VERBO: Filling in timing metrics per region...
 parallelismSelector::VERBO:     Collecting timing estimates for loop region with Id (7):

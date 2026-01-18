@@ -1300,8 +1300,8 @@
       </xilinx:taxonomies>
       <xilinx:displayName>ImgSharpeningFilter</xilinx:displayName>
       <xilinx:definitionSource>HLS</xilinx:definitionSource>
-      <xilinx:coreRevision>2114440541</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2026-01-17T20:41:58Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>2114441812</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2026-01-18T17:52:19Z</xilinx:coreCreationDateTime>
       <xilinx:sdxKernelAttributes>
         <xilinx:sdx_kernel>true</xilinx:sdx_kernel>
         <xilinx:sdx_kernel_type>hls</xilinx:sdx_kernel_type>

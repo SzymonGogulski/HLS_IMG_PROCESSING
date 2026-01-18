@@ -1,0 +1,24 @@
+
+
+Implementation tool: Xilinx Vivado v.2025.1
+Project:             ImgSharpeningFilter
+Solution:            hls
+Device target:       xc7z007s-clg400-1
+Report date:         Sun Jan 18 18:55:09 CET 2026
+
+#=== Post-Implementation Resource usage ===
+SLICE:           38
+LUT:            104
+FF:             131
+DSP:              0
+BRAM:             0
+URAM:             0
+LATCH:            0
+SRL:              0
+CLB:              0
+
+#=== Final timing ===
+CP required:                     8.000
+CP achieved post-synthesis:      7.127
+CP achieved post-implementation: 7.439
+Timing met
