@@ -9107,7 +9107,7 @@
       <spirit:parameters>
         <spirit:parameter>
           <spirit:name>FREQ_HZ</spirit:name>
-          <spirit:value spirit:format="float" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.FCLK_CLK0.FREQ_HZ" spirit:dependency="(spirit:decode(id(PARAM_VALUE.PCW_CLK0_FREQ)))" spirit:minimum="100000" spirit:maximum="333000000">50000000</spirit:value>
+          <spirit:value spirit:format="float" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.FCLK_CLK0.FREQ_HZ" spirit:dependency="(spirit:decode(id(PARAM_VALUE.PCW_CLK0_FREQ)))" spirit:minimum="100000" spirit:maximum="333000000">5e+07</spirit:value>
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>FREQ_TOLERANCE_HZ</spirit:name>
@@ -12833,6 +12833,97 @@
           <spirit:range spirit:format="bitString" spirit:bitStringLength="32">0x00040000</spirit:range>
         </spirit:segment>
       </spirit:segments>
+      <spirit:localMemoryMap>
+        <spirit:name>local_memory_map</spirit:name>
+        <spirit:addressBlock>
+          <spirit:name>microblaze_0</spirit:name>
+          <spirit:baseAddress spirit:format="long">1073807360</spirit:baseAddress>
+          <spirit:range spirit:format="long">8192</spirit:range>
+          <spirit:width spirit:format="long">32</spirit:width>
+          <spirit:parameters>
+            <spirit:parameter>
+              <spirit:name>lsb</spirit:name>
+              <spirit:value spirit:id="ADDRSPACE_ADDRBLOCKPARAM_VALUE.DATA.LOCAL_MEMORY_MAP.MICROBLAZE_0.lsb">0</spirit:value>
+            </spirit:parameter>
+            <spirit:parameter>
+              <spirit:name>msb</spirit:name>
+              <spirit:value spirit:id="ADDRSPACE_ADDRBLOCKPARAM_VALUE.DATA.LOCAL_MEMORY_MAP.MICROBLAZE_0.msb">31</spirit:value>
+            </spirit:parameter>
+            <spirit:parameter>
+              <spirit:name>workflow</spirit:name>
+              <spirit:value spirit:id="ADDRSPACE_ADDRBLOCKPARAM_VALUE.DATA.LOCAL_MEMORY_MAP.MICROBLAZE_0.workflow">simulation</spirit:value>
+            </spirit:parameter>
+            <spirit:parameter>
+              <spirit:name>controlpaths</spirit:name>
+              <spirit:value spirit:id="ADDRSPACE_ADDRBLOCKPARAM_VALUE.DATA.LOCAL_MEMORY_MAP.MICROBLAZE_0.controlpaths">axi_bram_ctrl_0=axi_bram_ctrl_0_bram</spirit:value>
+            </spirit:parameter>
+            <spirit:parameter>
+              <spirit:name>memorytypename</spirit:name>
+              <spirit:value spirit:id="ADDRSPACE_ADDRBLOCKPARAM_VALUE.DATA.LOCAL_MEMORY_MAP.MICROBLAZE_0.memorytypename">axi_bram_ctrl_0_bram_MEM_DEVICE</spirit:value>
+            </spirit:parameter>
+            <spirit:parameter>
+              <spirit:name>simmemfile</spirit:name>
+              <spirit:value spirit:id="ADDRSPACE_ADDRBLOCKPARAM_VALUE.DATA.LOCAL_MEMORY_MAP.MICROBLAZE_0.simmemfile">design_1_axi_bram_ctrl_0_bram_0.mem</spirit:value>
+            </spirit:parameter>
+            <spirit:parameter>
+              <spirit:name>eccalgorithm</spirit:name>
+              <spirit:value spirit:id="ADDRSPACE_ADDRBLOCKPARAM_VALUE.DATA.LOCAL_MEMORY_MAP.MICROBLAZE_0.eccalgorithm">ECC_NONE</spirit:value>
+            </spirit:parameter>
+            <spirit:parameter>
+              <spirit:name>ecclsb</spirit:name>
+              <spirit:value spirit:id="ADDRSPACE_ADDRBLOCKPARAM_VALUE.DATA.LOCAL_MEMORY_MAP.MICROBLAZE_0.ecclsb">0</spirit:value>
+            </spirit:parameter>
+            <spirit:parameter>
+              <spirit:name>eccmsb</spirit:name>
+              <spirit:value spirit:id="ADDRSPACE_ADDRBLOCKPARAM_VALUE.DATA.LOCAL_MEMORY_MAP.MICROBLAZE_0.eccmsb">0</spirit:value>
+            </spirit:parameter>
+          </spirit:parameters>
+        </spirit:addressBlock>
+        <spirit:addressBlock>
+          <spirit:name>microblaze_1</spirit:name>
+          <spirit:baseAddress spirit:format="long">1073807360</spirit:baseAddress>
+          <spirit:range spirit:format="long">8192</spirit:range>
+          <spirit:width spirit:format="long">32</spirit:width>
+          <spirit:parameters>
+            <spirit:parameter>
+              <spirit:name>lsb</spirit:name>
+              <spirit:value spirit:id="ADDRSPACE_ADDRBLOCKPARAM_VALUE.DATA.LOCAL_MEMORY_MAP.MICROBLAZE_1.lsb">0</spirit:value>
+            </spirit:parameter>
+            <spirit:parameter>
+              <spirit:name>msb</spirit:name>
+              <spirit:value spirit:id="ADDRSPACE_ADDRBLOCKPARAM_VALUE.DATA.LOCAL_MEMORY_MAP.MICROBLAZE_1.msb">31</spirit:value>
+            </spirit:parameter>
+            <spirit:parameter>
+              <spirit:name>workflow</spirit:name>
+              <spirit:value spirit:id="ADDRSPACE_ADDRBLOCKPARAM_VALUE.DATA.LOCAL_MEMORY_MAP.MICROBLAZE_1.workflow">implementation</spirit:value>
+            </spirit:parameter>
+            <spirit:parameter>
+              <spirit:name>controlpaths</spirit:name>
+              <spirit:value spirit:id="ADDRSPACE_ADDRBLOCKPARAM_VALUE.DATA.LOCAL_MEMORY_MAP.MICROBLAZE_1.controlpaths">axi_bram_ctrl_0=axi_bram_ctrl_0_bram</spirit:value>
+            </spirit:parameter>
+            <spirit:parameter>
+              <spirit:name>memorytypename</spirit:name>
+              <spirit:value spirit:id="ADDRSPACE_ADDRBLOCKPARAM_VALUE.DATA.LOCAL_MEMORY_MAP.MICROBLAZE_1.memorytypename"/>
+            </spirit:parameter>
+            <spirit:parameter>
+              <spirit:name>simmemfile</spirit:name>
+              <spirit:value spirit:id="ADDRSPACE_ADDRBLOCKPARAM_VALUE.DATA.LOCAL_MEMORY_MAP.MICROBLAZE_1.simmemfile"/>
+            </spirit:parameter>
+            <spirit:parameter>
+              <spirit:name>eccalgorithm</spirit:name>
+              <spirit:value spirit:id="ADDRSPACE_ADDRBLOCKPARAM_VALUE.DATA.LOCAL_MEMORY_MAP.MICROBLAZE_1.eccalgorithm">ECC_NONE</spirit:value>
+            </spirit:parameter>
+            <spirit:parameter>
+              <spirit:name>ecclsb</spirit:name>
+              <spirit:value spirit:id="ADDRSPACE_ADDRBLOCKPARAM_VALUE.DATA.LOCAL_MEMORY_MAP.MICROBLAZE_1.ecclsb">0</spirit:value>
+            </spirit:parameter>
+            <spirit:parameter>
+              <spirit:name>eccmsb</spirit:name>
+              <spirit:value spirit:id="ADDRSPACE_ADDRBLOCKPARAM_VALUE.DATA.LOCAL_MEMORY_MAP.MICROBLAZE_1.eccmsb">0</spirit:value>
+            </spirit:parameter>
+          </spirit:parameters>
+        </spirit:addressBlock>
+      </spirit:localMemoryMap>
     </spirit:addressSpace>
   </spirit:addressSpaces>
   <spirit:memoryMaps>
@@ -14996,7 +15087,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:2bc45fcb</spirit:value>
+            <spirit:value>9:fc93cfac</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -15011,11 +15102,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sat Jan 17 20:51:01 UTC 2026</spirit:value>
+            <spirit:value>Sat Jan 17 23:22:05 UTC 2026</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:f7263b10</spirit:value>
+            <spirit:value>9:60df1a4b</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>sim_type</spirit:name>
@@ -15034,11 +15125,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sat Jan 17 20:51:01 UTC 2026</spirit:value>
+            <spirit:value>Sat Jan 17 23:22:05 UTC 2026</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:2bc45fcb</spirit:value>
+            <spirit:value>9:fc93cfac</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -15053,11 +15144,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sat Jan 17 20:51:02 UTC 2026</spirit:value>
+            <spirit:value>Sat Jan 17 23:22:06 UTC 2026</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:f7263b10</spirit:value>
+            <spirit:value>9:60df1a4b</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>sim_type</spirit:name>
@@ -15076,11 +15167,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sat Jan 17 20:51:01 UTC 2026</spirit:value>
+            <spirit:value>Sat Jan 17 23:22:05 UTC 2026</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:fe41c39f</spirit:value>
+            <spirit:value>9:61f83985</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -15091,7 +15182,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:fe41c39f</spirit:value>
+            <spirit:value>9:61f83985</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -15105,11 +15196,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sat Jan 17 20:51:57 UTC 2026</spirit:value>
+            <spirit:value>Sat Jan 17 23:23:08 UTC 2026</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:fe41c39f</spirit:value>
+            <spirit:value>9:61f83985</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -15120,7 +15211,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:fe41c39f</spirit:value>
+            <spirit:value>9:61f83985</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -15136,11 +15227,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sat Jan 17 20:51:01 UTC 2026</spirit:value>
+            <spirit:value>Sat Jan 17 23:22:05 UTC 2026</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:9e657d3f</spirit:value>
+            <spirit:value>9:da137d0b</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>sim_type</spirit:name>
@@ -15160,11 +15251,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sat Jan 17 20:51:01 UTC 2026</spirit:value>
+            <spirit:value>Sat Jan 17 23:22:05 UTC 2026</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:9e657d3f</spirit:value>
+            <spirit:value>9:da137d0b</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>sim_type</spirit:name>
@@ -15184,11 +15275,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sat Jan 17 20:51:01 UTC 2026</spirit:value>
+            <spirit:value>Sat Jan 17 23:22:05 UTC 2026</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:fe41c39f</spirit:value>
+            <spirit:value>9:61f83985</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -33273,6 +33364,10 @@
         </spirit:parameter>
       </spirit:parameters>
     </spirit:cpu>
+    <spirit:cpu>
+      <spirit:name>microblaze</spirit:name>
+      <spirit:addressSpaceRef spirit:addressSpaceRef="Data"/>
+    </spirit:cpu>
   </spirit:cpus>
   <spirit:description>Arm dual core SOC with Zynq fpga</spirit:description>
   <spirit:parameters>
@@ -36544,7 +36639,7 @@
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
-            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PARAM_ENABLEMENT.PCW_IRQ_F2P_MODE" xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_IRQ_F2P_INTR)) = 1) ">false</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PARAM_ENABLEMENT.PCW_IRQ_F2P_MODE" xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_IRQ_F2P_INTR)) = 1) ">true</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:parameterInfo>
       </spirit:vendorExtensions>

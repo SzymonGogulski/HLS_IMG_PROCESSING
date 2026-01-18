@@ -3,8 +3,8 @@
 # SW Build 6140274 on Wed May 21 22:58:25 MDT 2025
 # IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
 # SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
-# Start of session at: Sat Jan 17 22:11:21 2026
-# Process ID         : 44664
+# Start of session at: Sun Jan 18 00:25:43 2026
+# Process ID         : 92668
 # Current directory  : /home/szymon/Desktop/CORA_Z7/projekt/BlockDesign/hw_bd.runs/synth_1
 # Command line       : vivado -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
 # Log file           : /home/szymon/Desktop/CORA_Z7/projekt/BlockDesign/hw_bd.runs/synth_1/design_1_wrapper.vds
@@ -13,13 +13,13 @@
 # Platform           : Ubuntu
 # Operating System   : Ubuntu 24.04.3 LTS
 # Processor Detail   : AMD Ryzen 7 4700U with Radeon Graphics
-# CPU Frequency      : 4184.356 MHz
+# CPU Frequency      : 4176.848 MHz
 # CPU Physical cores : 8
 # CPU Logical cores  : 8
 # Host memory        : 16157 MB
 # Swap memory        : 4294 MB
 # Total Virtual      : 20452 MB
-# Available Virtual  : 13399 MB
+# Available Virtual  : 10129 MB
 #-----------------------------------------------------------
 source design_1_wrapper.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
@@ -37,56 +37,64 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 44745
+INFO: [Synth 8-7075] Helper process launched with PID 92745
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2160.730 ; gain = 441.711 ; free physical = 5178 ; free virtual = 11450
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2159.727 ; gain = 440.711 ; free physical = 3940 ; free virtual = 8244
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [/home/szymon/Desktop/CORA_Z7/projekt/BlockDesign/hw_bd.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:13]
 INFO: [Synth 8-6157] synthesizing module 'design_1' [/home/szymon/Desktop/CORA_Z7/projekt/BlockDesign/hw_bd.gen/sources_1/bd/design_1/synth/design_1.v:13]
-INFO: [Synth 8-6157] synthesizing module 'design_1_ImgSharpeningFilter_0_0' [/home/szymon/Desktop/CORA_Z7/projekt/BlockDesign/hw_bd.runs/synth_1/.Xil/Vivado-44664-szymon/realtime/design_1_ImgSharpeningFilter_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_ImgSharpeningFilter_0_0' (0#1) [/home/szymon/Desktop/CORA_Z7/projekt/BlockDesign/hw_bd.runs/synth_1/.Xil/Vivado-44664-szymon/realtime/design_1_ImgSharpeningFilter_0_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'interrupt' of module 'design_1_ImgSharpeningFilter_0_0' is unconnected for instance 'ImgSharpeningFilter_0' [/home/szymon/Desktop/CORA_Z7/projekt/BlockDesign/hw_bd.gen/sources_1/bd/design_1/synth/design_1.v:178]
-WARNING: [Synth 8-7023] instance 'ImgSharpeningFilter_0' of module 'design_1_ImgSharpeningFilter_0_0' has 20 connections declared, but only 19 given [/home/szymon/Desktop/CORA_Z7/projekt/BlockDesign/hw_bd.gen/sources_1/bd/design_1/synth/design_1.v:178]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axi_smc_0' [/home/szymon/Desktop/CORA_Z7/projekt/BlockDesign/hw_bd.runs/synth_1/.Xil/Vivado-44664-szymon/realtime/design_1_axi_smc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_smc_0' (0#1) [/home/szymon/Desktop/CORA_Z7/projekt/BlockDesign/hw_bd.runs/synth_1/.Xil/Vivado-44664-szymon/realtime/design_1_axi_smc_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'M00_AXI_awprot' of module 'design_1_axi_smc_0' is unconnected for instance 'axi_smc' [/home/szymon/Desktop/CORA_Z7/projekt/BlockDesign/hw_bd.gen/sources_1/bd/design_1/synth/design_1.v:198]
-WARNING: [Synth 8-7071] port 'M00_AXI_arprot' of module 'design_1_axi_smc_0' is unconnected for instance 'axi_smc' [/home/szymon/Desktop/CORA_Z7/projekt/BlockDesign/hw_bd.gen/sources_1/bd/design_1/synth/design_1.v:198]
-WARNING: [Synth 8-7071] port 'M01_AXI_awprot' of module 'design_1_axi_smc_0' is unconnected for instance 'axi_smc' [/home/szymon/Desktop/CORA_Z7/projekt/BlockDesign/hw_bd.gen/sources_1/bd/design_1/synth/design_1.v:198]
-WARNING: [Synth 8-7071] port 'M01_AXI_arprot' of module 'design_1_axi_smc_0' is unconnected for instance 'axi_smc' [/home/szymon/Desktop/CORA_Z7/projekt/BlockDesign/hw_bd.gen/sources_1/bd/design_1/synth/design_1.v:198]
-WARNING: [Synth 8-7071] port 'M02_AXI_awprot' of module 'design_1_axi_smc_0' is unconnected for instance 'axi_smc' [/home/szymon/Desktop/CORA_Z7/projekt/BlockDesign/hw_bd.gen/sources_1/bd/design_1/synth/design_1.v:198]
-WARNING: [Synth 8-7071] port 'M02_AXI_arprot' of module 'design_1_axi_smc_0' is unconnected for instance 'axi_smc' [/home/szymon/Desktop/CORA_Z7/projekt/BlockDesign/hw_bd.gen/sources_1/bd/design_1/synth/design_1.v:198]
-WARNING: [Synth 8-7023] instance 'axi_smc' of module 'design_1_axi_smc_0' has 97 connections declared, but only 91 given [/home/szymon/Desktop/CORA_Z7/projekt/BlockDesign/hw_bd.gen/sources_1/bd/design_1/synth/design_1.v:198]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axi_gpio_0_1' [/home/szymon/Desktop/CORA_Z7/projekt/BlockDesign/hw_bd.runs/synth_1/.Xil/Vivado-44664-szymon/realtime/design_1_axi_gpio_0_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_gpio_0_1' (0#1) [/home/szymon/Desktop/CORA_Z7/projekt/BlockDesign/hw_bd.runs/synth_1/.Xil/Vivado-44664-szymon/realtime/design_1_axi_gpio_0_1_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axi_gpio_0_0' [/home/szymon/Desktop/CORA_Z7/projekt/BlockDesign/hw_bd.runs/synth_1/.Xil/Vivado-44664-szymon/realtime/design_1_axi_gpio_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_gpio_0_0' (0#1) [/home/szymon/Desktop/CORA_Z7/projekt/BlockDesign/hw_bd.runs/synth_1/.Xil/Vivado-44664-szymon/realtime/design_1_axi_gpio_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_processing_system7_0_0' [/home/szymon/Desktop/CORA_Z7/projekt/BlockDesign/hw_bd.runs/synth_1/.Xil/Vivado-44664-szymon/realtime/design_1_processing_system7_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_processing_system7_0_0' (0#1) [/home/szymon/Desktop/CORA_Z7/projekt/BlockDesign/hw_bd.runs/synth_1/.Xil/Vivado-44664-szymon/realtime/design_1_processing_system7_0_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'USB0_PORT_INDCTL' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/szymon/Desktop/CORA_Z7/projekt/BlockDesign/hw_bd.gen/sources_1/bd/design_1/synth/design_1.v:332]
-WARNING: [Synth 8-7071] port 'USB0_VBUS_PWRSELECT' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/szymon/Desktop/CORA_Z7/projekt/BlockDesign/hw_bd.gen/sources_1/bd/design_1/synth/design_1.v:332]
-WARNING: [Synth 8-7023] instance 'processing_system7_0' of module 'design_1_processing_system7_0_0' has 65 connections declared, but only 63 given [/home/szymon/Desktop/CORA_Z7/projekt/BlockDesign/hw_bd.gen/sources_1/bd/design_1/synth/design_1.v:332]
-INFO: [Synth 8-6157] synthesizing module 'design_1_rst_ps7_0_50M_0' [/home/szymon/Desktop/CORA_Z7/projekt/BlockDesign/hw_bd.runs/synth_1/.Xil/Vivado-44664-szymon/realtime/design_1_rst_ps7_0_50M_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_ps7_0_50M_0' (0#1) [/home/szymon/Desktop/CORA_Z7/projekt/BlockDesign/hw_bd.runs/synth_1/.Xil/Vivado-44664-szymon/realtime/design_1_rst_ps7_0_50M_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'mb_reset' of module 'design_1_rst_ps7_0_50M_0' is unconnected for instance 'rst_ps7_0_50M' [/home/szymon/Desktop/CORA_Z7/projekt/BlockDesign/hw_bd.gen/sources_1/bd/design_1/synth/design_1.v:396]
-WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'design_1_rst_ps7_0_50M_0' is unconnected for instance 'rst_ps7_0_50M' [/home/szymon/Desktop/CORA_Z7/projekt/BlockDesign/hw_bd.gen/sources_1/bd/design_1/synth/design_1.v:396]
-WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'design_1_rst_ps7_0_50M_0' is unconnected for instance 'rst_ps7_0_50M' [/home/szymon/Desktop/CORA_Z7/projekt/BlockDesign/hw_bd.gen/sources_1/bd/design_1/synth/design_1.v:396]
-WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'design_1_rst_ps7_0_50M_0' is unconnected for instance 'rst_ps7_0_50M' [/home/szymon/Desktop/CORA_Z7/projekt/BlockDesign/hw_bd.gen/sources_1/bd/design_1/synth/design_1.v:396]
-WARNING: [Synth 8-7023] instance 'rst_ps7_0_50M' of module 'design_1_rst_ps7_0_50M_0' has 10 connections declared, but only 6 given [/home/szymon/Desktop/CORA_Z7/projekt/BlockDesign/hw_bd.gen/sources_1/bd/design_1/synth/design_1.v:396]
+INFO: [Synth 8-6157] synthesizing module 'design_1_ImgSharpeningFilter_0_0' [/home/szymon/Desktop/CORA_Z7/projekt/BlockDesign/hw_bd.runs/synth_1/.Xil/Vivado-92668-szymon/realtime/design_1_ImgSharpeningFilter_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_ImgSharpeningFilter_0_0' (0#1) [/home/szymon/Desktop/CORA_Z7/projekt/BlockDesign/hw_bd.runs/synth_1/.Xil/Vivado-92668-szymon/realtime/design_1_ImgSharpeningFilter_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'interrupt' of module 'design_1_ImgSharpeningFilter_0_0' is unconnected for instance 'ImgSharpeningFilter_0' [/home/szymon/Desktop/CORA_Z7/projekt/BlockDesign/hw_bd.gen/sources_1/bd/design_1/synth/design_1.v:216]
+WARNING: [Synth 8-7023] instance 'ImgSharpeningFilter_0' of module 'design_1_ImgSharpeningFilter_0_0' has 20 connections declared, but only 19 given [/home/szymon/Desktop/CORA_Z7/projekt/BlockDesign/hw_bd.gen/sources_1/bd/design_1/synth/design_1.v:216]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_bram_ctrl_0_0' [/home/szymon/Desktop/CORA_Z7/projekt/BlockDesign/hw_bd.runs/synth_1/.Xil/Vivado-92668-szymon/realtime/design_1_axi_bram_ctrl_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_bram_ctrl_0_0' (0#1) [/home/szymon/Desktop/CORA_Z7/projekt/BlockDesign/hw_bd.runs/synth_1/.Xil/Vivado-92668-szymon/realtime/design_1_axi_bram_ctrl_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_bram_ctrl_0_bram_0' [/home/szymon/Desktop/CORA_Z7/projekt/BlockDesign/hw_bd.runs/synth_1/.Xil/Vivado-92668-szymon/realtime/design_1_axi_bram_ctrl_0_bram_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_bram_ctrl_0_bram_0' (0#1) [/home/szymon/Desktop/CORA_Z7/projekt/BlockDesign/hw_bd.runs/synth_1/.Xil/Vivado-92668-szymon/realtime/design_1_axi_bram_ctrl_0_bram_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'rsta_busy' of module 'design_1_axi_bram_ctrl_0_bram_0' is unconnected for instance 'axi_bram_ctrl_0_bram' [/home/szymon/Desktop/CORA_Z7/projekt/BlockDesign/hw_bd.gen/sources_1/bd/design_1/synth/design_1.v:279]
+WARNING: [Synth 8-7023] instance 'axi_bram_ctrl_0_bram' of module 'design_1_axi_bram_ctrl_0_bram_0' has 8 connections declared, but only 7 given [/home/szymon/Desktop/CORA_Z7/projekt/BlockDesign/hw_bd.gen/sources_1/bd/design_1/synth/design_1.v:279]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_smc_0' [/home/szymon/Desktop/CORA_Z7/projekt/BlockDesign/hw_bd.runs/synth_1/.Xil/Vivado-92668-szymon/realtime/design_1_axi_smc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_smc_0' (0#1) [/home/szymon/Desktop/CORA_Z7/projekt/BlockDesign/hw_bd.runs/synth_1/.Xil/Vivado-92668-szymon/realtime/design_1_axi_smc_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'M00_AXI_awprot' of module 'design_1_axi_smc_0' is unconnected for instance 'axi_smc' [/home/szymon/Desktop/CORA_Z7/projekt/BlockDesign/hw_bd.gen/sources_1/bd/design_1/synth/design_1.v:287]
+WARNING: [Synth 8-7071] port 'M00_AXI_arprot' of module 'design_1_axi_smc_0' is unconnected for instance 'axi_smc' [/home/szymon/Desktop/CORA_Z7/projekt/BlockDesign/hw_bd.gen/sources_1/bd/design_1/synth/design_1.v:287]
+WARNING: [Synth 8-7071] port 'M01_AXI_awprot' of module 'design_1_axi_smc_0' is unconnected for instance 'axi_smc' [/home/szymon/Desktop/CORA_Z7/projekt/BlockDesign/hw_bd.gen/sources_1/bd/design_1/synth/design_1.v:287]
+WARNING: [Synth 8-7071] port 'M01_AXI_arprot' of module 'design_1_axi_smc_0' is unconnected for instance 'axi_smc' [/home/szymon/Desktop/CORA_Z7/projekt/BlockDesign/hw_bd.gen/sources_1/bd/design_1/synth/design_1.v:287]
+WARNING: [Synth 8-7071] port 'M02_AXI_awprot' of module 'design_1_axi_smc_0' is unconnected for instance 'axi_smc' [/home/szymon/Desktop/CORA_Z7/projekt/BlockDesign/hw_bd.gen/sources_1/bd/design_1/synth/design_1.v:287]
+WARNING: [Synth 8-7071] port 'M02_AXI_arprot' of module 'design_1_axi_smc_0' is unconnected for instance 'axi_smc' [/home/szymon/Desktop/CORA_Z7/projekt/BlockDesign/hw_bd.gen/sources_1/bd/design_1/synth/design_1.v:287]
+WARNING: [Synth 8-7071] port 'M03_AXI_awqos' of module 'design_1_axi_smc_0' is unconnected for instance 'axi_smc' [/home/szymon/Desktop/CORA_Z7/projekt/BlockDesign/hw_bd.gen/sources_1/bd/design_1/synth/design_1.v:287]
+WARNING: [Synth 8-7071] port 'M03_AXI_arqos' of module 'design_1_axi_smc_0' is unconnected for instance 'axi_smc' [/home/szymon/Desktop/CORA_Z7/projekt/BlockDesign/hw_bd.gen/sources_1/bd/design_1/synth/design_1.v:287]
+WARNING: [Synth 8-7023] instance 'axi_smc' of module 'design_1_axi_smc_0' has 130 connections declared, but only 122 given [/home/szymon/Desktop/CORA_Z7/projekt/BlockDesign/hw_bd.gen/sources_1/bd/design_1/synth/design_1.v:287]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_gpio_0_1' [/home/szymon/Desktop/CORA_Z7/projekt/BlockDesign/hw_bd.runs/synth_1/.Xil/Vivado-92668-szymon/realtime/design_1_axi_gpio_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_gpio_0_1' (0#1) [/home/szymon/Desktop/CORA_Z7/projekt/BlockDesign/hw_bd.runs/synth_1/.Xil/Vivado-92668-szymon/realtime/design_1_axi_gpio_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_gpio_0_0' [/home/szymon/Desktop/CORA_Z7/projekt/BlockDesign/hw_bd.runs/synth_1/.Xil/Vivado-92668-szymon/realtime/design_1_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_gpio_0_0' (0#1) [/home/szymon/Desktop/CORA_Z7/projekt/BlockDesign/hw_bd.runs/synth_1/.Xil/Vivado-92668-szymon/realtime/design_1_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_processing_system7_0_0' [/home/szymon/Desktop/CORA_Z7/projekt/BlockDesign/hw_bd.runs/synth_1/.Xil/Vivado-92668-szymon/realtime/design_1_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_processing_system7_0_0' (0#1) [/home/szymon/Desktop/CORA_Z7/projekt/BlockDesign/hw_bd.runs/synth_1/.Xil/Vivado-92668-szymon/realtime/design_1_processing_system7_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'USB0_PORT_INDCTL' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/szymon/Desktop/CORA_Z7/projekt/BlockDesign/hw_bd.gen/sources_1/bd/design_1/synth/design_1.v:454]
+WARNING: [Synth 8-7071] port 'USB0_VBUS_PWRSELECT' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/szymon/Desktop/CORA_Z7/projekt/BlockDesign/hw_bd.gen/sources_1/bd/design_1/synth/design_1.v:454]
+WARNING: [Synth 8-7023] instance 'processing_system7_0' of module 'design_1_processing_system7_0_0' has 65 connections declared, but only 63 given [/home/szymon/Desktop/CORA_Z7/projekt/BlockDesign/hw_bd.gen/sources_1/bd/design_1/synth/design_1.v:454]
+INFO: [Synth 8-6157] synthesizing module 'design_1_rst_ps7_0_50M_0' [/home/szymon/Desktop/CORA_Z7/projekt/BlockDesign/hw_bd.runs/synth_1/.Xil/Vivado-92668-szymon/realtime/design_1_rst_ps7_0_50M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_ps7_0_50M_0' (0#1) [/home/szymon/Desktop/CORA_Z7/projekt/BlockDesign/hw_bd.runs/synth_1/.Xil/Vivado-92668-szymon/realtime/design_1_rst_ps7_0_50M_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'design_1_rst_ps7_0_50M_0' is unconnected for instance 'rst_ps7_0_50M' [/home/szymon/Desktop/CORA_Z7/projekt/BlockDesign/hw_bd.gen/sources_1/bd/design_1/synth/design_1.v:518]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'design_1_rst_ps7_0_50M_0' is unconnected for instance 'rst_ps7_0_50M' [/home/szymon/Desktop/CORA_Z7/projekt/BlockDesign/hw_bd.gen/sources_1/bd/design_1/synth/design_1.v:518]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'design_1_rst_ps7_0_50M_0' is unconnected for instance 'rst_ps7_0_50M' [/home/szymon/Desktop/CORA_Z7/projekt/BlockDesign/hw_bd.gen/sources_1/bd/design_1/synth/design_1.v:518]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'design_1_rst_ps7_0_50M_0' is unconnected for instance 'rst_ps7_0_50M' [/home/szymon/Desktop/CORA_Z7/projekt/BlockDesign/hw_bd.gen/sources_1/bd/design_1/synth/design_1.v:518]
+WARNING: [Synth 8-7023] instance 'rst_ps7_0_50M' of module 'design_1_rst_ps7_0_50M_0' has 10 connections declared, but only 6 given [/home/szymon/Desktop/CORA_Z7/projekt/BlockDesign/hw_bd.gen/sources_1/bd/design_1/synth/design_1.v:518]
 INFO: [Synth 8-6155] done synthesizing module 'design_1' (0#1) [/home/szymon/Desktop/CORA_Z7/projekt/BlockDesign/hw_bd.gen/sources_1/bd/design_1/synth/design_1.v:13]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (0#1) [/home/szymon/Desktop/CORA_Z7/projekt/BlockDesign/hw_bd.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:13]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2240.668 ; gain = 521.648 ; free physical = 5094 ; free virtual = 11359
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2240.664 ; gain = 521.648 ; free physical = 3871 ; free virtual = 8176
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2255.512 ; gain = 536.492 ; free physical = 5094 ; free virtual = 11359
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2255.508 ; gain = 536.492 ; free physical = 3870 ; free virtual = 8176
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2255.512 ; gain = 536.492 ; free physical = 5094 ; free virtual = 11359
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2255.508 ; gain = 536.492 ; free physical = 3870 ; free virtual = 8176
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2255.512 ; gain = 0.000 ; free physical = 5094 ; free virtual = 11359
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2255.508 ; gain = 0.000 ; free physical = 3870 ; free virtual = 8176
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -103,6 +111,10 @@ Parsing XDC File [/home/szymon/Desktop/CORA_Z7/projekt/BlockDesign/hw_bd.gen/sou
 Finished Parsing XDC File [/home/szymon/Desktop/CORA_Z7/projekt/BlockDesign/hw_bd.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1_in_context.xdc] for cell 'design_1_i/led_green'
 Parsing XDC File [/home/szymon/Desktop/CORA_Z7/projekt/BlockDesign/hw_bd.gen/sources_1/bd/design_1/ip/design_1_ImgSharpeningFilter_0_0/design_1_ImgSharpeningFilter_0_0/design_1_ImgSharpeningFilter_0_0_in_context.xdc] for cell 'design_1_i/ImgSharpeningFilter_0'
 Finished Parsing XDC File [/home/szymon/Desktop/CORA_Z7/projekt/BlockDesign/hw_bd.gen/sources_1/bd/design_1/ip/design_1_ImgSharpeningFilter_0_0/design_1_ImgSharpeningFilter_0_0/design_1_ImgSharpeningFilter_0_0_in_context.xdc] for cell 'design_1_i/ImgSharpeningFilter_0'
+Parsing XDC File [/home/szymon/Desktop/CORA_Z7/projekt/BlockDesign/hw_bd.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_0/design_1_axi_bram_ctrl_0_0/design_1_axi_bram_ctrl_0_0_in_context.xdc] for cell 'design_1_i/axi_bram_ctrl_0'
+Finished Parsing XDC File [/home/szymon/Desktop/CORA_Z7/projekt/BlockDesign/hw_bd.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_0/design_1_axi_bram_ctrl_0_0/design_1_axi_bram_ctrl_0_0_in_context.xdc] for cell 'design_1_i/axi_bram_ctrl_0'
+Parsing XDC File [/home/szymon/Desktop/CORA_Z7/projekt/BlockDesign/hw_bd.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_bram_0/design_1_axi_bram_ctrl_0_bram_0/design_1_axi_bram_ctrl_0_bram_0_in_context.xdc] for cell 'design_1_i/axi_bram_ctrl_0_bram'
+Finished Parsing XDC File [/home/szymon/Desktop/CORA_Z7/projekt/BlockDesign/hw_bd.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_bram_0/design_1_axi_bram_ctrl_0_bram_0/design_1_axi_bram_ctrl_0_bram_0_in_context.xdc] for cell 'design_1_i/axi_bram_ctrl_0_bram'
 Parsing XDC File [/home/szymon/Desktop/CORA_Z7/projekt/BlockDesign/hw_bd.srcs/constrs_1/new/physical.xdc]
 Finished Parsing XDC File [/home/szymon/Desktop/CORA_Z7/projekt/BlockDesign/hw_bd.srcs/constrs_1/new/physical.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/szymon/Desktop/CORA_Z7/projekt/BlockDesign/hw_bd.srcs/constrs_1/new/physical.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
@@ -111,31 +123,31 @@ Parsing XDC File [/home/szymon/Desktop/CORA_Z7/projekt/BlockDesign/hw_bd.runs/sy
 Finished Parsing XDC File [/home/szymon/Desktop/CORA_Z7/projekt/BlockDesign/hw_bd.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2304.438 ; gain = 0.000 ; free physical = 5093 ; free virtual = 11359
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2304.434 ; gain = 0.000 ; free physical = 3876 ; free virtual = 8181
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2304.473 ; gain = 0.000 ; free physical = 5093 ; free virtual = 11359
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2304.469 ; gain = 0.000 ; free physical = 3876 ; free virtual = 8181
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2304.473 ; gain = 585.453 ; free physical = 5142 ; free virtual = 11407
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2304.469 ; gain = 585.453 ; free physical = 4005 ; free virtual = 8312
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z007sclg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2312.441 ; gain = 593.422 ; free physical = 5142 ; free virtual = 11407
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2312.438 ; gain = 593.422 ; free physical = 4005 ; free virtual = 8312
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2312.441 ; gain = 593.422 ; free physical = 5146 ; free virtual = 11411
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2312.438 ; gain = 593.422 ; free physical = 4005 ; free virtual = 8312
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2312.441 ; gain = 593.422 ; free physical = 5145 ; free virtual = 11411
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2312.438 ; gain = 593.422 ; free physical = 4005 ; free virtual = 8312
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -158,25 +170,25 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2312.441 ; gain = 593.422 ; free physical = 5151 ; free virtual = 11421
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2312.438 ; gain = 593.422 ; free physical = 4025 ; free virtual = 8338
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 2404.441 ; gain = 685.422 ; free physical = 5060 ; free virtual = 11349
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 2405.438 ; gain = 686.422 ; free physical = 4023 ; free virtual = 8337
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 2404.441 ; gain = 685.422 ; free physical = 5060 ; free virtual = 11349
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 2405.438 ; gain = 686.422 ; free physical = 4023 ; free virtual = 8337
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 2414.457 ; gain = 695.438 ; free physical = 5053 ; free virtual = 11341
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 2415.453 ; gain = 696.438 ; free physical = 4015 ; free virtual = 8329
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -194,37 +206,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2589.270 ; gain = 870.250 ; free physical = 4893 ; free virtual = 11177
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2590.266 ; gain = 871.250 ; free physical = 3872 ; free virtual = 8187
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2589.270 ; gain = 870.250 ; free physical = 4893 ; free virtual = 11177
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2590.266 ; gain = 871.250 ; free physical = 3872 ; free virtual = 8187
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2589.270 ; gain = 870.250 ; free physical = 4893 ; free virtual = 11177
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2590.266 ; gain = 871.250 ; free physical = 3872 ; free virtual = 8187
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2589.270 ; gain = 870.250 ; free physical = 4893 ; free virtual = 11177
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2590.266 ; gain = 871.250 ; free physical = 3872 ; free virtual = 8187
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2589.270 ; gain = 870.250 ; free physical = 4893 ; free virtual = 11177
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2590.266 ; gain = 871.250 ; free physical = 3872 ; free virtual = 8187
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2589.270 ; gain = 870.250 ; free physical = 4893 ; free virtual = 11177
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2590.266 ; gain = 871.250 ; free physical = 3872 ; free virtual = 8187
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -235,11 +247,13 @@ Report BlackBoxes:
 |      |BlackBox name                    |Instances |
 +------+---------------------------------+----------+
 |1     |design_1_ImgSharpeningFilter_0_0 |         1|
-|2     |design_1_axi_smc_0               |         1|
-|3     |design_1_axi_gpio_0_1            |         1|
-|4     |design_1_axi_gpio_0_0            |         1|
-|5     |design_1_processing_system7_0_0  |         1|
-|6     |design_1_rst_ps7_0_50M_0         |         1|
+|2     |design_1_axi_bram_ctrl_0_0       |         1|
+|3     |design_1_axi_bram_ctrl_0_bram_0  |         1|
+|4     |design_1_axi_smc_0               |         1|
+|5     |design_1_axi_gpio_0_1            |         1|
+|6     |design_1_axi_gpio_0_0            |         1|
+|7     |design_1_processing_system7_0_0  |         1|
+|8     |design_1_rst_ps7_0_50M_0         |         1|
 +------+---------------------------------+----------+
 
 Report Cell Usage: 
@@ -247,34 +261,36 @@ Report Cell Usage:
 |      |Cell                           |Count |
 +------+-------------------------------+------+
 |1     |design_1_ImgSharpeningFilter_0 |     1|
-|2     |design_1_axi_gpio_0            |     2|
-|4     |design_1_axi_smc               |     1|
-|5     |design_1_processing_system7_0  |     1|
-|6     |design_1_rst_ps7_0_50M         |     1|
-|7     |OBUF                           |     2|
+|2     |design_1_axi_bram_ctrl_0       |     1|
+|3     |design_1_axi_bram_ctrl_0_bram  |     1|
+|4     |design_1_axi_gpio_0            |     2|
+|6     |design_1_axi_smc               |     1|
+|7     |design_1_processing_system7_0  |     1|
+|8     |design_1_rst_ps7_0_50M         |     1|
+|9     |OBUF                           |     2|
 +------+-------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2589.270 ; gain = 870.250 ; free physical = 4893 ; free virtual = 11177
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2590.266 ; gain = 871.250 ; free physical = 3872 ; free virtual = 8187
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 2589.270 ; gain = 821.289 ; free physical = 4893 ; free virtual = 11177
-Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2589.277 ; gain = 870.250 ; free physical = 4893 ; free virtual = 11177
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 2590.266 ; gain = 822.289 ; free physical = 3872 ; free virtual = 8187
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2590.273 ; gain = 871.250 ; free physical = 3872 ; free virtual = 8187
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2589.277 ; gain = 0.000 ; free physical = 4893 ; free virtual = 11177
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2590.273 ; gain = 0.000 ; free physical = 3872 ; free virtual = 8187
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2589.277 ; gain = 0.000 ; free physical = 5069 ; free virtual = 11353
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2590.273 ; gain = 0.000 ; free physical = 3901 ; free virtual = 8217
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete | Checksum: 833e21e1
+Synth Design complete | Checksum: 8b46fe98
 INFO: [Common 17-83] Releasing license: Synthesis
-38 Infos, 18 Warnings, 0 Critical Warnings and 0 Errors encountered.
+42 Infos, 22 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:28 . Memory (MB): peak = 2589.305 ; gain = 1050.871 ; free physical = 5069 ; free virtual = 11353
-INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1916.298; main = 1756.439; forked = 274.838
-INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3470.320; main = 2589.273; forked = 963.859
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2613.281 ; gain = 0.000 ; free physical = 5069 ; free virtual = 11353
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:28 . Memory (MB): peak = 2590.301 ; gain = 1053.871 ; free physical = 3901 ; free virtual = 8217
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1922.560; main = 1767.898; forked = 274.904
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3467.320; main = 2590.270; forked = 963.863
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2614.277 ; gain = 0.000 ; free physical = 3901 ; free virtual = 8217
 INFO: [Common 17-1381] The checkpoint '/home/szymon/Desktop/CORA_Z7/projekt/BlockDesign/hw_bd.runs/synth_1/design_1_wrapper.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sat Jan 17 22:11:55 2026...
+INFO: [Common 17-206] Exiting Vivado at Sun Jan 18 00:26:17 2026...

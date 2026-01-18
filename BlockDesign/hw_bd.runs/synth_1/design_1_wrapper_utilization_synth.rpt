@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2025.1 (lin64) Build 6140274 Wed May 21 22:58:25 MDT 2025
-| Date         : Sat Jan 17 22:11:55 2026
+| Date         : Sun Jan 18 00:26:17 2026
 | Host         : szymon running 64-bit Ubuntu 24.04.3 LTS
 | Command      : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
 | Design       : design_1_wrapper
@@ -164,6 +164,8 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 | design_1_axi_smc_0               |    1 |
 | design_1_axi_gpio_0_1            |    1 |
 | design_1_axi_gpio_0_0            |    1 |
+| design_1_axi_bram_ctrl_0_bram_0  |    1 |
+| design_1_axi_bram_ctrl_0_0       |    1 |
 | design_1_ImgSharpeningFilter_0_0 |    1 |
 +----------------------------------+------+
 

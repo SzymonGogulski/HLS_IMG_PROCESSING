@@ -1,6 +1,6 @@
 -------------------------------------
 | Tool Version : Vivado v.2025.1
-| Date         : Sat Jan 17 22:12:32 2026
+| Date         : Sun Jan 18 00:27:06 2026
 | Host         : szymon
 | Design       : design_1
 | Device       : xc7z007s-clg400-1--

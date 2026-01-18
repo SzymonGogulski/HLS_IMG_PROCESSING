@@ -24,4 +24,10 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_ax
 # IP: bd/design_1/ip/design_1_ImgSharpeningFilter_0_0/design_1_ImgSharpeningFilter_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_ImgSharpeningFilter_0_0 || ORIG_REF_NAME==design_1_ImgSharpeningFilter_0_0} -quiet] -quiet
 
+# IP: bd/design_1/ip/design_1_axi_bram_ctrl_0_0/design_1_axi_bram_ctrl_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_axi_bram_ctrl_0_0 || ORIG_REF_NAME==design_1_axi_bram_ctrl_0_0} -quiet] -quiet
+
+# IP: bd/design_1/ip/design_1_axi_bram_ctrl_0_bram_0/design_1_axi_bram_ctrl_0_bram_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_axi_bram_ctrl_0_bram_0 || ORIG_REF_NAME==design_1_axi_bram_ctrl_0_bram_0} -quiet] -quiet
+
 # XDC: /home/szymon/Desktop/CORA_Z7/projekt/BlockDesign/hw_bd.gen/sources_1/bd/design_1/design_1_ooc.xdc

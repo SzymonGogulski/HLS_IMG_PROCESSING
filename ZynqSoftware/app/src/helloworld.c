@@ -29,22 +29,73 @@
 #include <xparameters.h>
 #include <xstatus.h>
 #include "platform.h"
-#include "xil_printf.h"
 #include "xgpio.h"
 #include "sleep.h"
 #include "xuartps.h"
 #include "ximgsharpeningfilter.h"
+#include <stdlib.h>
+#include <string.h>
+#include <ctype.h>
+
+static int uart_send_str(XUartPs *UartPs, const char *s)
+{
+    const int len = (int)strlen(s);
+    int sent = 0;
+    while (sent < len) {
+        sent += XUartPs_Send(UartPs, (u8 *)(s + sent), (u32)(len - sent));
+    }
+    return sent;
+}
+
+static int uart_recv_exact(XUartPs *UartPs, u8 *buf, int nbytes)
+{
+    int got = 0;
+    while (got < nbytes) {
+        got += XUartPs_Recv(UartPs, buf + got, (u32)(nbytes - got));
+    }
+    return got;
+}
+
+static int uart_recv_dims(XUartPs *UartPs, int *out_h, int *out_w)
+{
+    char msg[128];
+    int idx = 0;
+
+    while (idx < (int)(sizeof(msg) - 1)) {
+        u8 ch;
+        uart_recv_exact(UartPs, &ch, 1);
+
+        msg[idx++] = (char)ch;
+        if (ch == '}') break;
+    }
+    msg[idx] = '\0';
+
+    char *ph = strstr(msg, "height:");
+    char *pw = strstr(msg, "width:");
+    if (!ph || !pw) return XST_FAILURE;
+
+    ph += (int)strlen("height:");
+    pw += (int)strlen("width:");
+
+    int h = atoi(ph);
+    int w = atoi(pw);
+
+    if (h <= 0 || w <= 0) return XST_FAILURE;
+
+    *out_h = h;
+    *out_w = w;
+    return XST_SUCCESS;
+}
 
 static int sf_init(XImgsharpeningfilter *sf){
 
-    int status = XImgsharpeningfilter_Initialize(&sf, XPAR_IMGSHARPENINGFILTER_0_BASEADDR);
+    int status = XImgsharpeningfilter_Initialize(sf, XPAR_IMGSHARPENINGFILTER_0_BASEADDR);
 
     if (status != XST_SUCCESS){
-        xil_printf("ERROR: XImagesharpeningfilter_Initialize failed: %d\r\n", status);
         return status;
     }
 
-    XImgsharpeningfilter_DisableAutoRestart(&sf);
+    XImgsharpeningfilter_DisableAutoRestart(sf);
 
     return XST_SUCCESS;
 }
@@ -87,8 +138,8 @@ int main()
     XGpio_SetDataDirection(&red, 1, 0);
     XGpio_SetDataDirection(&green, 1, 0);
 
-    XGpio_DiscreteWrite(&red, 1, 1);
-    XGpio_DiscreteWrite(&green, 1, 1);
+    XGpio_DiscreteWrite(&red, 1, 0);
+    XGpio_DiscreteWrite(&green, 1, 0);
 
     // UART INIT
     int status;
@@ -121,15 +172,34 @@ int main()
     }
 
     // Read UART IMG width and height
-    //{height:h,widht:w}
+    int h = 0, w = 0;
 
-    print("Hello World\n\r");
-    print("Successfully ran Hello World application");
+    if (uart_recv_dims(&UartPs, &h, &w) != XST_SUCCESS) {
+        return XST_FAILURE;
+    }   
+
+    //Allocate memory
+    size_t sz = (size_t)h * (size_t)w;
+    if (sz == 0) return XST_FAILURE;
+
+    u8 *img = (u8 *)malloc(sz);
+    if (!img) {         
+        XGpio_DiscreteWrite(&red, 1, 1);
+        XGpio_DiscreteWrite(&green, 1, 0);
+    } else {
+        XGpio_DiscreteWrite(&red, 1, 0);
+        XGpio_DiscreteWrite(&green, 1, 1);
+        free(img);
+    }
 
     sleep(10);
+    // Send read message
+    uart_send_str(&UartPs, "READY");
 
-    XGpio_DiscreteWrite(&red, 1, 0);
-    XGpio_DiscreteWrite(&green, 1, 0);
+
+
+
+
 
     cleanup_platform();
     return 0;

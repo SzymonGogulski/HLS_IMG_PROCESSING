@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2025.1 (lin64) Build 6140274 Wed May 21 22:58:25 MDT 2025
-| Date         : Sat Jan 17 22:12:49 2026
+| Date         : Sun Jan 18 00:27:42 2026
 | Host         : szymon running 64-bit Ubuntu 24.04.3 LTS
 | Command      : report_methodology -file design_1_wrapper_methodology_drc_routed.rpt -pb design_1_wrapper_methodology_drc_routed.pb -rpx design_1_wrapper_methodology_drc_routed.rpx
 | Design       : design_1_wrapper
@@ -23,12 +23,13 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max checks: <unlimited>
-             Checks found: 2
-+-----------+----------+-------------------------------+--------+
-| Rule      | Severity | Description                   | Checks |
-+-----------+----------+-------------------------------+--------+
-| TIMING-18 | Warning  | Missing input or output delay | 2      |
-+-----------+----------+-------------------------------+--------+
+             Checks found: 3
++-----------+----------+---------------------------------------------+--------+
+| Rule      | Severity | Description                                 | Checks |
++-----------+----------+---------------------------------------------+--------+
+| TIMING-18 | Warning  | Missing input or output delay               | 2      |
+| ULMTCS-1  | Warning  | Control Sets use limits recommend reduction | 1      |
++-----------+----------+---------------------------------------------+--------+
 
 2. REPORT DETAILS
 -----------------
@@ -40,6 +41,11 @@ Related violations: <none>
 TIMING-18#2 Warning
 Missing input or output delay  
 An output delay is missing on led_red_tri_o[0] relative to the rising and/or falling clock edge(s) of clk_fpga_0.
+Related violations: <none>
+
+ULMTCS-1#1 Warning
+Control Sets use limits recommend reduction  
+This design uses 499 control sets (vs. available limit of 4400, determined by 1 control set per CLB). This exceeds the control set use guideline of 7.5 percent. This is at a level where reduction is RECOMMENDED (see UG949). Use report_control_sets to get more details.
 Related violations: <none>
 
 

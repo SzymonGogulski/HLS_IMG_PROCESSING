@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z007sclg400-1" LaunchTime="1768684278" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/design_1_wrapper.dcp">
+<GenRun Id="synth_1" LaunchPart="xc7z007sclg400-1" LaunchTime="1768692131" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/design_1_wrapper.dcp">
   <File Type="VDS-TIMINGSUMMARY" Name="design_1_wrapper_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="design_1_wrapper.dcp"/>
   <File Type="RDS-UTIL-PB" Name="design_1_wrapper_utilization_synth.pb"/>
@@ -59,14 +59,15 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2025">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2025"/>
     <Step Id="synth_design"/>
   </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_axi_bram_ctrl_0_bram_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_rst_ps7_0_50M_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_axi_gpio_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_processing_system7_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_axi_bram_ctrl_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_axi_gpio_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_axi_smc_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_ImgSharpeningFilter_0_0"/>
 </GenRun>
